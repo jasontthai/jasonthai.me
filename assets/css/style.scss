@@ -5,23 +5,31 @@
 @import "minima";
 @import "minima/syntax-highlighting";
 
-.excerpt:hover {
-  opacity: 0.5;
-  transition: 0.5s;
+$post-color: #faf5ef;
+$link-color: #00a79d;
 
+.post {
+  background-color: $post-color;
+  padding: 15px;
+}
+
+a {
+  color: $link-color;
+  &:visited {
+    color: darken($link-color, 10%);
+  }
+}
+
+.excerpt:hover {
+  opacity: 0.8;
 
   a {
-    color: $brand-color;
     text-decoration: none;
-
-    &:visited {
-      color: darken($brand-color, 15%);
-    }
   }
 }
 
 .excerpt {
-  background-color: #faf5ef;
+  background-color: $post-color;
   border: 1px solid #d3d3d3;
   border-radius: .25rem;
   margin-top: 15px;
@@ -33,6 +41,7 @@
   }
   span {
     padding: 15px 15px 0px 15px;
+    color: #672f2f;
   }
 }
 
