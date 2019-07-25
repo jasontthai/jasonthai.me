@@ -1,7 +1,9 @@
 git config --global user.name "$USER_NAME"
 git config --global user.email "$USER_EMAIL"
 
-echo "export COMMIT_MESSAGE=\"$(git log --format=oneline -n 1 $CIRCLE_SHA1)\"" >> ~/.bashrc
+export COMMIT_MESSAGE=\"$(git log --format=oneline -n 1 $CIRCLE_SHA1)\"
+
+echo $COMMIT_MESSAGE
 
 git clone $GITHUB_PAGE_REPOSITORY_URL destination
 cd destination
