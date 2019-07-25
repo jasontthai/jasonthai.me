@@ -1,7 +1,7 @@
 git config --global user.name "$USER_NAME"
 git config --global user.email "$USER_EMAIL"
 
-export COMMIT_MESSAGE=\"$(git log --format=oneline -n 1 $CIRCLE_SHA1)\"
+export COMMIT_MESSAGE=\"$(git log --format=oneline -1 --pretty=format:'%h - %B')\"
 
 echo $COMMIT_MESSAGE
 
