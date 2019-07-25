@@ -45,7 +45,7 @@ The `.travis.yml` file declares the steps for Travis CI to execute, you can see 
 
 After you have created these files, commit and push the changes to **source** branch. You will see a new build will start in Travis CI, which will execute all the steps mentioned above and put the new changes of your site on **master** branch. You may see something similar to this on Travis CI:
 
-{% include lazy-img.html src="/assets/img/travisci-build" alt="TravisCI build" %}
+{% include lazy-img.html src="/assets/img/travisci-build.png" alt="TravisCI build" %}
 
 Once it's done, your changes will be available for viewing.
 
