@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 published: true
 ---
 
-![finance](/assets/img/accounting-black-budget.jpg)
+{% include lazy-img.html src="/assets/img/accounting-black-budget.jpg" alt="budgeting" %}
 
 Here is a list of my recommended financial tools that will enhance your experience of managing your finance:
 <!--more-->

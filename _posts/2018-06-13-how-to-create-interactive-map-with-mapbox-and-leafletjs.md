@@ -6,7 +6,7 @@ excerpt_separator: "<!--more-->"
 featured_img: /assets/img/visited-map.png
 ---
 
-![map](/assets/img/visited-map.png)
+{% include lazy-img.html src="/assets/img/visited-map.png" alt="Visted Places" %}
 
 Recently I created [<u>an interactive map page of all the places that I visited</u>](/visited-places).
 This post provides an overview of how to create such interactive map.

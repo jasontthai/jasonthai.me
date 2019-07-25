@@ -5,7 +5,7 @@ tags: tech
 toc: true
 ---
 
-![postgresql and mysql](/assets/img/postgresql-vs-mysql-features.jpg)
+{% include lazy-img.html src="/assets/img/postgresql-vs-mysql-features.jpg" alt="PostgreSQL vs MySQL" %}
 
 A consolidated list of useful commands for PostgreSQL and MySQL from my own findings.
 

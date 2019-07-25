@@ -2,9 +2,10 @@
 title: Recommended Browser Extensions
 layout: post
 tags: tech
+featured_img: /assets/img/browser-2457113_1280.png
 ---
 
-![browsers](/assets/img/browser-2457113_1280.png)
+{% include lazy-img.html src="/assets/img/browser-2457113_1280.png" alt="browsers" %}
 
 Here is a list of my recommended browser extensions that will make your browsing experience safer:
 
