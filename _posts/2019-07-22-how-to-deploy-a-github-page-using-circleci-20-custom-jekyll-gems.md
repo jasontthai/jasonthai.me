@@ -103,5 +103,30 @@ Once it's done, your changes will be available for viewing.
 ### Added benefit: Custom Jekyll Dependencies + Plugins
 As I mentioned, if we let Github Pages handle the build of our site, only a limited number of dependencies and plugins are supported. However, now we have switched to CircleCI and build the site ourselves, this comes with an additional benefit which is all the Jekyll dependencies and plugins are now supported. Some of you may be aware that [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) is not yet supported by Github Pages, but now you can take advantage of the new additional features of this dependency.
 
-## Other thoughts
-I also thought about separating the source code of the site in a separate repo so CircleCI can read from this source repo and build and make changes to the actual Github Pages repo. This provides the benefits of decoupling the source and the generated sites. For now, I leave this as an exercise so you can find out more about the functionalities of CircleCI.
+## Addendum
+If you decided to create a separate repo to store your source code and want to use CircleCI to push the generated static site to your Github Pages repo, you can replace the `.circleci/deploy.sh` above with the following content:
+```bash
+git config --global user.name "$USER_NAME"
+git config --global user.email "$USER_EMAIL"
+
+export COMMIT_MESSAGE=\"$(git log --format=oneline -1 --pretty=format:'%h - %B')\"
+
+echo $COMMIT_MESSAGE
+
+git clone $GITHUB_PAGE_REPOSITORY_URL destination
+cd destination
+
+git checkout master
+git pull origin master
+
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+mv ../_site/* .
+
+git add -fA
+git commit --allow-empty -m "$COMMIT_MESSAGE"
+git push -f origin master
+
+echo "Deployed successfully"
+```
+
+In your repo setting on CircleCI, add a new environment variable `GITHUB_PAGE_REPOSITORY_URL` which is your Github Pages repo URL.
