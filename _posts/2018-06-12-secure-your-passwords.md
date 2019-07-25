@@ -27,7 +27,7 @@ __Make use of__ capitalizations, punctuations, numbers and spelling.
 Here is password that apply all of these rules: *__mE8$pX1xF@x3uyC__* and some of its stats provided
 by [Password Checker Online](http://password-checker.online-domain-tools.com/):
 
-![Password Checker](/assets/img/password-checker.png "Password Checker")
+{% include lazy-img.html src="/assets/img/password-checker.png" alt="Password Checker" %}
 
 # Never Reuse a Password (Use a Password Management Tool)
 It is challenging to come up with a new password, let alone having to remember a complicated one

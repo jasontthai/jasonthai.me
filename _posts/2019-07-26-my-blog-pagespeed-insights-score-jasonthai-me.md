@@ -5,7 +5,7 @@ tags: tech
 toc: true
 ---
 
-![PageSpeed Insights](/assets/img/pagespeed-full.png)
+{% include lazy-img.html src="/assets/img/pagespeed-full.png" alt="PageSpeed Insights" %}
 
 ## Introduction
 

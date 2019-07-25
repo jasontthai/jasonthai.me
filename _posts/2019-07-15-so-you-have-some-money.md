@@ -5,7 +5,7 @@ featured_img: "/assets/img/money-matters-1173105.jpg"
 tag: finance
 ---
 
-![money](/assets/img/money-matters-1173105.jpg)
+{% include lazy-img.html src="/assets/img/money-matters-1173105.jpg" alt="so you have money" %}
 
 To San and Vy,
 

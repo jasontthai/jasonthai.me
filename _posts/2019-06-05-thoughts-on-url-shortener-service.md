@@ -5,7 +5,7 @@ tags: tech
 featured_img: /assets/img/tinyalias.png
 ---
 
-![tinyalias](/assets/img/tinyalias.png)
+{% include lazy-img.html src="/assets/img/tinyalias.png" alt="TinyAlias" %}
 
 TinyAlias is no longer in service but I am still hosting it on Heroku so you can try out its functionality. 
 

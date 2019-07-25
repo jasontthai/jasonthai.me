@@ -45,7 +45,7 @@ layout: default
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <a href="{{ post.url | relative_url }}">
                 <div>
-                    <div class="bg-img" style="background-image: url({{post.featured_img}})">
+                    <div class="bg-img lazyload" data-bg="{{post.featured_img}}">
                     </div>
                     <span class="post-link">
                         {{ post.title | escape }}
