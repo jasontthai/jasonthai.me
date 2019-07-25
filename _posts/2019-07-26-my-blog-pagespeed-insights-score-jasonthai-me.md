@@ -11,9 +11,10 @@ toc: true
 
 I have been testing how responsive my blog is and PageSpeed Insights give me a pretty good idea of the result. Certainly there are always improvements to be made but for now I am quite glad that the site is snappy.
 
+<!--more-->
 [Check my blog's PageSpeed Insights Score](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fjasonthai.me%2F&tab=desktop)
 
-I also tried out [Lighthouse](https://developers.google.com/web/tools/lighthouse), an open source tool to audit my site's performance. The result is [here](/assets/js/jasonthai.me-20190725T114000.json) in json or you can download the file and use [Lighthouse Report Viewer](https://googlechrome.github.io/lighthouse/viewer/) for the graphical view.
+I also tried out [Lighthouse](https://developers.google.com/web/tools/lighthouse), an open source tool to audit my site's performance. The result is [here](/assets/js/jasonthai.me-20190725T135457.json) in json or you can download the file and use [Lighthouse Report Viewer](https://googlechrome.github.io/lighthouse/viewer/) for the graphical view.
 
 ## Things I have done to improve speed
 
