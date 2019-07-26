@@ -4,7 +4,7 @@ markdown: kramdown
 
 # remote_theme: fongandrew/hydeout
 theme: minima
-email: thaixtri@gmail.com
+email: '&#116;&#104;&#097;&#105;&#120;&#116;&#114;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
 title: Jason's Notes
 description: Jason Thai's personal page
 baseurl: "" # the subpath of your site, e.g. /blog
