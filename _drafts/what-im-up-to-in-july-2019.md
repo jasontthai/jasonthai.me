@@ -1,10 +1,11 @@
 ---
 title: What I'm up to in July 2019
 tags: blog
-featured_img: /assets/img/the-month-july.jpg
+featured_img: /assets/img/the-month-july.webp
+category: en
 ---
 
-{% include lazy-img.html src="/assets/img/the-month-july.jpg" alt="July" %}
+{% include lazy-img.html src="/assets/img/the-month-july.webp" alt="July" %}
 
 First post of what I am hoping will be a series. Here I will update what has been happening with me in the month.
 
