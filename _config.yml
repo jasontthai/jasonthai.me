@@ -30,6 +30,7 @@ header_pages:
   - tags.html
   - visited-places.md
 
+comments: false
 disqus:
   shortname: https-jasonthai-me
 
