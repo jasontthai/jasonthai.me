@@ -30,9 +30,8 @@ header_pages:
   - tags.html
   - visited-places.md
 
-comments: false
-disqus:
-  shortname: https-jasonthai-me
+# disqus:
+#  shortname: https-jasonthai-me
 
 github_username: zirius
 linkedin_username: jasontthai
