@@ -14,7 +14,9 @@ I have been testing how responsive my blog is and PageSpeed Insights give me a p
 <!--more-->
 [Check my blog's PageSpeed Insights Score](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fjasonthai.me%2F&tab=desktop)
 
-I also tried out [Lighthouse](https://developers.google.com/web/tools/lighthouse), an open source tool to audit my site's performance. The result is [here](/assets/js/jasonthai.me-20190725T135457.json) in json or you can download the file and use [Lighthouse Report Viewer](https://googlechrome.github.io/lighthouse/viewer/) for the graphical view.
+I also tried out [Lighthouse](https://developers.google.com/web/tools/lighthouse), an open source tool to audit my site's performance. The result is [here](/assets/js/jasonthai.me-20190726T112605.json) in json or you can download the file and use [Lighthouse Report Viewer](https://googlechrome.github.io/lighthouse/viewer/) for the graphical view.
+
+Some other tools to test your site are [Pingdom](https://tools.pingdom.com) and [GTmetrix](https://gtmetrix.com/)
 
 ## Things I have done to improve speed
 
@@ -22,12 +24,12 @@ I also tried out [Lighthouse](https://developers.google.com/web/tools/lighthouse
 Cloudflare CDN ensures that my site is highly available and fast. Its SSL service also ensures your connection to my site is secure.
 
 ### Load scripts asynchronously
-Since scripts by default will block the rendering of the page, I use `async` attribute to have them load asynchronously
+Since scripts by default will block the rendering of the page, I use `async` attribute to have them loaded asynchronously.
 
 ### Less use of style and scripts
 The more scripts and styles a page has, the slower it becomes. I try not to overload the site with these things. 
 
-I also include `style.css` and `js` scripts directly on page if they are small to reduce HTTP calls 
+I also include CSS and javascripts directly on the page if they are small to reduce HTTP calls to fetch them.
 
 ### Lazyload images and webp format
 I optimize the images by converting them to [webp format](https://developers.google.com/speed/webp/) and using [lazyloading](https://github.com/aFarkas/lazysizes)  so they take less time to load and render.
