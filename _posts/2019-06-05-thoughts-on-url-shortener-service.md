@@ -2,10 +2,10 @@
 layout: post
 title: Things I've Learned Hosting a URL Shortener Service
 tags: tech
-featured_img: /assets/img/tinyalias.png
+featured_img: /assets/img/tinyalias.webp
 ---
 
-{% include lazy-img.html src="/assets/img/tinyalias.png" alt="TinyAlias" %}
+{% include lazy-img.html src="/assets/img/tinyalias.webp" alt="TinyAlias" %}
 
 TinyAlias is no longer in service but I am still hosting it on Heroku so you can try out its functionality. 
 

@@ -1,10 +1,10 @@
 ---
 title: The Existence of Anniversaries
-featured_img: "/assets/img/3years_featured.png"
+featured_img: "/assets/img/3years_featured.webp"
 tags: blog
 ---
 
-{% include lazy-img.html src="/assets/img/3years.jpg" alt="3 year anniversary" %}
+{% include lazy-img.html src="/assets/img/3years.webp" alt="3 year anniversary" %}
 
 Definition of **anniversary** from [Merriam-Webster](https://www.merriam-webster.com/dictionary/anniversary):
 > 1: The annual recurrence of a date marking a notable event

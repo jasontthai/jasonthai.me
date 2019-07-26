@@ -1,11 +1,11 @@
 ---
 title: Useful Commands for PostgreSQL and MySQL Database
-featured_img: /assets/img/postgresql-vs-mysql-features.jpg
+featured_img: /assets/img/postgresql-vs-mysql-features.webp
 tags: tech
 toc: true
 ---
 
-{% include lazy-img.html src="/assets/img/postgresql-vs-mysql-features.jpg" alt="PostgreSQL vs MySQL" %}
+{% include lazy-img.html src="/assets/img/postgresql-vs-mysql-features.webp" alt="PostgreSQL vs MySQL" %}
 
 A consolidated list of useful commands for PostgreSQL and MySQL from my own findings.
 

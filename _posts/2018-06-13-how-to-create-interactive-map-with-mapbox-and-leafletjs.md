@@ -3,10 +3,10 @@ title: How to Create an Interactive Map With Mapbox and Leafletjs
 layout: post
 tags: tech
 excerpt_separator: "<!--more-->"
-featured_img: /assets/img/visited-map.png
+featured_img: /assets/img/visited-map.webp
 ---
 
-{% include lazy-img.html src="/assets/img/visited-map.png" alt="Visted Places" %}
+{% include lazy-img.html src="/assets/img/visited-map.webp" alt="Visted Places" %}
 
 Recently I created [<u>an interactive map page of all the places that I visited</u>](/visited-places).
 This post provides an overview of how to create such interactive map.
@@ -46,7 +46,7 @@ __Render a map__ with some overlay. The overlay data are
 
 var geojson = L.geoJson(countries).addTo(map);
 var map = L.map('map').setView([0, 0], 2);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.webp?access_token={accessToken}', {
   maxZoom: 18,
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
     '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
