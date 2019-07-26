@@ -5,7 +5,7 @@ markdown: kramdown
 # remote_theme: fongandrew/hydeout
 theme: minima
 email: thaixtri@gmail.com
-title: Blog of Things
+title: Jason's Notes
 description: Jason Thai's personal page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jasonthai.me" # the base hostname & protocol for your site, e.g. http://example.com
