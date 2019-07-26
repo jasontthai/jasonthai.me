@@ -4,12 +4,12 @@ markdown: kramdown
 
 # remote_theme: fongandrew/hydeout
 theme: minima
-email: '&#116;&#104;&#097;&#105;&#120;&#116;&#114;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
+email: '&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;'
 title: Jason's Notes
 description: Jason Thai's personal page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jasonthai.me" # the base hostname & protocol for your site, e.g. http://example.com
-author: Jason
+author: Jason Thai
 # author:
   # name: Jason Thai
 
