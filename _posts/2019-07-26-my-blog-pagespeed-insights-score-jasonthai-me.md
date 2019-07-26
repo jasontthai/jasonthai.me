@@ -25,7 +25,9 @@ Cloudflare CDN ensures that my site is highly available and fast. Its SSL servic
 Since scripts by default will block the rendering of the page, I use `async` attribute to have them load asynchronously
 
 ### Less use of style and scripts
-The more scripts and styles a page has, the slower it becomes. I try not to overload the site with these things
+The more scripts and styles a page has, the slower it becomes. I try not to overload the site with these things. 
+
+I also include `style.css` and `js` scripts directly on page if they are small to reduce HTTP calls 
 
 ### Lazyload images and webp format
 I optimize the images by converting them to [webp format](https://developers.google.com/speed/webp/) and using [lazyloading](https://github.com/aFarkas/lazysizes)  so they take less time to load and render.
