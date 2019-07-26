@@ -1,11 +1,11 @@
 ---
 title: My Blog's PageSpeed Insights Score
-featured_img: /assets/img/pagespeed-featured.png
+featured_img: /assets/img/pagespeed-featured.webp
 tags: tech
 toc: true
 ---
 
-{% include lazy-img.html src="/assets/img/pagespeed-full.png" alt="PageSpeed Insights" %}
+{% include lazy-img.html src="/assets/img/pagespeed-full.webp" alt="PageSpeed Insights" %}
 
 ## Introduction
 

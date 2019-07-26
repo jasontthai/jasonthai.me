@@ -1,11 +1,11 @@
 ---
 title: So You Have Some Money
 excerpt_separator: "<!--more-->"
-featured_img: "/assets/img/money-matters-1173105.jpg"
+featured_img: "/assets/img/money-matters-1173105.webp"
 tag: finance
 ---
 
-{% include lazy-img.html src="/assets/img/money-matters-1173105.jpg" alt="so you have money" %}
+{% include lazy-img.html src="/assets/img/money-matters-1173105.webp" alt="so you have money" %}
 
 To San and Vy,
 
@@ -25,6 +25,6 @@ Here are some other next steps after the first 3 above:
 4.  Put your emergency fund into a high yield saving account to earn interest. (I can show you how to do this).
 5.  Start learning more about 401K, Traditional/Roth IRA (I will put up another post to go into details about this. For now, you can ignore)
 
-You can also take a look at this [flowchart](https://i.imgur.com/lSoUQr2.png) and check out reddit's personalfinance [wiki](https://www.reddit.com/r/personalfinance/wiki/index) to find out more about all things personal finance.
+You can also take a look at this [flowchart](https://i.imgur.com/lSoUQr2.webp) and check out reddit's personalfinance [wiki](https://www.reddit.com/r/personalfinance/wiki/index) to find out more about all things personal finance.
 
 Why you need to do all this stuff? The answer is simple. This is to help you get started on being financially responsible and eventually finanical independent. You may wonder what the heck is financial independence. I promise it will be very fun to know about this and not boring at all even though it also revolves around money a bit. For now, enough money talk for the day. See it is not too long!

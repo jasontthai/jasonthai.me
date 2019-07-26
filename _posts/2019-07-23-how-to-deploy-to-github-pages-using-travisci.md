@@ -1,11 +1,11 @@
 ---
 title: How to Deploy to Github Pages Using Travis CI
-featured_img: /assets/img/logo-travisci-wide1.jpg
+featured_img: /assets/img/logo-travisci-wide1.webp
 tags: tech
 toc: true
 ---
 
-{% include lazy-img.html src="/assets/img/logo-travisci-wide1.jpg" alt="TravisCI" %}
+{% include lazy-img.html src="/assets/img/logo-travisci-wide1.webp" alt="TravisCI" %}
 
 Follow up for my post [How to Deploy to Github Pages Using CircleCI 2.0 + Custom Jekyll Dependencies]({% post_url 2019-07-22-how-to-deploy-a-github-page-using-circleci-20-custom-jekyll-gems %}). This is a guide to set up automatic build and deployment using Travis CI as opposed to CircleCI
 
@@ -45,7 +45,7 @@ The `.travis.yml` file declares the steps for Travis CI to execute, you can see 
 
 After you have created these files, commit and push the changes to **source** branch. You will see a new build will start in Travis CI, which will execute all the steps mentioned above and put the new changes of your site on **master** branch. You may see something similar to this on Travis CI:
 
-{% include lazy-img.html src="/assets/img/travisci-build.png" alt="TravisCI build" %}
+{% include lazy-img.html src="/assets/img/travisci-build.webp" alt="TravisCI build" %}
 
 Once it's done, your changes will be available for viewing.
 

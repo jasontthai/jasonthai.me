@@ -2,12 +2,12 @@
 title: Recommended Financial Tools
 layout: post
 tags: finance
-featured_img: /assets/img/accounting-black-budget.jpg
+featured_img: /assets/img/accounting-black-budget.webp
 excerpt_separator: <!--more-->
 published: true
 ---
 
-{% include lazy-img.html src="/assets/img/accounting-black-budget.jpg" alt="budgeting" %}
+{% include lazy-img.html src="/assets/img/accounting-black-budget.webp" alt="budgeting" %}
 
 Here is a list of my recommended financial tools that will enhance your experience of managing your finance:
 <!--more-->
