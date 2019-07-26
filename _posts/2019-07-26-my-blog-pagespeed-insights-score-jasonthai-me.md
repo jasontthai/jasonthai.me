@@ -27,8 +27,8 @@ Since scripts by default will block the rendering of the page, I use `async` att
 ### Less use of style and scripts
 The more scripts and styles a page has, the slower it becomes. I try not to overload the site with these things
 
-### Smaller images and webp format
-I always try to resize and optimize the images by converting them to [webp format](https://developers.google.com/speed/webp/) so they take less time to load and render.
+### Lazyload images and webp format
+I optimize the images by converting them to [webp format](https://developers.google.com/speed/webp/) and using [lazyloading](https://github.com/aFarkas/lazysizes)  so they take less time to load and render.
 
 ## Conclusion
 To be clear, I do not think having a high score means the website is awesome. It also has to do with other factors like quality of content. That said, user experience is very important and we should not make the users wait to view our content.
