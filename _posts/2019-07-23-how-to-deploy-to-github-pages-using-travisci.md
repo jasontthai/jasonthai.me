@@ -9,6 +9,8 @@ toc: true
 
 Follow up for my post [How to Deploy to Github Pages Using CircleCI 2.0 + Custom Jekyll Dependencies]({% post_url 2019-07-22-how-to-deploy-a-github-page-using-circleci-20-custom-jekyll-gems %}). This is a guide to set up automatic build and deployment using Travis CI as opposed to CircleCI
 
+<!--more-->
+
 ## Travis CI
 Travis CI is also very  powerful continuous integration tool, which allows rapid builds and deployment of your projects.  Open source projects are supported and get free builds so as long as your static website is located on a public repository on Github, you won't have to pay anything to use it.
 

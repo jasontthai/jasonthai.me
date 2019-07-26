@@ -8,6 +8,8 @@ featured_img: https://repository-images.githubusercontent.com/65252/f2b7c780-70b
 
 The stock theme that I am currently using is from [https://github.com/jekyll/minima](https://github.com/jekyll/minima). I like it for its cleanliness and simplicty as the name implies.
 
+<!--more-->
+
 But as you know I enjoy customizing things my way so I did make a few changes to make this blog a bit more to my liking (for now. After all I have switched themes a few times). Here are a couple of new additions that I added.
 
 ### Added subscribe feature through email or RSS
