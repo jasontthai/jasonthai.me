@@ -38,15 +38,28 @@ a {
   border-radius: .25rem;
   margin-top: 15px;
 
+  .post-link, .post-meta {
+    color: #672f2f;
+  }
+
+  .post-excerpt {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .post-link {
+    padding-top: 15px;
+  }
+
   p {
     text-decoration: none;
     color: $text-color;
-    padding: 15px;
+    padding-top: 15px;
   }
-  span {
-    padding: 15px 15px 0px 15px;
-    color: #672f2f;
-  }
+}
+
+.post-list li {
+  margin-top: 15px;
 }
 
 .site-nav {
@@ -58,6 +71,26 @@ a {
   min-height: 180px;
   background-position: center;
   background-color: #ccc;
+}
+
+
+@media screen and (max-width: 600px) {
+  .bg-img {
+    display: none;  
+  }
+
+  .excerpt p {
+    display: none;
+  }
+
+  .post-excerpt {
+    padding-bottom: 15px;
+  }
+
+
+  .post-list li {
+    margin-bottom: 15px;
+  }
 }
 
 .page-nav {

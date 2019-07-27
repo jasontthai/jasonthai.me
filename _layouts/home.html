@@ -13,7 +13,7 @@ layout: default
     {% assign posts = paginator.posts %}
 {% endif %}
 <div class="home">
-<!--     {%- if page.title -%}
+    <!--     {%- if page.title -%}
     <h1 class="page-heading">
         {{ page.title }}
     </h1>
@@ -47,17 +47,19 @@ layout: default
                 <div>
                     <div class="bg-img lazyload" data-bg="{{post.featured_img}}">
                     </div>
-                    <span class="post-link">
-                        {{ post.title | escape }}
-                    </span>
-                    <span class="post-meta">
-                        {{ post.date | date: date_format }}
-                    </span>
-                    {%- if site.show_excerpts -%}
-                    <p>
-                        {{ post.excerpt | strip_html | truncatewords: 100 }}
-                    </p>
-                    {%- endif -%}
+                    <div class="post-excerpt">
+                        <span class="post-link">
+                            {{ post.title | escape }}
+                        </span>
+                        <span class="post-meta">
+                            {{ post.date | date: date_format }}
+                        </span>
+                        {%- if site.show_excerpts -%}
+                        <p>
+                            {{ post.excerpt | strip_html | truncatewords: 100 }}
+                        </p>
+                        {%- endif -%}
+                    </div>
                 </div>
             </a>
         </li>
