@@ -19,3 +19,7 @@ If you are wondering about the asset allocation that I am following, here is the
 * Taxable Account:  100% [VTSAX](https://investor.vanguard.com/mutual-funds/profile/vtsax)
 
 This portfolio seems to fit nicely with the approach of lazy investing as I do not have to worry about buying individual stocks and doing the due diligence to research about individual companies. You may argue stock picking can result in better investment over time but I think simplicity is the key to investing.
+
+<hr>
+
+[Checkout some of my other finance's notes](/tags#finance)
