@@ -7,9 +7,9 @@ featured_img: "/assets/img/blur-chart-data.webp"
 John Norstad, a retired mathematician, had presented three proofs that prove Total Stock Market (fund) is efficient. This is interesting so this note shares with you those three proofs.
 <!--more-->
 
-You can read about the proofs [here](https://web.archive.org/web/20170628202816/http://www.norstad.org/finance/tsmproofs.pdf) and  join the bogleheads forum to discuss about the proofs [here](https://www.bogleheads.org/forum/viewtopic.php?f=10&t=286828)
+You can [read about the proofs here](https://web.archive.org/web/20170628202816/http://www.norstad.org/finance/tsmproofs.pdf) and  [join the bogleheads forum to discuss about the proofs here](https://www.bogleheads.org/forum/viewtopic.php?f=10&t=286828)
 
-I have recently switched to mostly investing in [VTSAX](https://investor.vanguard.com/mutual-funds/profile/vtsax) so this study gives me some assurance that this is the right approach. Of course, stock market is volatile and risky, so imo, this only plays out if there is a long time horizon for investing.
+I have recently switched to mostly investing in [Vanguard Total Stock Market Index Fund (VTSAX)](https://investor.vanguard.com/mutual-funds/profile/vtsax) so this study gives me some assurance that this is the right approach. Of course, stock market is volatile and risky, so imo, this only plays out if there is a long time horizon for investing.
 
 If you are wondering about the asset allocation that I am following, here is the breakdown:
 ![Asset Allocation](/assets/img/asset-allocation.webp)
