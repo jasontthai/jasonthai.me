@@ -11,6 +11,11 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | default: site.author  | escape }}</span></span>
+      • <span>
+      {% for tag in page.tags %}
+        <a href="/tags/#{{ tag }}">#{{ tag }}</a> 
+      {% endfor %} 
+      </span>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
