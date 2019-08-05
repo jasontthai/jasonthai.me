@@ -2,7 +2,7 @@
 layout: post
 title: Things I've Learned Hosting a URL Shortener Service
 tags: tech
-featured_img: /assets/img/tinyalias.webp
+image: /assets/img/tinyalias.webp
 ---
 
 {% include lazy-img.html src="/assets/img/tinyalias.webp" alt="TinyAlias" %}

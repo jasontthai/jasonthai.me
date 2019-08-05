@@ -1,6 +1,6 @@
 ---
 title: TinyAlias URL Shortener Design and Its Features
-featured_img: /assets/img/tinyalias.webp
+image: /assets/img/tinyalias.webp
 tags: tech
 toc: true
 ---

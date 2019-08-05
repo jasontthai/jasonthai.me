@@ -2,7 +2,7 @@
 title: Recommended Browser Extensions
 layout: post
 tags: tech
-featured_img: /assets/img/browser-2457113_1280.webp
+image: /assets/img/browser-2457113_1280.webp
 ---
 
 {% include lazy-img.html src="/assets/img/browser-2457113_1280.webp" alt="browsers" %}

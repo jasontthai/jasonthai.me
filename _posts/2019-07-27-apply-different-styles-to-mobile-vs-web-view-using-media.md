@@ -1,7 +1,7 @@
 ---
 title: Apply Different Styles to Mobile vs Web View Using @media
 tags: tech
-featured_img: "/assets/img/responsive-media-queries.webp"
+image: "/assets/img/responsive-media-queries.webp"
 toc: true
 ---
 

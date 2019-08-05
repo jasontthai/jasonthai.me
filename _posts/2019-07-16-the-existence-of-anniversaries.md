@@ -1,6 +1,6 @@
 ---
 title: The Existence of Anniversaries
-featured_img: "/assets/img/3years_featured.webp"
+image: "/assets/img/3years_featured.webp"
 tags: blog
 ---
 

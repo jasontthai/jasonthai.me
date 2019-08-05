@@ -1,6 +1,6 @@
 ---
 title: My Blog's PageSpeed Insights Score
-featured_img: /assets/img/pagespeed-featured.webp
+image: /assets/img/pagespeed-featured.webp
 tags: tech
 toc: true
 ---

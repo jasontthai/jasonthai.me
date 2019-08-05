@@ -1,7 +1,7 @@
 ---
 title: Three Proofs Total Stock Market is Efficient
 tags: finance
-featured_img: "/assets/img/blur-chart-data.webp"
+image: "/assets/img/blur-chart-data.webp"
 ---
 
 John Norstad, a retired mathematician, had presented three proofs that prove Total Stock Market (fund) is efficient. This is interesting so this note shares with you those three proofs.

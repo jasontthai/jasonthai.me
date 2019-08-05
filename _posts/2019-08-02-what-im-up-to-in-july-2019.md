@@ -1,7 +1,7 @@
 ---
 title: What I'm up to in July 2019
 tags: blog
-featured_img: /assets/img/the-month-july.webp
+image: /assets/img/the-month-july.webp
 category: en
 ---
 
