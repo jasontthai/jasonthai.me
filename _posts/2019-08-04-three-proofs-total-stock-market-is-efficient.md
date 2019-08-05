@@ -12,7 +12,7 @@ You can [read about the proofs here](https://web.archive.org/web/20170628202816/
 I have recently switched to mostly investing in [Vanguard Total Stock Market Index Fund (VTSAX)](https://investor.vanguard.com/mutual-funds/profile/vtsax) so this study gives me some assurance that this is the right approach. Of course, stock market is volatile and risky, so imo, this only plays out if there is a long time horizon for investing.
 
 If you are wondering about the asset allocation that I am following, here is the breakdown:
-![Asset Allocation]({{ "/assets/img/asset-allocation.webp" | absolute_url }})
+{% include lazy-img.html src="/assets/img/asset-allocation.webp" alt="Asset Allocation" %}
 * 401K: 100% [Vanguard Target Retirement 2055 Fund (VFFVX)](https://investor.vanguard.com/mutual-funds/profile/VFFVX)
 * Roth IRA:  100% [VTSAX](https://investor.vanguard.com/mutual-funds/profile/vtsax)
 * Rollover IRA:  100% [VTSAX](https://investor.vanguard.com/mutual-funds/profile/vtsax)
