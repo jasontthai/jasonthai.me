@@ -3,7 +3,7 @@ title: How to Create an Interactive Map With Mapbox and Leafletjs
 layout: post
 tags: tech
 excerpt_separator: "<!--more-->"
-featured_img: /assets/img/visited-map.webp
+image: /assets/img/visited-map.webp
 ---
 
 {% include lazy-img.html src="/assets/img/visited-map.webp" alt="Visted Places" %}

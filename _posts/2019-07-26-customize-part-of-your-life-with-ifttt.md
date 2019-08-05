@@ -2,7 +2,7 @@
 title: Customize Part of Your Life with IFTTT
 tags: tech
 toc: true
-featured_img: "/assets/img/ifttt-featured.webp"
+image: "/assets/img/ifttt-featured.webp"
 ---
 
 {% include lazy-img.html src="/assets/img/ifttt-featured.webp" alt="IFTTT feature" %}

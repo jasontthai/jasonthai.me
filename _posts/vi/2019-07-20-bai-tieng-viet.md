@@ -2,7 +2,7 @@
 title: Bài Tiếng Việt
 layout: post
 tags: blog
-featured_img: "/assets/img/postage-stamps-484991_640.webp"
+image: "/assets/img/postage-stamps-484991_640.webp"
 ---
 
 {% include lazy-img.html src="/assets/img/postage-stamps-484991_640.webp" alt="Tem" %}

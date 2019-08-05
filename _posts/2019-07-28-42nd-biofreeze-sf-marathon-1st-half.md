@@ -1,6 +1,6 @@
 ---
 title: 42nd Biofreeze SF Marathon - 1st Half
-featured_img: "/assets/img/half-marathon-cover.webp"
+image: "/assets/img/half-marathon-cover.webp"
 tags: blog
 ---
 

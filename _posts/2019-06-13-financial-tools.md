@@ -2,7 +2,7 @@
 title: Recommended Financial Tools
 layout: post
 tags: finance
-featured_img: /assets/img/accounting-black-budget.webp
+image: /assets/img/accounting-black-budget.webp
 excerpt_separator: <!--more-->
 published: true
 ---

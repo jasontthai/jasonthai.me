@@ -1,7 +1,7 @@
 ---
 title: Regrowing My Succulents
 tags: blog
-featured_img: "/assets/img/succulent.webp"
+image: "/assets/img/succulent.webp"
 ---
 
 This is long overdue but today I decided to trim and regrow the succulents that my wife brought me. I admit I have not been taking good care of them lately and I promised my wife I would do a better job from now on. It took about an hour to replace the soil (the old one was actually kinda gross!) and trimming the succulents. I checked out a couple of websites to make sure I trimmed correctly but one never knows. I hope they can grow back to their beautiful selves.

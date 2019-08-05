@@ -1,7 +1,7 @@
 ---
 title: So You Have Some Money
 excerpt_separator: "<!--more-->"
-featured_img: "/assets/img/money-matters-1173105.webp"
+image: "/assets/img/money-matters-1173105.webp"
 tag: finance
 ---
 

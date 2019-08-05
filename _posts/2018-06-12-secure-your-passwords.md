@@ -2,7 +2,7 @@
 title: How to Create a Secure Password
 layout: post
 tags: tech
-featured_img: /assets/img/password-checker.webp
+image: /assets/img/password-checker.webp
 ---
 
 #### Updated 2019-06-14:
