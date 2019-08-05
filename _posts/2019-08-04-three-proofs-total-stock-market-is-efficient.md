@@ -22,4 +22,4 @@ This portfolio seems to fit nicely with the approach of lazy investing as I do n
 
 <hr>
 
-[Checkout some of my other finance's notes](/tags#finance)
+[Checkout some of my other finance's notes]({{ "/tags#finance" | absolute_url }})

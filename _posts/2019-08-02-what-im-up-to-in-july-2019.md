@@ -5,7 +5,7 @@ image: /assets/img/the-month-july.webp
 category: en
 ---
 
-![July](/assets/img/the-month-july.webp)
+![July]({{ "/assets/img/the-month-july.webp" | absolute_url }})
 
 First post of what I am hoping will be a series. Here I will update what has been happening with me in the month.
 
