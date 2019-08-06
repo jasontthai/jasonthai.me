@@ -23,9 +23,9 @@ jobs:
           paths:
             - vendor/bundle
           key: v2-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-      - run: JEKYLL_ENV=production bundle exec jekyll build
-      - run: npm install workbox-cli --global
+      - run: npm install workbox-cli
       - run: workbox injectManifest workbox-config.js
+      - run: JEKYLL_ENV=production bundle exec jekyll build
       # - run:
       #     name: Test
       #     command: bundle exec htmlproofer ./_site --check-html --disable-external --empty-alt-ignore
