@@ -7,3 +7,6 @@ if (workbox) {
 }
 
 workbox.precaching.precacheAndRoute([])
+
+workbox.routing.registerRoute(/(\.js$|\.css$)/, new workbox.strategies.CacheFirst());
+workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate());
