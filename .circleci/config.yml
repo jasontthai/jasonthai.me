@@ -23,7 +23,7 @@ jobs:
           paths:
             - vendor/bundle
           key: v2-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-      - run: npm install workbox-cli
+      - run: sudo npm install -g workbox-cli
       - run: workbox injectManifest workbox-config.js
       - run: JEKYLL_ENV=production bundle exec jekyll build
       # - run:
