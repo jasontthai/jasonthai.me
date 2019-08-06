@@ -23,9 +23,19 @@ jobs:
           paths:
             - vendor/bundle
           key: v2-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-      - run: sudo npm install -g workbox-cli
-      - run: workbox injectManifest workbox-config.js
       - run: JEKYLL_ENV=production bundle exec jekyll build
+      - restore_cache:
+          keys:
+            # when lock file changes, use increasingly general patterns to restore cache
+            - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - node-v1-{{ .Branch }}-
+            - node-v1-
+      - run: sudo npm install -g workbox-cli
+       - save_cache:
+          paths:
+            - ~/usr/local/lib/node_modules  # location depends on npm version
+          key: node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - run: workbox injectManifest workbox-config.js
       # - run:
       #     name: Test
       #     command: bundle exec htmlproofer ./_site --check-html --disable-external --empty-alt-ignore
