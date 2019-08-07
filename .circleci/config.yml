@@ -35,7 +35,7 @@ jobs:
           paths:
             - ~/usr/local/lib/node_modules  # location depends on npm version
           key: node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
-      - run: workbox injectManifest workbox-config.js
+      - run: npx workbox injectManifest workbox-config.js
       # - run:
       #     name: Test
       #     command: bundle exec htmlproofer ./_site --check-html --disable-external --empty-alt-ignore
