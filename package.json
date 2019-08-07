@@ -1,0 +1,23 @@
+{
+  "name": "jasonthai.me-source",
+  "version": "1.0.0",
+  "description": "npm dependencies for jasonthai.me",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zirius/jasonthai.me-source.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zirius/jasonthai.me-source/issues"
+  },
+  "homepage": "https://github.com/zirius/jasonthai.me-source#readme",
+  "keywords": [],
+  "dependencies": {
+    "workbox-cli": "^4.3.1"
+  }
+}
