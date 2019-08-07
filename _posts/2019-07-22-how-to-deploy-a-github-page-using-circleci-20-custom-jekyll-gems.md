@@ -3,6 +3,7 @@ title: How to Deploy to Github Pages Using CircleCI 2.0 + Custom Jekyll Dependen
 image: /assets/img/circleci-logo-1200x630.webp
 tags: tech
 toc: true
+description: How to deploy to Github Pages Using CircirCI 2.0 and how to use Jekyll custom dependencies on Github Pages
 ---
 
 {% include lazy-img.html src="/assets/img/circleci-logo-1200x630.webp" alt="CircleCi" %}

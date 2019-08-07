@@ -3,6 +3,7 @@ title: How to Deploy to Github Pages Using Travis CI
 image: /assets/img/logo-travisci-wide1.webp
 tags: tech
 toc: true
+description: How to deploy to Github Pages using Travis CI
 ---
 
 {% include lazy-img.html src="/assets/img/logo-travisci-wide1.webp" alt="TravisCI" %}

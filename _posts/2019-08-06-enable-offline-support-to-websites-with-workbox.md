@@ -27,6 +27,8 @@ workbox.precaching.precacheAndRoute([]);
 ## What is Workbox?
 Workbox is a set of javascript libraries that add support for caching and offline access of web apps. Workbox provides an abstract layer for developers when working with [service workers](https://developers.google.com/web/fundamentals/primers/service-workers/). Some of the things workbox support like precaching, runtime caching, etc will be covered below.
 
+Does your browser support workbox and service workers? [Check here](https://love2dev.com/blog/what-browsers-support-service-workers/)
+
 ## Enable service worker
 Add this script to the bottom of your website:
 ```html

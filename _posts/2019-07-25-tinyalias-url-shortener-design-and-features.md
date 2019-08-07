@@ -3,6 +3,7 @@ title: TinyAlias URL Shortener Design and Its Features
 image: /assets/img/tinyalias.webp
 tags: tech
 toc: true
+description: How to design a tinyurl service
 ---
 <style>
 
