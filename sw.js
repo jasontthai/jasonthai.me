@@ -6,7 +6,7 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-workbox.precaching.precacheAndRoute([])
+workbox.precaching.precacheAndRoute([]);
 
 // Caching Images
 workbox.routing.registerRoute(
