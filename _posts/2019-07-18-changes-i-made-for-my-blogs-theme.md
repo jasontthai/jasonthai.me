@@ -2,6 +2,7 @@
 title: Changes I Made for My Blog's Theme
 tags: tech
 image: https://repository-images.githubusercontent.com/65252/f2b7c780-70b6-11e9-85d2-f4bda8708a2d
+description: Some highlights of changes I made to Jekyll's Minima theme.
 ---
 
 {% include lazy-img.html src="https://repository-images.githubusercontent.com/65252/f2b7c780-70b6-11e9-85d2-f4bda8708a2d" alt="Jekyll" %}
