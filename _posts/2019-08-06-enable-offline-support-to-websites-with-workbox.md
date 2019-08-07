@@ -14,6 +14,7 @@ Recently I have added offline support for this blog using [Workbox](https://deve
 
 ## TLDR
 Steps to enable offline support:
+* Enable service worker
 * Create sw.js with
 ```javascript
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
