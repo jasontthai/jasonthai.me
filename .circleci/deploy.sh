@@ -13,8 +13,6 @@ git pull origin master
 
 find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
 mv ../_site/* .
-rm package-lock.json package.json
-
 
 git add -fA
 git commit --allow-empty -m "$COMMIT_MESSAGE"
