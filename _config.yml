@@ -82,10 +82,11 @@ google_analytics: UA-120912817-1
 exclude:
   - .travis.yml
   - bin/*
-  - circle.yml
+  - .circle/
   - Gemfile
   - Gemfile.lock
   - package.json
+  - package-lock.json
   - README.md
   - yarn.lock
   - vendor
