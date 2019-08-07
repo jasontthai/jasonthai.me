@@ -133,6 +133,6 @@ In `config.yml` file I added:
 
 It is quite simple, just added two extra steps to install workbox-cli and run the same command to inject the precache routes.
 
-## Consideration
+## Considerations
 * Using the workbox-cli, we can cache everything on the site. However, this will not work if the website contains thousands of posts and images as everything will be downloaded to the browser cache.
 * Using the workbox-cli, we can only set service workers to cache our website's assets. It will not handle caching other website's sites. This is important because we probably use things like external fonts, javascripts, css files, etc. So we need to manually add that support to our service workers.
