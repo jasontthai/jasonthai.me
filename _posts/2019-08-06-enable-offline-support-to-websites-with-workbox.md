@@ -105,7 +105,7 @@ workbox.routing.registerRoute(
 ```
 
 ## Add to build and automate
-[Since I am using CircleCI to deploy changes of my site to Github Pages]({% post_url 2019-07-22-how-to-deploy-a-github-page-using-circleci-20-custom-jekyll-gems %}), I also add the workbox + service worker script generation to the build. 
+[Since I am using CircleCI to deploy changes of my site to Github Pages]({{ site.url }}{% post_url 2019-07-22-how-to-deploy-a-github-page-using-circleci-20-custom-jekyll-gems %}), I also add the workbox + service worker script generation to the build. 
 
 Declared `workbox-config.js`:
 ```javascript

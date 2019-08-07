@@ -7,7 +7,7 @@ toc: true
 
 {% include lazy-img.html src="/assets/img/logo-travisci-wide1.webp" alt="TravisCI" %}
 
-Follow up for my post [How to Deploy to Github Pages Using CircleCI 2.0 + Custom Jekyll Dependencies]({% post_url 2019-07-22-how-to-deploy-a-github-page-using-circleci-20-custom-jekyll-gems %}). This is a guide to set up automatic build and deployment using Travis CI as opposed to CircleCI
+Follow up for my post [How to Deploy to Github Pages Using CircleCI 2.0 + Custom Jekyll Dependencies]({{ site.url }}{% post_url 2019-07-22-how-to-deploy-a-github-page-using-circleci-20-custom-jekyll-gems %}). This is a guide to set up automatic build and deployment using Travis CI as opposed to CircleCI
 
 <!--more-->
 
