@@ -89,3 +89,4 @@ exclude:
   - README.md
   - yarn.lock
   - vendor
+  - node_modules/*
