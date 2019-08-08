@@ -59,7 +59,7 @@ If you have completed all the above steps, verify using the audits tool again an
 {% include lazy-img.html src="/assets/img/pwa.webp" alt="PWA" %}
 
 ## More ways to verify
-* If you open the menu on chrome browser, you'll see the option to install your wpa as an app on your desktop.
+* If you open the menu on chrome browser, you'll see the option to install your pwa as an app on your desktop.
 * View the site on browser and you can be asked to add this site as an app.
 
 ## Conclusion
