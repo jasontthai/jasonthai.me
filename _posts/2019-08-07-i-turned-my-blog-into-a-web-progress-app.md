@@ -1,5 +1,5 @@
 ---
-title: I Turned My Blog to a Progressive Web App
+title: I Turned My Blog into a Progressive Web App
 tags: tech
 description: A note of how I turn my blog into a progressive web app
 image: "/assets/img/pwa-logo.webp"
