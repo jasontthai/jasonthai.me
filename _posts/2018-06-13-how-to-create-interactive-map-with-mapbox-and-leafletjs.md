@@ -40,7 +40,7 @@ Add a div tag to the _body_ of HTML code:
 __Render a map__ with some overlay. The overlay data are
 [GeoJSON](http://geojson.org). We will use a sample data
 ([custom.geo.js](/assets/js/custom.geo.js)) as a demonstration.
-```html
+```javascript
 <script src="https://jtthai.com/assets/js/custom.geo.js" type="text/javascript"></script> // load geojson data
 <script type="text/javascript">
 

@@ -25,14 +25,14 @@ The view on mobile is optimized a lot more for information browsing. The image a
 Using `@media` query, we can define specific css behavior depending on certain width or height of the screen. You can learn more about it [here](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
 For example, the following query will apply to device with screen width up to 480px
-```scss
+```css
 @media screen and (max-width: 480px) {
   // define css here
 }
 ```
 
 For my specific site, this is what I define:
-```scss
+```css
 @media screen and (max-width: 600px) {
   .bg-img {
     display: none;   // hiding the cover image
