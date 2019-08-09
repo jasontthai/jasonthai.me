@@ -6,7 +6,7 @@ image: "/assets/img/blur-close-up-environment-401213.webp"
 
 ### A Collection of What I am keeping track of in the book [Your Life or Your Money](https://www.amazon.com/Your-Money-Life-Transforming-Relationship/dp/0143115766)
 
-Read more about it [here](https://yourmoneyoryourlife.com/)
+[Read more about it here](https://yourmoneyoryourlife.com/)
 
 Questions to asked before spending:
 1. Did I receive fullfilment, satisfaction, and value in proportion to life energy spent?
