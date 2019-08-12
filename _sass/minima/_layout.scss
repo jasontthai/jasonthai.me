@@ -184,8 +184,8 @@
 
   @include media-query($on-laptop) {
     position: relative;
-    max-width: 100%;
-    display: contents;
+    width: 100%;
+    //display: contents;
     //flex-direction: row;
   }
 }
