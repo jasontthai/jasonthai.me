@@ -1,8 +1,8 @@
 ---
 title: What I'm up to in July 2019
-tags: blog
+category: Blog
 image: /assets/img/the-month-july.webp
-category: en
+category: Blog
 ---
 
 {% include lazy-img.html src="/assets/img/the-month-july.webp" alt="July" %}

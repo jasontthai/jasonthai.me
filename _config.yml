@@ -29,7 +29,7 @@ pagination:
 header_pages:
   - about.md
   - posts.md
-  - tags.html
+  - categories.html
   - visited-places.html
 
 # disqus:
@@ -37,6 +37,7 @@ header_pages:
 
 github_username: zirius
 linkedin_username: jasontthai
+rss: Feed
 
 show_excerpts: true
 excerpt_separator: <!--more-->
@@ -51,13 +52,13 @@ defaults:
       path: "_posts"
       type: "posts"
     values:
-      category: "en"
+      tag: "en"
   -
     scope:
       path: "_posts/vi"
       type: "posts"
     values:
-      category: "vi"
+      tag: "vi"
 
 plugins:
   - jekyll-feed

@@ -1,6 +1,6 @@
 ---
 title: Three Proofs Total Stock Market is Efficient
-tags: finance
+category: Finance
 image: "/assets/img/blur-chart-data.webp"
 ---
 

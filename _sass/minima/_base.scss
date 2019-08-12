@@ -220,8 +220,15 @@ pre {
 }
 
 .social-media-list {
-  li + li {
+  li {
     padding-top: 5px;
+  }
+
+  @include media-query($on-laptop) {
+    li {
+      display: inline;
+      padding-left: 10px;
+    }
   }
 }
 
