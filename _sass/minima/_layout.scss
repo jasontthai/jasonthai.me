@@ -171,13 +171,11 @@
 }
 
 .site-sidebar {
-  margin-top: $spacing-unit;
+  padding-top: $spacing-unit;
   margin-right: 15px;
   float: left;
   position: -webkit-sticky;
   position: sticky;
-  //display: flex;
-  //flex-direction: column;
   justify-content: space-between;
   width: calc(300px - 1em);
   top: 0;
@@ -185,8 +183,6 @@
   @include media-query($on-laptop) {
     position: relative;
     width: 100%;
-    //display: contents;
-    //flex-direction: row;
   }
 }
 
