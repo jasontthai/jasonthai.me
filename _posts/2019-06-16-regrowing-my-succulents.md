@@ -1,6 +1,6 @@
 ---
 title: Regrowing My Succulents
-tags: blog
+category: blog
 image: "/assets/img/succulent.webp"
 ---
 

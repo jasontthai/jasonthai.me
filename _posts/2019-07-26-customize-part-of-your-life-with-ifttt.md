@@ -1,6 +1,6 @@
 ---
 title: Customize Part of Your Life with IFTTT
-tags: tech
+category: tech
 toc: true
 image: "/assets/img/ifttt-featured.webp"
 ---

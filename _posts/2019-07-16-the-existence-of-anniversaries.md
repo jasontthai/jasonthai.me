@@ -1,7 +1,7 @@
 ---
 title: The Existence of Anniversaries
 image: "/assets/img/3years_featured.webp"
-tags: blog
+category: blog
 ---
 
 {% include lazy-img.html src="/assets/img/3years.webp" alt="3 year anniversary" %}

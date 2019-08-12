@@ -2,7 +2,7 @@
 title: So You Have Some Money
 excerpt_separator: "<!--more-->"
 image: "/assets/img/money-matters-1173105.webp"
-tag: finance
+category: finance
 ---
 
 {% include lazy-img.html src="/assets/img/money-matters-1173105.webp" alt="so you have money" %}

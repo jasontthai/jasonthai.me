@@ -9,9 +9,11 @@ title: Jason's Notes
 description: Jason Thai's personal page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jasonthai.me" # the base hostname & protocol for your site, e.g. http://example.com
-author: Jason Thai
-# author:
-  # name: Jason Thai
+# author: Jason Thai
+author:
+  name: Jason Thai
+  avatar: /assets/img/profile.webp
+  description: Jason's personal page
 
 # paginate:         5
 # paginate_path:    '/page/:num'
@@ -27,14 +29,15 @@ pagination:
 header_pages:
   - about.md
   - posts.md
-  - tags.html
-  - visited-places.md
+  - categories.html
+  - visited-places.html
 
 # disqus:
 #  shortname: https-jasonthai-me
 
 github_username: zirius
 linkedin_username: jasontthai
+rss: Feed
 
 show_excerpts: true
 excerpt_separator: <!--more-->
@@ -49,13 +52,20 @@ defaults:
       path: "_posts"
       type: "posts"
     values:
-      category: "en"
+      tag: "en"
   -
     scope:
       path: "_posts/vi"
       type: "posts"
     values:
-      category: "vi"
+      tag: "vi"
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
 plugins:
   - jekyll-feed

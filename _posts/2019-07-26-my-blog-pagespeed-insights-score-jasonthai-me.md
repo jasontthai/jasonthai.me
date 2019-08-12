@@ -1,7 +1,7 @@
 ---
 title: My Blog's PageSpeed Insights Score
 image: /assets/img/pagespeed-featured.webp
-tags: tech
+category: tech
 toc: true
 description: A note of how to achieve high score on PageSpeed Insights
 ---
