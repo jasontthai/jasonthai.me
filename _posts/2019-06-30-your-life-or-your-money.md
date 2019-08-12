@@ -1,6 +1,6 @@
 ---
 title: Your Life or Your Money
-tag: finance
+category: finance
 image: "/assets/img/blur-close-up-environment-401213.webp"
 ---
 

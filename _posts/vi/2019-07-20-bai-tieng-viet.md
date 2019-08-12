@@ -1,7 +1,7 @@
 ---
 title: Bài Tiếng Việt
 layout: post
-tags: blog
+category: blog
 image: "/assets/img/postage-stamps-484991_640.webp"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Recommended Financial Tools
 layout: post
-tags: finance
+category: finance
 image: /assets/img/accounting-black-budget.webp
 excerpt_separator: <!--more-->
 published: true
