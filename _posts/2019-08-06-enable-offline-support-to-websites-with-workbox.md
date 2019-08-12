@@ -2,7 +2,7 @@
 title: Enable Offline Support to Websites with Workbox
 description: A note of what Workbox is and how to use it to enable offline access
   for websites
-category: Tech
+category: tech
 toc: true
 image: "/assets/img/workbox.webp"
 ---

@@ -1,7 +1,7 @@
 ---
 title: How to Create a Secure Password
 layout: post
-category: Tech
+category: tech
 image: /assets/img/password-checker.webp
 description: A walkthrough of different ways to have more secure passwords
 ---

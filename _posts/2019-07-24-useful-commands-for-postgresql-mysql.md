@@ -1,7 +1,7 @@
 ---
 title: Useful Commands for PostgreSQL and MySQL Database
 image: "/assets/img/postgresql-vs-mysql-features.webp"
-category: Tech
+category: tech
 toc: true
 ---
 

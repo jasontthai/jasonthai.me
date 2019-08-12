@@ -12,8 +12,8 @@ layout: default
       </time>
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | default: site.author.name  | escape }}</span></span>
       • <span>
-      {% for tag in page.tags %}
-        <a href="/tags/#{{ tag }}">#{{ tag }}</a> 
+      {% for category in page.categories %}
+        <a href="/categories/#{{ category }}">#{{ category }}</a>
       {% endfor %} 
       </span>
   </header>

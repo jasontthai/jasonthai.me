@@ -1,7 +1,7 @@
 ---
 title: How to Create an Interactive Map With Mapbox and Leafletjs
 layout: post
-category: Tech
+category: tech
 image: /assets/img/visited-map.webp
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Apply Different Styles to Mobile vs Web View Using @media
-category: Tech
+category: tech
 image: "/assets/img/responsive-media-queries.webp"
 toc: true
 description: a brief walkthrough of how to use @media queries to apply styles to mobile and web view

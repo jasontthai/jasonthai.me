@@ -1,7 +1,7 @@
 ---
 title: Recommended Browser Extensions
 layout: post
-category: Tech
+category: tech
 image: /assets/img/browser-2457113_1280.webp
 ---
 
