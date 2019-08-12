@@ -2,6 +2,7 @@
 title: Your Life or Your Money
 category: finance
 image: "/assets/img/blur-close-up-environment-401213.webp"
+description: A collection of what I find useful in the book Your Life or Your Money.
 ---
 
 ### A Collection of What I am keeping track of in the book [Your Life or Your Money](https://www.amazon.com/Your-Money-Life-Transforming-Relationship/dp/0143115766)

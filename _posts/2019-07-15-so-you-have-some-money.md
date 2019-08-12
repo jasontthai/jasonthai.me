@@ -3,6 +3,7 @@ title: So You Have Some Money
 excerpt_separator: "<!--more-->"
 image: "/assets/img/money-matters-1173105.webp"
 category: finance
+description: A letter to my wife and sister about money.
 ---
 
 {% include lazy-img.html src="/assets/img/money-matters-1173105.webp" alt="so you have money" %}

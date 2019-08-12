@@ -55,7 +55,7 @@ layout: default
                         </span>
                         {%- if site.show_excerpts -%}
                         <p>
-                            {{ post.excerpt | strip_html | truncatewords: 100 }}
+                            {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
                         </p>
                         {%- endif -%}
                     </div>

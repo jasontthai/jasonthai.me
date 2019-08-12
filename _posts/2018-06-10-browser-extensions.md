@@ -3,6 +3,7 @@ title: Recommended Browser Extensions
 layout: post
 category: tech
 image: /assets/img/browser-2457113_1280.webp
+description: List of my recommended browser extensions
 ---
 
 {% include lazy-img.html src="/assets/img/browser-2457113_1280.webp" alt="browsers" %}

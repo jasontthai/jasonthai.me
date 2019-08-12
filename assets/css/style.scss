@@ -56,6 +56,12 @@ a {
     color: $text-color;
     padding-top: 15px;
   }
+
+  @include media-query($on-laptop) {
+    box-shadow: unset;
+    border: unset;
+    background-color: unset;
+  }
 }
 
 .post-list li {
@@ -71,18 +77,13 @@ a {
   min-height: 180px;
   background-position: center;
   background-color: #ccc;
-}
 
-
-@media screen and (max-width: 600px) {
-  .bg-img {
-    display: none;  
-  }
-
-  .excerpt p {
+  @include media-query($on-laptop) {
     display: none;
   }
+}
 
+@media screen and (max-width: 600px) {
   .post-excerpt {
     padding-bottom: 15px;
   }
