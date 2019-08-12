@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+{% assign author = page.author | default: site.author %}
+
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="wrapper" aria-label="Content">
+      <div class="site-sidebar sticky">
+        <div class="author-profile">
+          <img src="{{ author.avatar }}">
+        </div>
+        <div class="author-description">
+          {{ author.description }}
+        </div>
+      </div>
+      <div class="page-content">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

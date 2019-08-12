@@ -9,9 +9,11 @@ title: Jason's Notes
 description: Jason Thai's personal page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jasonthai.me" # the base hostname & protocol for your site, e.g. http://example.com
-author: Jason Thai
-# author:
-  # name: Jason Thai
+# author: Jason Thai
+author:
+  name: Jason Thai
+  avatar: /assets/img/profile.webp
+  description: test test
 
 # paginate:         5
 # paginate_path:    '/page/:num'
@@ -28,7 +30,7 @@ header_pages:
   - about.md
   - posts.md
   - tags.html
-  - visited-places.md
+  - visited-places.html
 
 # disqus:
 #  shortname: https-jasonthai-me
