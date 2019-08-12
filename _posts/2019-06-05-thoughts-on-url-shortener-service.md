@@ -3,6 +3,7 @@ layout: post
 title: Things I've Learned Hosting a URL Shortener Service
 category: tech
 image: /assets/img/tinyalias.webp
+description: My experience hosting a URL shortener service.
 ---
 
 {% include lazy-img.html src="/assets/img/tinyalias.webp" alt="TinyAlias" %}

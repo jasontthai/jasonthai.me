@@ -3,8 +3,7 @@ title: Recommended Financial Tools
 layout: post
 category: finance
 image: /assets/img/accounting-black-budget.webp
-excerpt_separator: <!--more-->
-published: true
+description: A list of my recommended financial tools.
 ---
 
 {% include lazy-img.html src="/assets/img/accounting-black-budget.webp" alt="budgeting" %}

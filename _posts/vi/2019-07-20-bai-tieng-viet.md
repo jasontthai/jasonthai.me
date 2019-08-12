@@ -3,6 +3,7 @@ title: Bài Tiếng Việt
 layout: post
 category: blog
 image: "/assets/img/postage-stamps-484991_640.webp"
+description: Bài tiếng việt đầu tiên của blog.
 ---
 
 {% include lazy-img.html src="/assets/img/postage-stamps-484991_640.webp" alt="Tem" %}
