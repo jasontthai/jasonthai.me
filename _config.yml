@@ -60,6 +60,13 @@ defaults:
     values:
       tag: "vi"
 
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
 plugins:
   - jekyll-feed
   - jekyll-gist
