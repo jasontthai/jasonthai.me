@@ -1,6 +1,7 @@
 ---
 title: About
 layout: page
+description: Hey I'm Jason. You can find more about me in about page.
 ---
 
 For up to date profile, check out my [LinkedIn](https://www.linkedin.com/in/jasontthai)
