@@ -185,6 +185,17 @@
 }
 
 .author-profile {
+  display: block;
+  vertical-align: top;
+
+  @include media-query($on-laptop) {
+    display: table-cell;
+    padding-left: 15px;
+  }
+}
+
+.author-avatar {
+  display: block;
   img {
     border-radius: 50%;
     width: 6rem;
@@ -192,6 +203,21 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @include media-query($on-laptop) {
+    display: table-cell;
+  }
+}
+
+.author-name {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.author-description {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #7b7b7b;
 }
 
 
@@ -201,7 +227,7 @@
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
-  max-width:80%;
+  max-width: 100%;
   overflow-x: auto;
 
   @include media-query($on-laptop) {

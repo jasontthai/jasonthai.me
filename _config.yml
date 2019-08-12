@@ -13,7 +13,7 @@ url: "https://jasonthai.me" # the base hostname & protocol for your site, e.g. h
 author:
   name: Jason Thai
   avatar: /assets/img/profile.webp
-  description: test test
+  description: Jason's personal page
 
 # paginate:         5
 # paginate_path:    '/page/:num'

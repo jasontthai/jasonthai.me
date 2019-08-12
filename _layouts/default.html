@@ -12,12 +12,17 @@
 
     <main class="wrapper" aria-label="Content">
       <div class="site-sidebar sticky">
-        <div class="author-profile">
+        <div class="author-avatar">
           <img src="{{ author.avatar }}">
         </div>
-        <div class="author-description">
-          {{ author.description }}
+
+        <div class="author-profile">
+          <h3 class="author-name">{{ author.name }}</h3>
+          <div class="author-description">
+            {{ author.description }}
+          </div>
         </div>
+
       </div>
       <div class="page-content">
         {{ content }}
