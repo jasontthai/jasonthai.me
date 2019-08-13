@@ -14,13 +14,13 @@ I recently switched from using Disqus comment system to Commento. The reason is 
 ## Prerequisites
 A few things you will need:
 * A server. If you have not got one, I recommended using [Digital Ocean](https://m.do.co/c/c544762f5c36). A $5 droplet is sufficient.
-* A domain which has an A record point to your server's IP. I am hosting the service on [https://commento.jasonthai.me](https://commento.jasonthai.me)
+* A domain which has an A record pointing your domain to your server's IP. For example, I have an A record that points my subdomain `commento` to my server's IP so Commento is available on [https://commento.jasonthai.me](https://commento.jasonthai.me)
 
 When you create a VPS, you will be asked which OS to install. I chose to use Ubuntu 18.04 as there are a lot of tutorials online for Ubuntu to help you get started.
 
 ## Setting up Commento
 ### Install Apache2
-[Follow this tutorial on Digital Ocean to help you get started setting up Apache](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart)
+[Follow this tutorial on Digital Ocean to help you get started setting up Apache](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart).
 It contains all the necessary information to help you get started on your first server.
 
 ### Install PostgreSQL
