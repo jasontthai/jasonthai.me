@@ -224,9 +224,37 @@
 .author-description {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #7b7b7b;
+  color: $grey-color;
 }
 
+.newsletter-section {
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+}
+
+.newsletter-form {
+  display: flex;
+
+  input[type=email] {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0.5rem;
+    border: 2px solid #ccc;
+  }
+
+  input[type=submit] {
+    background-color: #00a79d;
+    padding: .6rem .9rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  input {
+    display: block;
+    border-radius: 4px;
+    padding: 0.75rem;
+  }
+}
 
 /**
  * Page content
