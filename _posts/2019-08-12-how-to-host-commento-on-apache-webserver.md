@@ -133,9 +133,11 @@ Include /etc/letsencrypt/options-ssl-apache.conf
 ```
 
 ### Running Commento
-Run `systemctl start commento` to start commento service.
+Run `systemctl start commento` to start Commento service.
 
-Run `systemctl enable commento` to enable commento as a background service.
+Run `systemctl enable commento` to enable Commento as a background service.
+
+Run `systemctl status commento` to check the status of Commento.
 
 After setting everything up, you can go to the domain that you set up to access Commento. If it works, you'll be greeted with something like this:
 {% include lazy-img.html src="/assets/img/commento.webp" alt="Commento" %}
