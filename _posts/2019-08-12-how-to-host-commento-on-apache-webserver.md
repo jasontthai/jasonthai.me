@@ -21,7 +21,7 @@ When you create a VPS, you will be asked which OS to install. I chose to use Ubu
 ## Setting up Commento
 ### Install Apache2
 [Follow this tutorial on Digital Ocean to help you get started setting up Apache](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart).
-It contains all the necessary information to help you get started on your first server.
+It contains all the necessary information to help you install Apache.
 
 ### Install PostgreSQL
 [Follow this tutorial to install PostgreSQL on your VPS](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
@@ -146,8 +146,7 @@ After setting everything up, you can go to the domain that you set up to access 
 Put this to where you want the comments to show up:
 ```html
 <div id="commento"></div>
-<script defer
-  src="https://YOUR-DOMAIN-HERE/js/commento.js">
+<script defer src="https://YOUR-DOMAIN-HERE/js/commento.js">
 </script>
 ```
 
