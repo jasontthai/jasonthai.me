@@ -153,6 +153,7 @@ Put this to where you want the comments to show up:
 
 You should be seeing something similar to my site if everything works correctly.
 
-## Other ways to host Commento
-* [Using Nginx](https://oct8l.gitlab.io/posts/2018/129/setting-up-commento-with-hugo/)
-* [Using Heroku](https://github.com/fidiego/commento-heroku)
+## Resources
+* [https://docs.commento.io](https://docs.commento.io/)
+* [https://oct8l.gitlab.io/posts/2018/129/setting-up-commento-with-hugo/](https://oct8l.gitlab.io/posts/2018/129/setting-up-commento-with-hugo/)
+* [https://github.com/fidiego/commento-heroku](https://github.com/fidiego/commento-heroku)
