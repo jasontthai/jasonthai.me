@@ -106,7 +106,7 @@ Create a new file `/etc/apache2/sites-available/commento.jasonthai.me.conf:`
 ```
 Note: the above conf assumes you are not using any TLS/SSL certificates and we are exposing Commento through port 80 which is the default port you can access from your browser. If you choose to enable HTTPS for commento,  [follow this tutorial to enable HTTPS on your server](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04). This will greatly enhance the security of your Commento service.
 
-After running the letsencript certbot, the apache config will look something like this instead:
+After running `Letsencrypt certbot`, the apache config will look something like this instead:
 ```apache
 <VirtualHost *:80>
 RewriteEngine on
