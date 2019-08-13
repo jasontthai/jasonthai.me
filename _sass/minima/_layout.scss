@@ -245,14 +245,14 @@
   input[type=submit] {
     background-color: #00a79d;
     padding: .6rem .9rem;
-    font-weight: 600;
     color: #ffffff;
   }
 
   input {
     display: block;
     border-radius: 4px;
-    padding: 0.75rem;
+    padding: 0.5rem;
+    font-weight: 600;
   }
 }
 
