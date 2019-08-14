@@ -247,6 +247,12 @@
     border: none;
     padding: .6rem .6rem;
     color: #ffffff;
+    cursor: pointer;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   input {
