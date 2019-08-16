@@ -11,19 +11,15 @@ description: categories page
 {% assign category_words = site_categories | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
 
-<div id="category-page">
-  <div class="categories-list">
+<div>
+  <div class="flex-auto">
     {% for category_pair in category_words %}
     {% assign category = category_pair | split:'|' | last %}
-    <a href="#{{ category | slugify }}" class="tag-link">
-      <span>{{ category | capitalize }}</span>
-      <span>{{ site.categories[category] | size }}</span>
-    </a>  | 
+    <a href="#{{ category | slugify }}" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa2 ba border-box">
+      <span class="pl1">{{ category | capitalize }} {{ site.categories[category] | size }}</span>
+    </a>
     {% endfor %}
   </div>
-
-  <hr/>
-
   <div class="posts-by-category">
     {% for category_pair in category_words %}
     {% assign category = category_pair | split:'|' | last %}

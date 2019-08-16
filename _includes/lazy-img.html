@@ -1,5 +1,5 @@
 {% if include.lazy == true %}
-<img style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; height: auto;" data-src="{{ include.src | absolute_url }}" alt="{{ include.alt }}" class="lazyload">
+<img data-src="{{ include.src | absolute_url }}" alt="{{ include.alt }}" class="lazyload">
 {% else %}
-<img style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; height: auto;" src="{{ include.src | absolute_url }}" alt="{{ include.alt }}">
+<img src="{{ include.src | absolute_url }}" alt="{{ include.alt }}">
 {% endif %}
