@@ -18,7 +18,7 @@ layout: default
                 <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns db-ns dn">
                     <img  class="lazyload" data-src="{{ post.image }}" alt="">
                 </div>
-                <div class="w-100 w-60-ns pl3-ns">
+                <div class="w-100 pl3-ns">
                     <h1 class="f3 fw1 baskerville mt0 lh-title">{{ post.title }}</h1>
                     <p class="f6 f5-l lh-copy">
                         {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
