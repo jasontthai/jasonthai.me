@@ -42,3 +42,13 @@ a {
 a:hover {
   color: black;
 }
+
+.sticky {
+  position: sticky;
+  position:  -webkit-sticky;
+  top: 0;
+
+  @include media-query($on-laptop) {
+    position: relative;
+  }
+}
