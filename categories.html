@@ -23,7 +23,7 @@ description: categories page
   <div class="posts-by-category">
     {% for category_pair in category_words %}
     {% assign category = category_pair | split:'|' | last %}
-    <div id="{{ category | slugify }}" class="posts-for-category">
+    <div id="{{ category | slugify }}" class="posts-for-tag">
       <h2>{{ category | capitalize }}</h2>
       <ul class="posts-list">
         {% for post in site.categories[category] %}
