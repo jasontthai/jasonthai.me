@@ -3,12 +3,12 @@ layout: default
 ---
 <article class="avenir center w-two-thirds-ns w-90">
   <header class="pt2 pt3-ns">
-    <h1 class="mt0 baskerville">{{ page.title | escape }}</h1>
-    <time class="f5 f4-l db">
+    <h1 class="tc f1-l lh-title mt0 baskerville">{{ page.title | escape }}</h1>
+    <time class="tc f5 f4-l db">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {{ page.date | date: date_format }}
     </time>
-    <p class="f5 mb4 center lh-copy">
+    <p class="tc f5 mb4 center lh-copy">
       {{ page.author | default: site.author.name  | escape }}
     </p>
   </header>

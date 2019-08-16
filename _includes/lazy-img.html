@@ -1,5 +1,5 @@
 {% if include.lazy == true %}
-<img data-src="{{ include.src | absolute_url }}" alt="{{ include.alt }}" class="lazyload">
+<img class="db ml-auto mr-auto" data-src="{{ include.src | absolute_url }}" alt="{{ include.alt }}" class="lazyload">
 {% else %}
-<img src="{{ include.src | absolute_url }}" alt="{{ include.alt }}">
+<img class="db ml-auto mr-auto" src="{{ include.src | absolute_url }}" alt="{{ include.alt }}">
 {% endif %}
