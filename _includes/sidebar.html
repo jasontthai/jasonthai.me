@@ -1,42 +1,67 @@
 {% assign author = page.author | default: site.author %}
 
-<div class="site-sidebar sticky">
-    <div class="author-avatar">
-        <img src="{{ author.avatar }}" alt="">
+<div class="avenir db fl-l w-30-l pt3-l pa3 pa0-l">
+    <div class="dtc db-l">
+        <img class="br-100 w3 w4-l" src="{{ author.avatar }}" alt="profile">
     </div>
 
-    <div class="author-profile">
-        <h3 class="author-name">{{ author.name }}</h3>
-        <div class="author-description">
+    <div class="dtc db-l v-top pl3 pl0-l">
+        <h3 class="mt1">{{ author.name }}</h3>
+        <div class="mt1 mb1">
             {{ author.description }}
         </div>
     </div>
-    <div class="author-social">
-        <ul class="social-media-list">
-            {%- if site.dribbble_username -%}<li><a href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg> <span class="username">{{ site.dribbble_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.facebook_username -%}<li><a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg> <span class="username">{{ site.facebook_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.flickr_username -%}<li><a href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#flickr' | relative_url }}"></use></svg> <span class="username">{{ site.flickr_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.instagram_username -%}<li><a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#instagram' | relative_url }}"></use></svg> <span class="username">{{ site.instagram_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.linkedin_username -%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">{{ site.linkedin_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.pinterest_username -%}<li><a href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#pinterest' | relative_url }}"></use></svg> <span class="username">{{ site.pinterest_username| escape }}</span></a></li>{%- endif -%}
-            {%- for mst in site.mastodon -%}{%- if mst.username and mst.instance -%}<li><a href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mastodon' | relative_url }}"></use></svg> <span class="username">{{ mst.username|escape }}</span></a></li>{%- endif -%}{%- endfor -%}
-            {%- if site.twitter_username -%}<li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> <span class="username">{{ site.twitter_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.youtube_username -%}<li><a href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg> <span class="username">{{ site.youtube_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.googleplus_username -%}<li><a href="https://plus.google.com/{{ site.googleplus_username| escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#googleplus' | relative_url }}"></use></svg> <span class="username">{{ site.googleplus_username| escape }}</span></a></li>{%- endif -%}
-            {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
-        </ul>
+    <div class="db v-top mt3 tc tl-l">
+        {%- if site.facebook_username -%}
+            <a class="link dim black dib h2 w2 br-100 mr3 pa2 bg-near-white ba b--black-10" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" title="facebook">
+                <svg data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
+                    <title>facebook icon</title>
+                    <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
+                </svg>
+            </a>
+        {%- endif -%}
+        {%- if site.github_username -%}
+            <a class="link dim black dib br-100 h2 w2 mr3 pa2 bg-near-white ba b--black-10" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" title="github">
+                <svg data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor">
+                    <title>github icon</title>
+                    <path d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z"></path>
+                </svg>
+            </a>
+        {%- endif -%}
+        {%- if site.linkedin_username -%}
+        <a class="link dim black dib h2 w2 br-100 mr3 pa2 bg-near-white ba b--black-10" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" title="linkedin">
+            <svg data-icon="linkedin" viewBox="0 0 24 24" style="fill:currentcolor">
+                <title>linkedin icon</title>
+                <path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+        </a>
+        {%- endif -%}
+        {%- if site.rss -%}
+        <a class="link dim black dib h2 w2 br-100 mr3 pa2 bg-near-white ba b--black-10" href="{{ 'feed.xml' | relative_url }}" title="rss">
+            <svg data-icon="rss" viewBox="0 0 24 24" style="fill:currentcolor">
+                <path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/>
+            </svg>
+        </a>
+        {%- endif -%}
+        {%- if site.email -%}
+        <a class="link dim black dib h2 w2 br-100 mr3 pa2 bg-near-white ba b--black-10" href="mailto:{{ site.email }}" title="email">
+            <svg data-icon="email" viewBox="0 0 24 24" style="fill:currentcolor">
+                <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+            </svg>
+        </a>
+        {%- endif -%}
     </div>
-    <section class="newsletter-section">
-        <p>Stay in touch. <b>No spam I promise!</b></p>
-        <form class="newsletter-form" action="https://sendy.jasonthai.me/subscribe" method="POST" accept-charset="utf-8">
-            <input type="email" name="email" required placeholder="Your email" id="email"/><br/><div style="display:none;">
-            <label for="hp">HP</label><br/>
-            <input type="text" name="hp" id="hp"/>
-        </div>
+    <section class="db dt-l mv2 bg-near-white tc tl-l">
+        <p class="pa2 mv0">Stay in touch. <b>No spam I promise!</b></p>
+        <form class="flex pa2" action="https://sendy.jasonthai.me/subscribe" method="POST" accept-charset="utf-8">
+            <input class="ba b--light-gray pa2 mr2 w-100" type="email" name="email" required placeholder="Your email" id="email"/><br/>
+            <div style="display:none;">
+                <label for="hp">HP</label><br/>
+                <input type="text" name="hp" id="hp"/>
+            </div>
             <input type="hidden" name="list" value="RlFTfUJsZwmNqd7522892A9g"/>
             <input type="hidden" name="subform" value="yes"/>
-            <input type="submit" name="submit" id="submit" value="Submit"/>
+            <input class="black bg-animate hover-bg-black hover-white inline-flex items-center pa2 ba b--black border-box shadow-hover" type="submit" name="submit" id="submit" value="Submit"/>
         </form>
     </section>
 </div>
