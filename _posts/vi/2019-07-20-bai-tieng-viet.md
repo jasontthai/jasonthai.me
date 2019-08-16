@@ -2,11 +2,11 @@
 title: Bài Tiếng Việt
 layout: post
 category: blog
-image: "/assets/img/postage-stamps-484991_640.webp"
+image: "/assets/img/postage-stamps-484991_640.jpg"
 description: Bài tiếng việt đầu tiên của blog.
 ---
 
-{% include lazy-img.html src="/assets/img/postage-stamps-484991_640.webp" alt="Tem" %}
+{% include lazy-img.html src="/assets/img/postage-stamps-484991_640.jpg" alt="Tem" %}
 
 Thiệt ra cái blog này đầu tiên chỉ định viết bằng tiếng Anh thôi nhưng mà càng viết thì tui lại càng muốn nó thành cái blog tạp hóa hơn. Mò từ hỗm rài tới giờ mới ra được một cách hơi ưng ý một tí để trình bày bài viết. Cái công cụ [Jekyll](https://jekyllrb.com/) này không giống như Wordpress (wp thì cái gì cũng làm sẵn cho mình). Này thì phải mày mò viết code nhiều hơn một tí. Mà tui thì lại không có giỏi trong việc chỉnh sửa CSS cho lắm.
 

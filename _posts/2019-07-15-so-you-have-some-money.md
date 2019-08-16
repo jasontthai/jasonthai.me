@@ -1,12 +1,12 @@
 ---
 title: So You Have Some Money
 excerpt_separator: "<!--more-->"
-image: "/assets/img/money-matters-1173105.webp"
+image: "/assets/img/money-matters-1173105.jpg"
 category: finance
 description: A letter to my wife and sister about money.
 ---
 
-{% include lazy-img.html src="/assets/img/money-matters-1173105.webp" alt="so you have money" %}
+{% include lazy-img.html src="/assets/img/money-matters-1173105.jpg" alt="so you have money" %}
 
 To San and Vy,
 

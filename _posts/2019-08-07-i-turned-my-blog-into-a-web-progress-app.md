@@ -2,7 +2,7 @@
 title: I Turned My Blog into a Progressive Web App
 category: tech
 description: A note of how I turn my blog into a progressive web app
-image: "/assets/img/pwa-logo.webp"
+image: "/assets/img/pwa-logo.png"
 ---
 
 I recently create a post of [how to enable offline support to websites with Workbox]({{ site.url }}{% post_url 2019-08-06-enable-offline-support-to-websites-with-workbox %}) and turns out it already covers half of the work of turning my blog into a progressive web app (PWA). This note will cover the rest to fully convert a regular website to a PWA.
@@ -10,7 +10,7 @@ I recently create a post of [how to enable offline support to websites with Work
 
 The first thing is to check what is needed to be done in order to be a PWA. We can do that by using Google Chrome's developer tools' audit.
 
-{% include lazy-img.html src="/assets/img/devtool-audits.webp" alt="Dev Tool Audits" %}
+{% include lazy-img.html src="/assets/img/devtool-audits.png" alt="Dev Tool Audits" %}
 Give it a run, and see who well your website is doing.
 
 Now let's dive in the steps to turn my blog to a PWA.
@@ -56,7 +56,7 @@ I also added the required meta tags for a PWA:
 
 ## Verify through Audits
 If you have completed all the above steps, verify using the audits tool again and hopefully you'll be greeted with this screen:
-{% include lazy-img.html src="/assets/img/pwa.webp" alt="PWA" %}
+{% include lazy-img.html src="/assets/img/pwa.png" alt="PWA" %}
 
 ## More ways to verify
 * If you open the menu on chrome browser, you'll see the option to install your pwa as an app on your desktop.

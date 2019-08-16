@@ -1,13 +1,13 @@
 ---
 title: 42nd Biofreeze SF Marathon - 1st Half
-image: "/assets/img/half-marathon-cover.webp"
+image: "/assets/img/half-marathon-cover.png"
 category: blog
 description: 42nd Biofreeze SF marathon race report
 ---
 
 I finally ran my first half marathon today 07-28-19 in [The 42nd Biofreeze SF Marathon](https://www.thesfmarathon.com/). This has been one of my goals of the year. Suffice to say it has been one of the best day of my life so far. Here is the result of my race:
 
-{% include lazy-img.html src="/assets/img/half-marathon.webp" alt="half marathon result" %}
+{% include lazy-img.html src="/assets/img/half-marathon.png" alt="half marathon result" %}
 
 Race Report:
 
