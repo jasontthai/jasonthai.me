@@ -8,20 +8,28 @@ layout: compress
 
   {%- include head.html -%}
 
-  <body>
+  <body class="flex flex-column vh-100">
 
     {%- include header.html -%}
 
-    <main class="wrapper" aria-label="Content">
+    <main class="db h-auto w-100 ph5-l flex-grow-1" aria-label="Content">
       {% if page.sidebar != false %}
         {% include sidebar.html %}
-      {% endif %}
-      <div class="page-content">
+        <div class="db fl-l w-70-l">
+          {{ content }}
+        </div>
+      {% else %}
+      <div class="db fl-l w-100">
         {{ content }}
       </div>
+      {% endif %}
     </main>
 
-    {%- include footer.html -%}
+    <footer class="avenir mid-gray flex-shrink-0">
+      <div class="db w-100 h-auto fl mt3 pv4 bt b--light-silver">
+        <small class="f6 db tc">©  {{ site.time | date: '%Y' }} <b class="ttu">{{ site.title | escape }}</b></small>
+      </div>
+    </footer>
 
   </body>
 

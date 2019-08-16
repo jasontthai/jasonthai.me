@@ -4,123 +4,41 @@
 
 @import "minima";
 
-$post-color: #faf5ef;
-$link-color: #00a79d;
-
-.post-title {
-  color: #672f2f;
+p, ul {
+  overflow-x: auto;
 }
 
-.post {
-  background-color: $post-color;
-  padding: 15px;
+/**
+ * Code formatting
+ */
+pre,
+code {
+  @include relative-font-size(0.9375);
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+}
+
+code {
+  padding: 1px 5px;
+  color: #f8f8f2;
+  background-color: #272822;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 a {
-  color: $link-color;
-  &:visited {
-    color: darken($link-color, 10%);
-  }
+  //color: #19a974;
+  color: darkred;
 }
-
-.excerpt:hover {
-  opacity: 0.8;
-
-  a {
-    text-decoration: none;
-  }
-}
-
-.excerpt {
-  background-color: $post-color;
-  border: 1px solid #d3d3d3;
-  border-radius: .25rem;
-  margin-top: 15px;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.19), 0 0.3rem 0.3rem -0.1rem rgba(0,0,0,.23);
-
-  .post-link, .post-meta {
-    color: #672f2f;
-  }
-
-  .post-excerpt {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  .post-link {
-    padding-top: 15px;
-    text-decoration: underline;
-  }
-
-  p {
-    text-decoration: none;
-    color: $text-color;
-    padding-top: 15px;
-  }
-
-  @include media-query($on-laptop) {
-    box-shadow: unset;
-    border: unset;
-    background-color: unset;
-
-    .post-excerpt {
-      padding-right: unset;
-      padding-left: unset;
-    }
-  }
-}
-
-.post-list li {
-  margin-top: 15px;
-}
-
-.site-nav {
-  z-index: 99999;
-}
-
-.bg-img {
-  background-size: cover;
-  min-height: 180px;
-  background-position: center;
-  background-color: #ccc;
-
-  @include media-query($on-laptop) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .post-excerpt {
-    padding-bottom: 15px;
-  }
-
-
-  .post-list li {
-    margin-bottom: 15px;
-  }
-}
-
-.page-nav {
-  display: block;
-  width: auto;
-  overflow: hidden;
-}
-
-.page-nav a {
-  display: block;
-  width: 50%;
-  float: left;
-  margin: 1em 0;
-}
-
-.page-nav .next {
-  text-align: right;
-}
-
-.section-nav {
-  background-color: $post-color;
-  margin: 5px 0;
-  padding: 10px 30px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
+a:hover {
+  color: black;
 }
