@@ -96,6 +96,7 @@ GEM
       nokogiri (~> 1.9)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jekyll-webp (1.0.0)
     kramdown (1.17.0)
     liquid (4.0.3)
     listen (3.1.5)
@@ -182,5 +183,8 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-titles-from-headings
   jekyll-toc
+  jekyll-webp
   minima
 
+BUNDLED WITH
+   2.0.2

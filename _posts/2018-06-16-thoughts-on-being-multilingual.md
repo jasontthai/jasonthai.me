@@ -2,7 +2,7 @@
 title: Thoughts on Being Multilingual
 layout: post
 category: blog
-image: /assets/img/hello-1907233_1280.webp
+image: /assets/img/hello-1907233_1280.png
 description: My thoughts on being multilingual.
 ---
 

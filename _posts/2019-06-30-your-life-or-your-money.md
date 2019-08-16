@@ -1,7 +1,7 @@
 ---
 title: Your Life or Your Money
 category: finance
-image: "/assets/img/blur-close-up-environment-401213.webp"
+image: "/assets/img/blur-close-up-environment-401213.jpg"
 description: A collection of what I find useful in the book Your Life or Your Money.
 ---
 

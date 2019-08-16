@@ -1,6 +1,6 @@
 ---
 title: TinyAlias URL Shortener Design and Its Features
-image: /assets/img/tinyalias.webp
+image: /assets/img/tinyalias.png
 category: tech
 toc: true
 description: How to design a tinyurl service
@@ -115,27 +115,27 @@ After I wrote some of my thoughts about my URL shortener service TinayAlias and 
 <!-- Full-width images with number and caption text -->
 <div class="mySlides fade">
 <div class="numbertextImg">1 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-authentication.webp" alt="TinyAlias Authentication" %}
+{% include lazy-img.html src="/assets/img/tinyalias-authentication.png" alt="TinyAlias Authentication" %}
 </div>
 
 <div class="mySlides fade">
 <div class="numbertextImg">2 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-password.webp" alt="TinyAlias Password" %}
+{% include lazy-img.html src="/assets/img/tinyalias-password.png" alt="TinyAlias Password" %}
 </div>
 
 <div class="mySlides fade">
 <div class="numbertextImg">3 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-analytics.webp" alt="TinyAlias Analytics" %}
+{% include lazy-img.html src="/assets/img/tinyalias-analytics.png" alt="TinyAlias Analytics" %}
 </div>
 
 <div class="mySlides fade">
 <div class="numbertextImg">4 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-mindful.webp" alt="TinyAlias Mindful" %}
+{% include lazy-img.html src="/assets/img/tinyalias-mindful.png" alt="TinyAlias Mindful" %}
 </div>
 
 <div class="mySlides fade">
 <div class="numbertextImg">5 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-news.webp" alt="TinyAlias News" %}
+{% include lazy-img.html src="/assets/img/tinyalias-news.png" alt="TinyAlias News" %}
 </div>
 
 <!-- Next and previous buttons -->
@@ -155,7 +155,7 @@ After I wrote some of my thoughts about my URL shortener service TinayAlias and 
 
 ## Design
 
-{% include lazy-img.html src="/assets/img/tinyalias-diagram.webp" alt="TinyAlias Design" %}
+{% include lazy-img.html src="/assets/img/tinyalias-diagram.png" alt="TinyAlias Design" %}
 
 ### Workflow
 

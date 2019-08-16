@@ -4,10 +4,10 @@ description: A walkthrough of how to host Commento commenting system with Apache
   server
 category: tech
 toc: true
-image: "/assets/img/commento-logo.webp"
+image: "/assets/img/commento-logo.png"
 ---
 
-{% include lazy-img.html src="/assets/img/commento-logo.webp" alt="Commento Logo" %}
+{% include lazy-img.html src="/assets/img/commento-logo.png" alt="Commento Logo" %}
 ## Introduction
 I recently switched from using Disqus comment system to Commento. The reason is that I am in favor of a non-tracking and lightweight system which Commento satisfies. This note will go over the steps to host Commento using Apache webserver.
 
@@ -140,7 +140,7 @@ Run `systemctl enable commento` to enable Commento as a background service.
 Run `systemctl status commento` to check the status of Commento.
 
 After setting everything up, you can go to the domain that you set up to access Commento. If it works, you'll be greeted with something like this:
-{% include lazy-img.html src="/assets/img/commento.webp" alt="Commento" %}
+{% include lazy-img.html src="/assets/img/commento.png" alt="Commento" %}
 
 ## Adding Commento to Your Site
 Put this to where you want the comments to show up:

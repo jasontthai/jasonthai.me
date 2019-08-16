@@ -2,10 +2,10 @@
 title: Customize Part of Your Life with IFTTT
 category: tech
 toc: true
-image: "/assets/img/ifttt-featured.webp"
+image: "/assets/img/ifttt-featured.png"
 ---
 
-{% include lazy-img.html src="/assets/img/ifttt-featured.webp" alt="IFTTT feature" %}
+{% include lazy-img.html src="/assets/img/ifttt-featured.png" alt="IFTTT feature" %}
 
 I have been using [IFTTT](https://ifttt.com) to automate a part of my life and I figure it is useful not just to me but to others as well. This post lists some of the useful applets I use to improve my day to day activities.
 <!--more-->
