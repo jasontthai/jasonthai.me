@@ -1,11 +1,15 @@
 ---
 title: Changes I Made for My Blog's Theme
 category: tech
-image: https://repository-images.githubusercontent.com/65252/f2b7c780-70b6-11e9-85d2-f4bda8708a2d
+image: /assets/img/jekyll.png
 description: Some highlights of changes I made to Jekyll's Minima theme.
+toc: true
 ---
 
-{% include lazy-img.html src="https://repository-images.githubusercontent.com/65252/f2b7c780-70b6-11e9-85d2-f4bda8708a2d" alt="Jekyll" %}
+### Update 08/16/2019
+This post is outdated as this blog has been through a few iterations of design. Hopefully I will write another blog that covers what has changed. In the meantime you can read to get some context about my blog's old design.
+
+{% include lazy-img.html src="/assets/img/jekyll.png" alt="Jekyll" %}
 
 The stock theme that I am currently using is from [https://github.com/jekyll/minima](https://github.com/jekyll/minima). I like it for its cleanliness and simplicty as the name implies.
 
