@@ -15,17 +15,14 @@ layout: default
     <article class="bt bb b--black-10">
         <a class="db pv4 ph3 ph0-l no-underline black dim" href="{{ post.url | relative_url }}">
             <div class="flex flex-column flex-row-ns">
-                <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns db-ns dn">
-                    <!--                    <img  class="lazyload" data-src="{{ post.image }}" alt="">-->
+                <picture class="pr3-ns mb4 mb0-ns w-100 w-40-ns db-ns dn">
+                    {% if post.image %}
                     {% assign image_filename_and_ext = post.image | split:"."  %}
                     {% assign image_filename = image_filename_and_ext[0] | append: ".webp" %}
-
-                    <picture>
-                        <source srcset="{{ image_filename | absolute_url }}" type="image/webp">
-                        <img class="lazyload"  src="{{ post.image | absolute_url }}" alt="">
-                    </picture>
-
-                </div>
+                    <source data-srcset="{{ image_filename | absolute_url }}" type="image/webp">
+                    <img class="lazyload"  data-src="{{ post.image | absolute_url }}" alt="">
+                    {% endif %}
+                </picture>
                 <div class="w-100 pl3-ns">
                     <h1 class="f3 fw1 baskerville mt0 lh-title">{{ post.title }}</h1>
                     <p class="f6 f5-l lh-copy">
