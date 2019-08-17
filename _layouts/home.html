@@ -5,15 +5,15 @@ layout: default
 {% if paginator.total_pages >= 1 %}
 {% assign posts = paginator.posts %}
 {% endif %}
-<section class="center avenir">
+<section class="center avenir w-90 lh-copy">
     {%- if page.title -%}
-    <h1 class="baskerville fw1 ph3 ph0-l">{{ page.title }}</h1>
+    <h1 class="baskerville fw1 ph0-l">{{ page.title }}</h1>
     {%- endif -%}
     {{ content }}
 
     {%- for post in posts -%}
     <article class="bt bb b--black-10">
-        <a class="db pv4 ph3 ph0-l no-underline black dim" href="{{ post.url | relative_url }}">
+        <a class="db pv4 no-underline black dim" href="{{ post.url | relative_url }}">
             <div class="flex flex-column flex-row-ns">
                 <picture class="pr3-ns mb4 mb0-ns w-100 w-40-ns db-ns dn">
                     {% if post.image %}
