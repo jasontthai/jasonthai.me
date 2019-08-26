@@ -3,6 +3,7 @@ title: How to host OpenVPN and Pi-hole on Ubuntu 18.04 VPS
 image: "/assets/img/openvpn-pihole.png"
 description: how to host OpenVPN and Pi-hole on Ubuntu 18.04 VPS
 toc: true
+category: tech
 ---
 
 ## Introduction
