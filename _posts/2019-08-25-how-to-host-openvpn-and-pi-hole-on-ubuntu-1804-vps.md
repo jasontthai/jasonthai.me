@@ -7,7 +7,7 @@ category: tech
 ---
 
 ## Introduction
-I have been playing around with setting up my own [OpenVPN server](https://openvpn.net) lately and also found out [Pi-hole](https://pi-hole.net). The two combined services provide a good way to make your web browsing experience more secure and ad-free. 
+I have been playing around with setting up my own [OpenVPN server](https://openvpn.net) lately and also found out [Pi-hole](https://pi-hole.net).  OpenVPN provides a way to set up a VPN that I can self manage and Pi-hole is a network wide ad blocking system. The two combined services provide a good way to make your web browsing experience more secure and ad-free. 
 
 [I followed the guide on Pi-hole to set up a VPN server](https://docs.pi-hole.net/guides/vpn/setup-openvpn-server/) but I found out that some information is missing depending on the type of VPS you have such as whether your VPS is a NAT VPS or not. Below is the documented steps of all my findings.
 
@@ -85,7 +85,7 @@ remove all the existing `push "dhcp-option DNS x.x.x.x` and add `push "dhcp-opti
 Restart OpenVPN services:
 ```shell
 systemctl daemon-reload
-systemctl restart openvpn
+systemctl restart openvpn // Jason's notes: just restarting openvpn does not change the configuration for OpenVPN server.
 systemctl restart openvpn-server@server.service
 ```
 
