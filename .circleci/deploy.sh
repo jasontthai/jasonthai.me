@@ -12,7 +12,6 @@ git checkout master
 git pull origin master
 
 find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
-sudo apt install rsync -y
 rsync -avz ../_site/ root@$SERVER_IP:/var/www/jasonthai/
 mv ../_site/* .
 
