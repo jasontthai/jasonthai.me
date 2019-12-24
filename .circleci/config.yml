@@ -39,6 +39,9 @@ jobs:
       # - run:
       #     name: Test
       #     command: bundle exec htmlproofer ./_site --check-html --disable-external --empty-alt-ignore
+      - add_ssh_keys:
+        fingerprints:
+          - "8e:14:d6:3a:d2:e4:e1:8a:41:19:91:00:b2:f2:ec:74"
       - deploy:
           name: Deploy Release to GitHub
           command: |
