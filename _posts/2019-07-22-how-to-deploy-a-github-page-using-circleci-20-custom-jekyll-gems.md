@@ -29,8 +29,8 @@ jobs:
     docker:
       - image: circleci/ruby:latest
         environment:
-          USER_NAME: zirius
-          USER_EMAIL: thaixtri@gmail.com
+          USER_NAME: YOUR GITHUB USERNAME
+          USER_EMAIL: YOUR EMAIL
     steps:
       - checkout
       - run:
