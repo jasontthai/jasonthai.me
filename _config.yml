@@ -28,6 +28,7 @@ pagination:
 
 header_pages:
   - about.md
+  - services.html
   - posts.md
   - categories.html
   - visited-places.html
