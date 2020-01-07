@@ -3,20 +3,25 @@
   url: https://git.jasonthai.me
   icon: /assets/img/services/gitea.png
 
+- name: CodiMD
+  description: Realtime collaborative markdown notes on all platforms. <br> <br> <br>
+  url: https://md.jasonthai.me
+  icon: /assets/img/services/markdown.png
+
 - name: EchoIP
-  description: IP address lookup. Source code can be found at <a href="https://github.com/mpolden/echoip">https://github.com/mpolden/echoip</a>. API supported.
+  description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported. <br> <br>
   url: https://ip.jasonthai.me
-  icon: /assets/img/services/ip.png  
+  icon: /assets/img/services/ip.png
+
+- name: TT-RSS
+  description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account.
+  url: https://rss.jasonthai.me
+  icon: /assets/img/services/rss.png
 
 - name: Nextcloud
   description: The self-hosted productivity platform that keeps you in control. Data is encrypted. Contact me for a free 4GB space.
   url: https://cloud.jasonthai.me
   icon: /assets/img/services/cloud.png
-
-- name: TT-RSS
-  description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Registration disabled. Contact me for an account.
-  url: https://rss.jasonthai.me
-  icon: /assets/img/services/rss.png
 
 - name: Wallabag
   description: Wallabag is an open source project to save your web articles and allows you to read them later on your mobile devices.
@@ -32,5 +37,3 @@
   description: Sync your bookmarks between browsers and devices while maintaining your privacy and anonymity.
   url: https://xbrowsersync.jasonthai.me
   icon: /assets/img/services/browsersync.png
-
-
