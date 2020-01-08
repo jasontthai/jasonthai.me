@@ -8,6 +8,11 @@
   url: https://md.jasonthai.me
   icon: /assets/img/services/markdown.png
 
+- name: PrivateBin
+  description: PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.
+  url: https://privatebin.jasonthai.me
+  icon: /assets/img/services/bin.png
+
 - name: EchoIP
   description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported. <br> <br>
   url: https://ip.jasonthai.me
