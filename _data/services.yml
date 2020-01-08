@@ -1,42 +1,42 @@
-- name: Gitea
-  description: Gitea is a community managed lightweight code hosting solution written in Go. It is published under the MIT license.
-  url: https://git.jasonthai.me
-  icon: /assets/img/services/gitea.png
+- name: Bitwarden
+  description: The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.
+  url: https://bitwarden.jasonthai.me
+  icon: /assets/img/services/passwordmanager.png
 
 - name: CodiMD
   description: Realtime collaborative markdown notes on all platforms. <br> <br> <br>
   url: https://md.jasonthai.me
   icon: /assets/img/services/markdown.png
 
-- name: PrivateBin
-  description: PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.
-  url: https://privatebin.jasonthai.me
-  icon: /assets/img/services/bin.png
-
 - name: EchoIP
   description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported. <br> <br>
   url: https://ip.jasonthai.me
   icon: /assets/img/services/ip.png
 
-- name: TT-RSS
-  description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account.
-  url: https://rss.jasonthai.me
-  icon: /assets/img/services/rss.png
+- name: Gitea
+  description: Gitea is a community managed lightweight code hosting solution written in Go. It is published under the MIT license.
+  url: https://git.jasonthai.me
+  icon: /assets/img/services/gitea.png
 
 - name: Nextcloud
   description: The self-hosted productivity platform that keeps you in control. Data is encrypted. Contact me for a free 4GB space.
   url: https://cloud.jasonthai.me
   icon: /assets/img/services/cloud.png
 
+- name: PrivateBin
+  description: PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.
+  url: https://privatebin.jasonthai.me
+  icon: /assets/img/services/bin.png
+
+- name: TT-RSS
+  description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account.
+  url: https://rss.jasonthai.me
+  icon: /assets/img/services/rss.png
+
 - name: Wallabag
   description: Wallabag is an open source project to save your web articles and allows you to read them later on your mobile devices.
   url: https://wallabag.jasonthai.me
   icon: /assets/img/services/wallabag.png
-
-- name: Bitwarden
-  description: The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.
-  url: https://bitwarden.jasonthai.me
-  icon: /assets/img/services/passwordmanager.png
 
 - name: xBrowserSync
   description: Sync your bookmarks between browsers and devices while maintaining your privacy and anonymity.
