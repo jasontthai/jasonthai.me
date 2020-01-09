@@ -8,6 +8,11 @@
   url: https://md.jasonthai.me
   icon: /assets/img/services/markdown.png
 
+- name: Commento
+  description: A fast, privacy-focused commenting platform. <br><br><br><br>
+  url: https://commento.jasonthai.me
+  icon: /assets/img/services/commento.png
+
 - name: EchoIP
   description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported. <br> <br>
   url: https://ip.jasonthai.me
