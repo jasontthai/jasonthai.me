@@ -59,7 +59,7 @@ Press any key to continue...
 
 ### Start OpenVPN
 Modify OpenVPN server's configuration in `/etc/openvpn/server/server.conf`:
-remove all the existing `push "dhcp-option DNS x.x.x.x` and add `push "dhcp-optioni DNS 10.8.0.1"`
+remove all the existing `push "dhcp-option DNS x.x.x.x` and add `push "dhcp-option DNS 10.8.0.1"`
 
 Restart OpenVPN services:
 ```shell
