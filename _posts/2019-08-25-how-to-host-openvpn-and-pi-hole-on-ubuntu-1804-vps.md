@@ -58,28 +58,7 @@ Press any key to continue...
 ```
 
 ### Start OpenVPN
-I had to modify the existing OpenVPN service in `/lib/systemd/system/openvpn.service` with the following:
-
-```shell
-# This service is actually a systemd target,
-# but we are using a service since targets cannot be reloaded.
-
-[Unit]
-Description=OpenVPN service
-After=network.target
-
-[Service]
-Type=oneshot
-RemainAfterExit=yes
-ExecStart=/bin/true
-ExecReload=/bin/true
-WorkingDirectory=/etc/openvpn/server
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Also modify OpenVPN server's configuration in `/etc/openvpn/server/server.conf`:
+Modify OpenVPN server's configuration in `/etc/openvpn/server/server.conf`:
 remove all the existing `push "dhcp-option DNS x.x.x.x` and add `push "dhcp-optioni DNS 10.8.0.1"`
 
 Restart OpenVPN services:
