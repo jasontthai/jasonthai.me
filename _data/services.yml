@@ -4,17 +4,17 @@
   icon: /assets/img/services/passwordmanager.png
 
 - name: CodiMD
-  description: Realtime collaborative markdown notes on all platforms. <br> <br> <br>
+  description: Realtime collaborative markdown notes on all platforms. <br> <br>
   url: https://md.jasonthai.me
   icon: /assets/img/services/markdown.png
 
 - name: Commento
-  description: A fast, privacy-focused commenting platform. <br><br><br>
+  description: A fast, privacy-focused commenting platform. Easy to use, no spam.<br><br>
   url: https://commento.jasonthai.me
   icon: /assets/img/services/commento.png
 
 - name: EchoIP
-  description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported. <br> <br>
+  description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported. <br> <br> <br>
   url: https://ip.jasonthai.me
   icon: /assets/img/services/ip.png
 
@@ -29,12 +29,12 @@
   icon: /assets/img/services/cloud.png
 
 - name: PrivateBin
-  description: PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.
+  description: PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. <br>
   url: https://privatebin.jasonthai.me
   icon: /assets/img/services/bin.png
 
 - name: TT-RSS
-  description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account.
+  description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account. <br>
   url: https://rss.jasonthai.me
   icon: /assets/img/services/rss.png
 
