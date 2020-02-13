@@ -19,7 +19,7 @@ I do not have a specific theme of topics that are covered in this blog. Mainly w
 If you expect a lot of randomness, this blog is for you.
 
 ### How often is this blog updated?
-I try to write as much as possible whenever I feel like writing. If you are interested, you can subscribe using your email [here](https://feedburner.google.com/fb/a/mailverify?uri=jasonthai&loc=en_US) and you will be notified when a new post is out.
+I try to write as much as possible whenever I feel like writing. If you are interested, you can subscribe using your email [here](https://sendy.jasonthai.me/subscription?f=aMoj2fcnT0bUVyfb6PEV892OvH4sw4rgsF7635mkQRs763I5Y763763Xi763zUQgDPQZ35BITffLDji892vy2TqdRT3oGZN1gNQw) and you will be notified when a new post is out.
 
 ### Give me feedbacks on my Posts
 Send me an email at [&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;](mailto:&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;). I will really appreciate it!
