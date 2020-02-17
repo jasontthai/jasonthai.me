@@ -29,7 +29,7 @@ curl -L json.id/setup.sh | sudo bash -s -- -a
 ```shell
 curl -sL json.id/setup.sh | sudo bash
 # ## ## ## ## ## ## ## ## ## ## ## ## #
-#    Debian-based VPS Setup Script    #
+#           VPS Setup Script          #
 # ## ## ## ## ## ## ## ## ## ## ## ## #
 
 Wed 12 Feb 2020 03:56:01 PM PST
