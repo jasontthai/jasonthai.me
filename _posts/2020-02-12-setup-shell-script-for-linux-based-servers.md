@@ -1,11 +1,11 @@
 ---
-title: Setup Shell Script for Debian-based Servers
-description: A script I created to quickly set up and harden Debian based servers.
+title: Setup Shell Script for Linux-based Servers
+description: A script I created to quickly set up and harden Linux based servers.
 category: tech
 image: "/assets/img/scripts.png"
 ---
 
-Since I have a few Linux servers that are running Debian or Ubuntu OS, I want to have an automatic and convenient way to quickly set up and get them running.  Specifically I want to do a the following things for a fresh server:
+Since I have a few Linux servers that are running RHEL, Debian or Ubuntu OS, I want to have an automatic and convenient way to quickly set up and get them running.  Specifically I want to do a the following things for a fresh server:
 
 * Upgrade the server's packages to the latest version
 * Install essential packages such as: fail2ban, ufw, htop, apache2, docker, etc.
@@ -67,7 +67,7 @@ or to view help
 ```shell
 curl -sL json.id/setup.sh | sudo bash -s -- -h
 # ## ## ## ## ## ## ## ## ## ## ## ## #
-#    Debian-based VPS Setup Script    #
+#           VPS Setup Script          #
 # ## ## ## ## ## ## ## ## ## ## ## ## #
 
 Wed 12 Feb 2020 04:04:07 PM PST
