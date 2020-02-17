@@ -20,7 +20,6 @@ Current server providers I am using:
 * [TerraHost](https://terrahost.no) - Dedicated server for media streaming
 * [Hetzner](https://hetzner.com) - Dedicated server for media streaming
 * [Smarthost](https://smarthost.com) - VPS for selfhosted apps
-* [Hostdoc](https://hostdoc.com) - VPS for media streaming
 * [Hosthatch](https://hosthatch.com) - Storage VPS
 * [IonSwitch](https://ionswitch.com) - VPS for my blog
 * [Buyvm](https://buyvm.net) - VPS for VPN
