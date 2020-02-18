@@ -12,8 +12,7 @@ git checkout master
 git pull origin master
 
 find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
-rsync -avz ../_site/ root@$SERVER_IP:/var/www/jasonthai/
-rsync -avz ../_site/ root@$SERVER_IP_LA:/var/www/jasonthai/
+rsync -avz ../_site/ json@$SERVER_IP_LA:/var/www/jasonthai/
 mv ../_site/* .
 
 git add -fA
