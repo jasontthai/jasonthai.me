@@ -2,6 +2,7 @@
 title: Better SSH Keys Management with AuthorizedKeysCommand
 description: Use AuthorizedKeysCommand to better manage SSH keys
 category: tech
+image: "/assets/img/ssh.jpg"
 ---
 
 I usually use authorized_key files to store SSH public keys in order to access my servers . However once I start to have multiple servers, I realize manually managing SSH keys is nightmare.
