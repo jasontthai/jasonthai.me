@@ -44,7 +44,6 @@ jobs:
           fingerprints:
             - "8e:14:d6:3a:d2:e4:e1:8a:41:19:91:00:b2:f2:ec:74"
       - run: ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
-      - run: ssh-keyscan -H $SERVER_IP_LA >> ~/.ssh/known_hosts
       - deploy:
           name: Deploy Release
           command: |
