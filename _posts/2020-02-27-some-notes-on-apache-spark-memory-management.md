@@ -43,8 +43,10 @@ Consider an EMR cluster with 1 master - 25 slaves running c5.18xlarge instance. 
    > spark.executor.instances = 14 * 25 - 1 = 349
 * <span style="color: darkred">spark.default.parallelism</span> = spark.executor.instances * spark.executors.cores * 2
    > spark.default.parallelism = 349 * 5 * 2 = 3490
-* <span style="color: darkred">spark.executor.extraJavaOptions</span> = -XX:+UseG1GC -XX:+UnlockDiagnosticVMOptions -XX:+G1SummarizeConcMark -XX:InitiatingHeapOccupancyPercent=35 -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:OnOutOfMemoryError='kill -9 %p'
-* <span style="color: darkred">spark.driver.extraJavaOptions</span> = -XX:+UseG1GC -XX:+UnlockDiagnosticVMOptions -XX:+G1SummarizeConcMark -XX:InitiatingHeapOccupancyPercent=35 -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:OnOutOfMemoryError='kill -9 %p'
+* <span style="color: darkred">spark.executor.extraJavaOptions</span>
+   > spark.executor.extraJavaOptions = -XX:+UseG1GC -XX:+UnlockDiagnosticVMOptions -XX:+G1SummarizeConcMark -XX:InitiatingHeapOccupancyPercent=35 -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:OnOutOfMemoryError='kill -9 %p'
+* <span style="color: darkred">spark.driver.extraJavaOptions</span>
+   > spark.executor.extraJavaOptions = -XX:+UseG1GC -XX:+UnlockDiagnosticVMOptions -XX:+G1SummarizeConcMark -XX:InitiatingHeapOccupancyPercent=35 -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:OnOutOfMemoryError='kill -9 %p'
 
 ## Sources:
 * [https://aws.amazon.com/blogs/big-data/best-practices-for-successfully-managing-memory-for-apache-spark-applications-on-amazon-emr/](https://aws.amazon.com/blogs/big-data/best-practices-for-successfully-managing-memory-for-apache-spark-applications-on-amazon-emr/)
