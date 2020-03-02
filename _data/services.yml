@@ -18,10 +18,10 @@
   url: https://ip.jasonthai.me
   icon: /assets/img/services/ip.png
 
-- name: Gitea
-  description: Gitea is a community managed lightweight code hosting solution written in Go. It is published under the MIT license.
-  url: https://git.jasonthai.me
-  icon: /assets/img/services/gitea.png
+# - name: Gitea
+#   description: Gitea is a community managed lightweight code hosting solution written in Go. It is published under the MIT license.
+#   url: https://git.jasonthai.me
+#   icon: /assets/img/services/gitea.png
 
 - name: Nextcloud
   description: The self-hosted productivity platform that keeps you in control. Data is encrypted. Contact me for a free 4GB space.
@@ -43,7 +43,7 @@
   url: https://wallabag.jasonthai.me
   icon: /assets/img/services/wallabag.png
 
-- name: xBrowserSync
-  description: Sync your bookmarks between browsers and devices while maintaining your privacy and anonymity.
-  url: https://xbrowsersync.jasonthai.me
-  icon: /assets/img/services/browsersync.png
+# - name: xBrowserSync
+#   description: Sync your bookmarks between browsers and devices while maintaining your privacy and anonymity.
+#   url: https://xbrowsersync.jasonthai.me
+#   icon: /assets/img/services/browsersync.png
