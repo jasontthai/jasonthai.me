@@ -81,6 +81,12 @@ After setting up nextcloud, you will see something like:
 
 {% include lazy-img.html src="/assets/img/nextcloud.jpeg" alt="Nextcloud" %}
 
+## Modify Overwrite Protocal
+Modify `/opt/nextcloud-data/config/config.php` and add:
+```conf
+'overwriteprotocol' => 'https',
+```
+
 ## Modify Upload Max Filesize
 By default, Nextcloud only allows uploading file up to 2MB which is not very useful. We can modify the max filesize by adding `/opt/nextcloud-data/.htaccess` with following:
 ```conf
