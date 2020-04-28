@@ -30,8 +30,8 @@
   {% if site.ads_enable == true -%}
     {%- include ads.html -%}
   {%- endif -%}
+  {%- include matomo.html -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
     {%- include matomo.html -%}
   {%- endif -%}
 </head>
