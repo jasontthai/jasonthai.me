@@ -91,7 +91,7 @@ plugins:
 
 # sidebar_home_link: true
 
-google_analytics: UA-120912817-1
+# google_analytics: UA-120912817-1
 
 ############################################################
 # Site configuration for the WebP Generator Plugin
