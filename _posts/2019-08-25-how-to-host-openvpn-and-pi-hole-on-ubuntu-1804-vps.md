@@ -13,7 +13,7 @@ I have been playing around with setting up my own [OpenVPN server](https://openv
 
 ## Installation
 
-### OpenVPN Setup
+### Wireguard Setup
 Run these scripts:
 ```shell
 wget https://git.io/vpn -O openvpn-install.sh
