@@ -136,7 +136,10 @@ Pi-hole blocked `pagead2.googlesyndication.com` as the domain is in its blacklis
 
 
 ### Generate Wireguard Client Config File
-	Run `bash wireguard-install.sh`
+Run `bash wireguard-install.sh`
+
+### Configure Wireguard to use Pi-hole DNS
+Edit your wireguard client conf file and update the DNS servers setting with Pi-hole internal address. In my case it is `10.7.0.1` 
 
 ### Test From Browser
 After connecting to your VPN using Wireguard client. Go to this address [http://pagead2.googlesyndication.com](http://pagead2.googlesyndication.com), if everything works correctly you will see this:
