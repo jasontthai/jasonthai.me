@@ -74,7 +74,7 @@ ip a show dev wg0
 Note down your default  gateway IP address:
 ```shell
 ip r | grep default
-default via XXX.XXX.XXX.XXX dev eth0 onlink // not this address
+default via XXX.XXX.XXX.XXX dev eth0 onlink // note this address
 ```
 
 Run this script:
