@@ -6,6 +6,8 @@ toc: true
 category: tech
 ---
 
+Interested in using Wireguard? Check out my post on [How to setup wireguard and pi-hole on Debian/Ubuntu]({{ site.url }}{% post_url 2020-05-01-how-to-setup-wireguard-pi-hole-on-debian-10-ubuntu-1804 %})
+
 ## Introduction
 I have been playing around with setting up my own [OpenVPN server](https://openvpn.net) lately and also found out [Pi-hole](https://pi-hole.net).  OpenVPN provides a way to set up a VPN that I can self manage and Pi-hole is a network wide ad blocking system. The two combined services provide a good way to make your web browsing experience more secure and ad-free. 
 
