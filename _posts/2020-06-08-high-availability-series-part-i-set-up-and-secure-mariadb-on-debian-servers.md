@@ -402,3 +402,5 @@ This post guides us how to set up a MariaDB server and secure connection between
 [https://mariadb.com/kb/en/secure-connections-overview](https://mariadb.com/kb/en/secure-connections-overview)
 
 [https://mariadb.com/kb/en/securing-connections-for-client-and-server](https://mariadb.com/kb/en/securing-connections-for-client-and-server)
+
+[[High Availability Series] PART II: Configure and Secure a 3-node Galera Cluster]({{ site.url }}{% post_url 2020-06-20-high-availability-series-part-ii-configure-and-secure-a-3-node-galera-cluster %})
