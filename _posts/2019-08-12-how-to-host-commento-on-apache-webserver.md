@@ -99,6 +99,21 @@ Run `systemctl enable commento` to enable Commento as a background service.
 
 Run `systemctl status commento` to check the status of Commento.
 ### The docker way
+Pull the image:
+```sh
+$ docker pull registry.gitlab.com/commento/commento
+```
+Start the container: 
+```sh
+$ docker run -it                                                            \
+    -p 8080:8080                                                            \
+    -e COMMENTO_ORIGIN=https://commento.jasonthai.me                        \
+    -e COMMENTO_POSTGRES=postgres://commento@172.17.0.1:5432/commento       \
+    --network="bridge"                                                      \
+    registry.gitlab.com/commento/commento
+```
+Note: you will have to configure postgres same as the manual way. `172.17.0.1` is the IP address of docker0 proto
+### The docker compose  way
 Create `docker-compose.yml` file with following contents:
 ```yaml
 version: '3'
@@ -107,7 +122,7 @@ services:
   server:
     image: registry.gitlab.com/commento/commento
     ports:
-      - 8281:8080
+      - 8080:8080
     environment:
       COMMENTO_ORIGIN: https://commento.jasonthai.me
       COMMENTO_PORT: 8080
