@@ -212,10 +212,10 @@ If you noticed, we have configured a stats page for HAProxy on port 8404 in our 
 You will see something like this:
 {% include lazy-img.html src="/assets/img/haproxy-stats.png" alt="HAProxy Stats" %}
 
-# Conclusion:
+# Conclusions
 We have configured a HAProxy node as a load balancer to our Galera cluster. Connection between HAProxy to the three nodes is secured by Stunnel. In the next post, we will go over setting up a full HA webservers that are powered by a HA Galera cluster.
 
-# Resources:
+# Resources
 [[High Availability Series] PART I: Set Up and Use SSL to Secure MariaDB on Debian Servers]({{ site.url }}{% post_url 2020-06-08-high-availability-series-part-i-set-up-and-secure-mariadb-on-debian-servers %})
 
 [[High Availability Series] PART II: Configure and Secure a 3-node Galera Cluster]({{ site.url }}{% post_url 2020-06-20-high-availability-series-part-ii-configure-and-secure-a-3-node-galera-cluster %})
