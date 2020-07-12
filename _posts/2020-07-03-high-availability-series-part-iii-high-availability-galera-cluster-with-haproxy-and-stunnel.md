@@ -98,7 +98,7 @@ syslog = no
 client = yes
 CAfile = /etc/mysql/certs/stunnel.pem
 accept  = 127.0.0.1:13306
-connect = IP-of-node1:23306
+connect = IP-of-node1:13306
 verify = 2
 verifyChain = yes
 
