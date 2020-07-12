@@ -16,6 +16,7 @@ rsync -avz ../_site/ json@$SERVER_IP:/var/www/jasonthai/
 rsync -avz ../_site/ json@$NODE1_IP:/var/www/jasonthai/
 rsync -avz ../_site/ json@$NODE2_IP:/var/www/jasonthai/
 rsync -avz ../_site/ json@$NODE3_IP:/var/www/jasonthai/
+rsync -avz ../_site/ json@$NODE4_IP:/var/www/jasonthai/
 mv ../_site/* .
 
 git add -fA
