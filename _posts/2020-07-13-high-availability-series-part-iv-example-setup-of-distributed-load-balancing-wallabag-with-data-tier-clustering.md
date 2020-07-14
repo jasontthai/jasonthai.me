@@ -5,7 +5,7 @@ toc: true
 image: "/assets/img/ha-cluster.png"
 description: 'High Availability Series: Example Setup of Distributed Load Balancing
   Wallabag with Data Tier Clustering. How to set up a highly available Wallabag with
-  docker-compose powered by HAProxy and Galera cluster.'
+  docker-compose powered by HAProxy, Apache2 and Galera cluster.'
 category: tech
 ---
 
