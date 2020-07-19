@@ -10,6 +10,7 @@ description: Jason Thai's personal page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jasonthai.me" # the base hostname & protocol for your site, e.g. http://example.com
 # author: Jason Thai
+cdnurl: "https://cdn.jasonthai.me"
 author:
   name: Jason Thai
   avatar: /assets/img/profile.jpeg
