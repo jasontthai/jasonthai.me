@@ -4,7 +4,29 @@ title: Services
 description: Free services that I hosted
 ---
 A set of services that I am currently hosting. You can check the status of all services at <a href="https://status.jasonthai.me">https://status.jasonthai.me</a>
+<style type="text/css">
+.blink_green {
+  animation: blinker_green 1.2s infinite;
+}
+.blink_red {
+    animation: blinker_red 1.2s infinite;
+}
 
+@keyframes blinker_green {  
+  0%{     color: green;    }
+  49%{    color: green; }
+  60%{    color: transparent; }
+  99%{    color: transparent;  }
+  100%{   color: green;    }
+}
+@keyframes blinker_red {  
+  0%{     color: darkred;    }
+  49%{    color: darkred; }
+  60%{    color: transparent; }
+  99%{    color: transparent;  }
+  100%{   color: darkred;    }
+}
+</style>
 <div>
     <div class="flex flex-wrap">
         {% for service in site.data.services %}
@@ -14,6 +36,7 @@ A set of services that I am currently hosting. You can check the status of all s
                     <h1 class="f4">
                         <a href="{{ service.url }}">{{ service.name }}</a>
                     </h1>
+                    <span id="{{ service.id }}" class="blink_me"></span>
                     <hr class="mw3 bb bw1 b--black-10">
                     </hr>
                 </img>
@@ -25,3 +48,21 @@ A set of services that I am currently hosting. You can check the status of all s
         {% endfor %}
     </div>
 </div>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    function getStatus() {
+        $.getJSON("https://check.jasonthai.me", function(result) {
+            if(result.reload)
+                setTimeout(function() { location.reload(true) }, 1000);
+            for (var i = 0; i < result.data.length; i++) {
+                if (result.data[i].status == 1) {
+                    $('#' + result.data[i].id).attr('class', "blink_green").html('Online');
+                } else {
+                    $('#' + result.data[i].id).attr('class', "blink_red").html('Offline');
+                }
+            }
+        });
+        setTimeout(getStatus, 60000);
+    }
+    getStatus();
+</script>
