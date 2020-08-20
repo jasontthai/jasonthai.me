@@ -51,14 +51,14 @@ A set of services that I am currently hosting. You can check the status of all s
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
     function getStatus() {
-        $.getJSON("https://check.jasonthai.me", function(result) {
-            if(result.reload)
-                setTimeout(function() { location.reload(true) }, 1000);
-            for (var i = 0; i < result.data.length; i++) {
-                if (result.data[i].status == 1) {
-                    $('#' + result.data[i].id).attr('class', "blink_green").html('Online');
-                } else {
-                    $('#' + result.data[i].id).attr('class', "blink_red").html('Offline');
+        $.post("https://api.uptimerobot.com/v2/getMonitors", {
+            "api_key": "ur976816-df4af47e846c916b83909b69"
+        }, function(result) {
+            for (var i = 0; i < result.monitors.length; i++) {
+                if (result.monitors[i].status == 2) {
+                    $('#' + result.monitors[i].id).attr('class', "blink_green").html('Online');
+                } else if (result.monitors[i].status == 8 || result.monitors[i].status == 9) {
+                    $('#' + result.monitors[i].id).attr('class', "blink_red").html('Offline');
                 }
             }
         });
