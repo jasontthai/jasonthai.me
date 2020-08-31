@@ -10,11 +10,11 @@
 {% if include.lazy == true %}
 <picture>
     <source data-srcset="{{ cdnurl | append: image_filename }}" alt="{{ include.alt }}" type="image/webp">
-    <img class="db ml-auto mr-auto" data-src="{{ site.cdnurl}}/{{ include.src | absolute_url }}" alt="{{ include.alt }}">
+    <img class="db ml-auto mr-auto" data-src="{{ site.cdnurl | append: include.src }}" alt="{{ include.alt }}">
 </picture>
 {% else %}
 <picture>
     <source srcset="{{ cdnurl | append: image_filename }}" type="image/webp">
-    <img class="db ml-auto mr-auto"  src="{{ site.cdnurl}}/{{ include.src | absolute_url }}" alt="{{ include.alt }}">
+    <img class="db ml-auto mr-auto"  src="{{ site.cdnurl | append: include.src }}" alt="{{ include.alt }}">
 </picture>
 {% endif %}
