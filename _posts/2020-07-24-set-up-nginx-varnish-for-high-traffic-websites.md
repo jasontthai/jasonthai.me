@@ -93,8 +93,8 @@ server {
 
 server {
     listen 8080;
-    listen [::]:8080
-    server_name your-website.com
+    listen [::]:8080;
+    server_name your-website.com;
     root /var/www/website;
     index index.html index.htm index.php
 }
