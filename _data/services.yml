@@ -4,7 +4,7 @@
   icon: /assets/img/services/passwordmanager.png
   id: 785563184
 
-- name: CodiMD
+- name: HedgeDoc
   description: Realtime collaborative markdown notes on all platforms. <br> <br>
   url: https://md.jasonthai.me
   icon: /assets/img/services/markdown.png
@@ -26,11 +26,11 @@
 #   url: https://git.jasonthai.me
 #   icon: /assets/img/services/gitea.png
 
-- name: Nextcloud
-  description: The self-hosted productivity platform that keeps you in control. Data is encrypted. Contact me for a free 4GB space.
-  url: https://cloud.jasonthai.me
-  icon: /assets/img/services/cloud.png
-  id: 785563189
+#- name: Nextcloud
+#  description: The self-hosted productivity platform that keeps you in control. Data is encrypted. Contact me for a free 4GB space.
+#  url: https://cloud.jasonthai.me
+#  icon: /assets/img/services/cloud.png
+#  id: 785563189
 
 - name: PrivateBin
   description: PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. <br>
