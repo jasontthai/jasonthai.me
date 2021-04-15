@@ -19,3 +19,5 @@ gem 'jekyll-titles-from-headings'
 gem 'html-proofer'
 gem 'jekyll-toc'
 gem 'jekyll-webp'
+
+gem "jekyll", "~> 4.2"

@@ -172,6 +172,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer
+  jekyll (~> 4.2)
   jekyll-admin
   jekyll-avatar
   jekyll-coffeescript
