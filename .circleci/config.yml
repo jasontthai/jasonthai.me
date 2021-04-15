@@ -19,7 +19,7 @@ jobs:
             - v2-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
             - v2-gem-cache-{{ arch }}-{{ .Branch }}-
             - v2-gem-cache-{{ arch }}-
-      - run: bundle install --path=vendor/bundle && bundle clean
+      - run: bundle config set --local path 'vendor/bundle' && bundle install && bundle clean
       - save_cache:
           paths:
             - vendor/bundle
