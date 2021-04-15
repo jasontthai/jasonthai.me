@@ -8,7 +8,7 @@ jobs:
           USER_EMAIL: thaixtri@gmail.com
     steps:
       - checkout
-      - run: sudo apt install rsync -y
+      - run: sudo apt install rsync npm -y
       - run:
           name: install dependencies
           command: |
