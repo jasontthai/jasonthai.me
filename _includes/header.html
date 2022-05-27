@@ -1,23 +1,26 @@
-<header class="avenir">
+<header>
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+  {%- if titles_size > 0 -%}
+  <nav class="flex flex-col items-center 
+          sm:flex-row sm:justify-between sm:px-16 
+          border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
+    <a class="flex flex-row items-center py-2 text-2xl 
+            text-red-800 visited:text-red-800 dark:text-red-400 dark:visited:text-red-400" href="/" title="Home">
+      <img src="/favicon.png" class="pr-2" alt="Site Name"> Jason's Notes
+    </a>
 
-    {%- if titles_size > 0 -%}
-      <nav class="db bb b--light-silver dt-l w-100 border-box pa3 ph5-l">
-        <a class="db dtc-l v-mid mid-gray link underline-hover w-100 w-25-l tc tl-l mb2 mb0-l f3-l" href="/" title="Home">
-          <img src="/favicon.png" class="v-mid w2 h2 br-100" alt="Site Name"> Jason's Notes
-        </a>
-
-        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title and my_page.autogen == nil -%}
-            <a class="link underline-hover dark-gray f6 f5-l dib mr3 mr4-l" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-      </nav>
-    {%- endif -%}
+    <div class="py-2 flex flex-col sm:flex-row">
+      {%- for path in page_paths -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
+      {%- if my_page.title and my_page.autogen == nil -%}
+      <a class="px-4 " href="{{ my_page.url | relative_url }}">{{ my_page.title |
+        escape }}</a>
+      {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </nav>
+  {%- endif -%}
 </header>

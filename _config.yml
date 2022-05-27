@@ -45,8 +45,6 @@ rss: Feed
 show_excerpts: true
 excerpt_separator: <!--more-->
 
-ads_enable: false
-
 permalink: /blog/:year/:month/:day/:title/
 
 defaults:

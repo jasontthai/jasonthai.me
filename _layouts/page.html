@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<section class="center avenir w-90 lh-copy">
+<section class="prose prose-stone prose-sm md:prose-lg lg:prose-xl
+    dark:prose-invert w-full sm:w-2/3 max-w-none px-4 
+    prose-a:text-red-800 dark:prose-a:text-red-400 hover:prose-a:text-black dark:hover:prose-a:text-white">
     {%- if page.title -%}
-    <h1 class="baskerville fw1 ph0-l">{{ page.title }}</h1>
+    <h1 class="my-5 text-4xl">{{ page.title }}</h1>
     {%- endif -%}
-    {{ content }}
+    <article>
+        {{ content }}
+    </article>
 </section>
