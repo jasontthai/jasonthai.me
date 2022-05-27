@@ -17,8 +17,8 @@ Steps to enable offline support:
 * Enable service worker
 * Create sw.js with
 ```javascript
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
-workbox.precaching.precacheAndRoute([]);
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js');
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
 ```
 * Install workbox-cli with `npm install workbox-cli --global`
 * Follow workbox wizard `workbox wizard --injectManifest`
@@ -55,8 +55,8 @@ Install by using npm:
 ### Setup service worker
 In `sw.js` specify the following boilerplate code:
 ```javascript
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
-workbox.precaching.precacheAndRoute([]) 
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js');
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
 ```
 Notice we have not specified anything yet to precache. This serves as an injection point for workbox to compute and inject all the routes to be cached. 
 
@@ -84,7 +84,7 @@ workbox.routing.registerRoute(
   new workbox.strategies.CacheFirst({
     cacheName: 'images',
     plugins: [
-      new workbox.expiration.Plugin({
+      new workbox.expiration.ExpirationPlugin({
         maxEntries: 60,
         maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
       }),
@@ -139,3 +139,6 @@ It is quite simple, just added two extra steps to install workbox-cli and run th
 ## Considerations
 * Using the workbox-cli, we can cache everything on the site. However, this will not work if the website contains thousands of posts and images as everything will be downloaded to the browser cache.
 * Using the workbox-cli, we can only set service workers to cache our website's assets. It will not handle caching other website's sites. This is important because we probably use things like external fonts, javascripts, css files, etc. So we need to manually add that support to our service workers.
+
+## Footnotes:
+* 05-27-2022: Update to the latest workbox version
