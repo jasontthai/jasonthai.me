@@ -6,6 +6,8 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
+import { precacheAndRoute } from 'workbox-precaching';
+
 precacheAndRoute(self.__WB_MANIFEST);
 
 // Caching Images
