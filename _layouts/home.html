@@ -7,32 +7,33 @@ layout: default
 {% endif %}
 {% assign cdnurl = site.baseurl %}
 {% if jekyll.environment == "production" %}
-   {% assign cdnurl = site.cdnurl %}
+{% assign cdnurl = site.cdnurl %}
 {% endif %}
-<section class="center avenir w-90 lh-copy">
+<section class="px-4 sm:w-2/3 justify-center">
     {%- if page.title -%}
-    <h1 class="baskerville fw1 ph0-l">{{ page.title }}</h1>
+    <h1 class="my-5 text-4xl">{{ page.title }}</h1>
     {%- endif -%}
     {{ content }}
 
     {%- for post in posts -%}
-    <article class="bt bb b--black-10">
-        <a class="db pv4 no-underline black dim" href="{{ post.url | relative_url }}">
-            <div class="flex flex-column flex-row-ns">
-                <picture class="pr3-ns mb4 mb0-ns w-100 w-40-ns db-ns dn">
+    <article class="py-8 border-b-2 border-gray-700 dark:border-gray-300">
+        <a class="transition-opacity ease-in duration-150 hover:opacity-60 hover:no-underline"
+            href="{{ post.url | relative_url }}">
+            <div class="flex flex-col sm:flex-row">
+                <picture class="hidden sm:block w-2/5 max-w-sm mr-20">
                     {% if post.image %}
-                    {% assign image_filename_and_ext = post.image | split:"."  %}
+                    {% assign image_filename_and_ext = post.image | split:"." %}
                     {% assign image_filename = image_filename_and_ext[0] | append: ".webp" %}
-                    <source data-srcset="{{ cdnurl | append: image_filename }}" type="image/webp">
-                    <img class="lazyload"  data-src="{{ cdnurl | append: post.image }}" alt="">
+                    <!-- <source data-srcset="{{ cdnurl | append: image_filename }}" type="image/webp"> -->
+                    <img class="lazyload" data-src="{{ cdnurl | append: post.image}}" alt="">
                     {% endif %}
                 </picture>
-                <div class="w-100 pl3-ns">
-                    <h1 class="f3 fw1 baskerville mt0 lh-title">{{ post.title }}</h1>
-                    <p class="f6 f5-l lh-copy">
+                <div class="sm:w-3/5">
+                    <h1 class="text-2xl font-light">{{ post.title }}</h1>
+                    <p class="mt-4 mb-2">
                         {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
                     </p>
-                    <time class="f6 lh-copy">
+                    <time>
                         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                         {{ post.date | date: date_format }}
                     </time>
@@ -42,20 +43,22 @@ layout: default
     </article>
     {% endfor %}
     {% if paginator.total_pages > 1 %}
-    <div class="flex items-center justify-center pa4">
+    <div class="flex items-center justify-center px-4 my-10">
         {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4">
-            <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
+        <a href="{{ paginator.previous_page_path }}"
+            class="text-black dark:bg-white hover:bg-black hover:text-white border-2 inline-flex hover:no-underline p-3 mx-3 border-gray-700 dark:border-gray-300">
+            <svg class="w-4" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
                 <title>chevronLeft icon</title>
                 <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
             </svg>
-            <span class="pl1">Previous</span>
+            <span class="pl-1">Previous</span>
         </a>
         {% endif %}
         {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box">
-            <span class="pr1">Next</span>
-            <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+        <a href="{{ paginator.next_page_path }}"
+            class="text-black dark:bg-white hover:bg-black hover:text-white border-2 inline-flex hover:no-underline p-3 mx-3 border-gray-700 dark:border-gray-300">
+            <span class="pr-1">Next</span>
+            <svg class="w-4" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
                 <title>chevronRight icon</title>
                 <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
             </svg>

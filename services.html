@@ -3,62 +3,37 @@ layout: page
 title: Services
 description: Free services that I hosted
 ---
-A set of services that I am currently hosting. You can check the status of all services at <a href="https://status.jasonthai.me">https://status.jasonthai.me</a>
-<style type="text/css">
-.blink_green {
-  animation: blinker_green 1.2s infinite;
-}
-.blink_red {
-    animation: blinker_red 1.2s infinite;
-}
+A set of services that I am currently hosting. You can check the status of all services at <a
+    class="text-red-800 visited:text-red-800 dark:text-red-400 dark:visited:text-red-400"
+    href="https://status.jasonthai.me">https://status.jasonthai.me</a>
 
-@keyframes blinker_green {  
-  0%{     color: green;    }
-  49%{    color: green; }
-  60%{    color: transparent; }
-  99%{    color: transparent;  }
-  100%{   color: green;    }
-}
-@keyframes blinker_red {  
-  0%{     color: darkred;    }
-  49%{    color: darkred; }
-  60%{    color: transparent; }
-  99%{    color: transparent;  }
-  100%{   color: darkred;    }
-}
-</style>
-<div>
-    <div class="flex flex-wrap">
-        {% for service in site.data.services %}
-        <article class="dib v-bottom w-30-ns bg-white br3 pa3 pa4-ns mv3 ba b--black-10 mr1 mr3-l">
-            <div class="tc">
-                <img class="h3 w3 dib" src="{{ service.icon }}" title="{{ service.name }}">
-                    <h1 class="f4">
-                        <a href="{{ service.url }}">{{ service.name }}</a>
-                    </h1>
-                    <span id="{{ service.id }}" class="blink_me"></span>
-                    <hr class="mw3 bb bw1 b--black-10">
-                    </hr>
-                </img>
-            </div>
-            <p class="lh-copy measure center f6 black-70">
-                {{ service.description }}
-            </p>
-        </article>
-        {% endfor %}
-    </div>
+<div class="not-prose grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
+    {% for service in site.data.services %}
+    <article class="relative flex flex-col items-center border-2 p-8 border-black dark:bg-white">
+        <img class="h-16 w-16" src="{{ service.icon }}" title="{{ service.name }}">
+        <h1 class="text-xl my-2">
+            <a class="text-red-800 visited:text-red-800 dark:hover:text-black" href="{{ service.url }}">{{ service.name }}</a>
+        </h1>
+        <span id="{{ service.id }}" class="absolute top-2 right-2"></span>
+        </img>
+        <p class="text-black">
+            {{ service.description }}
+        </p>
+    </article>
+    {% endfor %}
+</div>
 </div>
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
     function getStatus() {
         $.post("https://api.uptimerobot.com/v2/getMonitors", {
             "api_key": "ur976816-df4af47e846c916b83909b69"
-        }, function(result) {
+        }, function (result) {
             for (var i = 0; i < result.monitors.length; i++) {
                 if (result.monitors[i].status == 2) {
-                    $('#' + result.monitors[i].id).attr('class', "blink_green").html('Online');
+                    $('#' + result.monitors[i].id).addClass("text-green-700").html('Online');
                 } else if (result.monitors[i].status == 8 || result.monitors[i].status == 9) {
-                    $('#' + result.monitors[i].id).attr('class', "blink_red").html('Offline');
+                    $('#' + result.monitors[i].id).addClass("text-red-700").html('Offline');
                 }
             }
         });
