@@ -1,12 +1,14 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js');
 
+import {precacheAndRoute} from 'workbox-precaching';
+
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-workbox.precaching.precacheAndRoute([]);
+precacheAndRoute(self.__WB_MANIFEST);
 
 // Caching Images
 workbox.routing.registerRoute(
