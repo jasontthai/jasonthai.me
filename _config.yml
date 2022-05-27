@@ -89,10 +89,6 @@ plugins:
   - jekyll-toc
   - jekyll-webp
 
-# sidebar_home_link: true
-
-# google_analytics: UA-120912817-1
-
 ############################################################
 # Site configuration for the WebP Generator Plugin
 # The values here represent the defaults if nothing is set
