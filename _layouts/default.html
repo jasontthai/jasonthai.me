@@ -4,33 +4,23 @@ layout: compress
 
 <!DOCTYPE html>
 
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body class="flex flex-column vh-100">
+<body class="dark:bg-stone-800 flex flex-col min-h-screen dark:text-white">
 
-    {%- include header.html -%}
+  {%- include header.html -%}
 
-    <main class="db h-auto w-100 ph5-l flex-grow-1" aria-label="Content">
-      {% if page.sidebar != false %}
-        {% include sidebar.html %}
-        <div class="db fl-l w-70-l">
-          {{ content }}
-        </div>
-      {% else %}
-      <div class="db fl-l w-100">
-        {{ content }}
-      </div>
-      {% endif %}
-    </main>
+  <main class="flex justify-center mt-8 flex-grow" aria-label="Content">
+    {{ content }}
+  </main>
 
-    <footer class="avenir mid-gray flex-shrink-0">
-      <div class="db w-100 h-auto fl mt3 pv4 bt b--light-silver">
-        <small class="f6 db tc"><b class="ttu">{{ site.title | escape }}</b> © 2019 - {{ site.time | date: '%Y' }}</small>
-      </div>
-    </footer>
+  <footer
+    class="justify-center border-t-2 border-gray-700 dark:border-gray-300 flex flex-row py-5 flex-shrink-0">
+    <span>{{ site.title | escape }}</b> © 2019 - {{ site.time | date: '%Y' }}</span>
+  </footer>
 
-  </body>
+</body>
 
 </html>
