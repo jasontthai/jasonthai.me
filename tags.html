@@ -6,17 +6,19 @@ description: tags page
 
 <!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
 <!-- With added pipe to handle lack of sort_natural -->
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}|{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}|{{ tag | first }}{% unless forloop.last
+%},{% endunless %}{% endfor %}{% endcapture %}
 <!-- site_tags: {{ site_tags }} -->
 {% assign tag_words = site_tags | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
 
 <div>
-    <div class="flex-auto">
+    <div class="flex-auto not-prose">
         {% for tag_pair in tag_words %}
         {% assign tag = tag_pair | split:'|' | last %}
-        <a href="#{{ tag | slugify }}" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa2 ba border-box">
-            <span class="pl1">{{ tag | capitalize }} {{ site.tags[tag] | size }}</span>
+        <a href="#{{ tag | slugify }}"
+            class=" text-black dark:text-white hover:dark:text-black hover:text-white bg-white dark:bg-black hover:bg-black dark:hover:bg-white border-2 inline-flex hover:no-underline p-3 mx-3 border-gray-700 dark:border-gray-300">
+            {{ tag | capitalize }} {{ site.tags[tag] | size }}
         </a>
         {% endfor %}
     </div>

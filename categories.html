@@ -6,17 +6,19 @@ description: categories page
 
 <!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
 <!-- With added pipe to handle lack of sort_natural -->
-{% capture site_categories %}{% for category in site.categories %}{{ category | first | downcase }}|{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% capture site_categories %}{% for category in site.categories %}{{ category | first | downcase }}|{{ category | first
+}}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 <!-- site_tags: {{ site_tags }} -->
 {% assign category_words = site_categories | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
 
 <div>
-  <div class="flex-auto">
+  <div class="flex-auto not-prose">
     {% for category_pair in category_words %}
     {% assign category = category_pair | split:'|' | last %}
-    <a href="#{{ category | slugify }}" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa2 ba border-box">
-      <span class="pl1">{{ category | capitalize }} {{ site.categories[category] | size }}</span>
+    <a href="#{{ category | slugify }}"
+      class=" text-black dark:text-white hover:dark:text-black hover:text-white bg-white dark:bg-black hover:bg-black dark:hover:bg-white border-2 inline-flex hover:no-underline p-3 mx-3 border-gray-700 dark:border-gray-300">
+      {{ category | capitalize }} {{ site.categories[category] | size }}
     </a>
     {% endfor %}
   </div>
@@ -27,14 +29,14 @@ description: categories page
       <h2>{{ category | capitalize }}</h2>
       <ul class="posts-list">
         {% for post in site.categories[category] %}
-          <li>
-            <!-- <h3> -->
-              <a href="{{ site.baseurl }}{{ post.url }}">
-                {{ post.title }}
-              </a>
-                <small>{{ post.date | date_to_string }}</small>
-            <!-- </h3> -->
-          </li>
+        <li>
+          <!-- <h3> -->
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+          <small>{{ post.date | date_to_string }}</small>
+          <!-- </h3> -->
+        </li>
         {% endfor %}
       </ul>
     </div>
