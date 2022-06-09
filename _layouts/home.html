@@ -11,7 +11,7 @@ layout: default
 {% endif %}
 <section class="px-4 sm:w-2/3 justify-center">
     {%- if page.title -%}
-    <h1 class="my-5 text-4xl">{{ page.title }}</h1>
+    <h1 class="my-5 text-4xl text-orange-400">{{ page.title }}</h1>
     {%- endif -%}
     {{ content }}
 
@@ -29,7 +29,7 @@ layout: default
                     {% endif %}
                 </picture>
                 <div class="sm:w-3/5">
-                    <h1 class="text-2xl font-light">{{ post.title }}</h1>
+                    <h1 class="text-2xl font-light text-red-800 dark:text-blue-200">{{ post.title }}</h1>
                     <p class="mt-4 mb-2">
                         {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
                     </p>
