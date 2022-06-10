@@ -1228,6 +1228,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
+.w-10{
+  width: 2.5rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
