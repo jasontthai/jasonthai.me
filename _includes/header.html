@@ -1,27 +1,142 @@
+<style>
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    /* background-color: #fff; */
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  #menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  @media (max-width: 640px) {
+    .menu-button-container {
+      display: flex;
+    }
+
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 58px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      z-index: 1;
+      /* color: #ffffff; */
+      /* background-color: #222; */
+    }
+
+    .menu>li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+</style>
 <header>
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
   {%- if titles_size > 0 -%}
-  <nav class="flex flex-col items-center 
-          sm:flex-row sm:justify-between sm:px-16 
-          border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
+  <section class="px-4 flex items-center flex-row justify-between sm:px-16
+      border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
     <a class="flex flex-row items-center py-2 text-2xl 
-            text-red-800 dark:text-blue-200 underline hover:text-black dark:hover:text-white" href="/" title="Home">
+      text-red-800 dark:text-blue-200 underline hover:text-black dark:hover:text-white" href="/" title="Home">
       <img class="w-10" src="/favicon.png" class="pr-2" alt="Site Name"> Jason's Notes
     </a>
-
-    <div class="py-2 flex flex-col sm:flex-row">
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button before:bg-orange-400 after:bg-orange-400 bg-orange-400 '></div>
+    </label>
+    <ul class="menu">
       {%- for path in page_paths -%}
       {%- assign my_page = site.pages | where: "path", path | first -%}
       {%- if my_page.title and my_page.autogen == nil -%}
-      <a class="px-4 text-red-800 dark:text-blue-200 underline hover:text-black dark:hover:text-white"
-        href="{{ my_page.url | relative_url }}">{{ my_page.title |
-        escape }}</a>
+      <li class="sm:bg-transparent bg-white dark:bg-black">
+        <a class="px-4 text-red-800 dark:text-blue-200 underline hover:text-black dark:hover:text-white"
+          href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}
+        </a>
+      </li>
       {%- endif -%}
       {%- endfor -%}
-    </div>
-  </nav>
+    </ul>
+  </section>
   {%- endif -%}
 </header>
