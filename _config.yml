@@ -132,3 +132,4 @@ exclude:
   - yarn.lock
   - vendor
   - node_modules/*
+  - tailwind.config.js
