@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-gem "minima"
+gem 'jekyll-feed'
+gem 'jekyll-last-modified-at'
 gem 'jekyll-gist'
 gem 'jekyll-compose', group: :jekyll_plugins
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
-gem 'jekyll-avatar'
 gem 'jekyll-redirect-from'
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-paginate-v2'

@@ -2,9 +2,7 @@
 markdown: kramdown
 highlighter: rouge
 
-# remote_theme: fongandrew/hydeout
 repository: jasontthai/jasonthai.me-source
-theme: minima
 email: '&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;'
 title: Jason's Notes
 description: Jason Thai's personal page
@@ -76,7 +74,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-avatar
   - jekyll-redirect-from
   - jekyll-admin
   - jekyll-coffeescript
@@ -88,6 +85,7 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-toc
   - jekyll-webp
+  - jekyll-last-modified-at
 
 ############################################################
 # Site configuration for the WebP Generator Plugin
