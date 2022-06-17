@@ -1,20 +1,27 @@
 ---
 layout: default
 ---
-<article class="prose prose-gray prose-sm
-dark:prose-invert w-full sm:w-2/3 max-w-none px-4 
-prose-a:text-red-800 dark:prose-a:text-blue-200 hover:prose-a:text-black dark:hover:prose-a:text-white
-prose-h1:text-orange-400">
-  <header class="flex flex-col items-center">
+<article class="prose prose-gray dark:prose-invert w-full max-w-none px-4 
+  prose-a:text-red-800 dark:prose-a:text-blue-200 hover:prose-a:text-black dark:hover:prose-a:text-white
+  prose-h1:text-orange-400">
+  <header class="">
     <h1>{{ page.title | escape }}</h1>
-    <time class="tc f5 f4-l db">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {{ page.date | date: date_format }}
-    </time>
-    <p class="tc f5 mb4 center lh-copy">
-      {{ page.author | default: site.author.name | escape }}
-    </p>
+    <div class="flex">
+      <span class="pr-2">Published:</span>
+      <time class="">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+      <span class="px-2">|</span>
+      <span class="pr-2">Last Edited:</span>
+      <time class="">
+        {{ page.last_modified_at | date: "%b %-d, %Y" }}
+      </time>
+    </div>
+    <span>
+      Author: {{ page.author | default: site.author.name | escape }}
+    </span>
   </header>
+
   <div class="">
     <div class="db f5 lh-copy">
       {{ content | toc }}
