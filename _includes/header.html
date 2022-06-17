@@ -4,12 +4,11 @@
     flex-direction: row;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.5rem 0;
   }
 
   .menu>li {
     margin: 0 1rem;
-    overflow: hidden;
   }
 
   .menu-button-container {
@@ -84,6 +83,7 @@
       padding: 0;
       border: 0;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      overflow: hidden;
     }
 
     #menu-toggle:checked~.menu li {
@@ -115,11 +115,16 @@
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
   {%- if titles_size > 0 -%}
-  <section class="px-4 flex items-center flex-row justify-between sm:px-16
+  <section class="px-4 flex items-center sm:flex-col justify-between sm:px-16
       border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
     <a class="flex flex-row items-center py-2 text-2xl 
-      text-red-800 dark:text-blue-200 underline hover:text-black dark:hover:text-white" href="/" title="Home">
-      <img class="w-10" src="/favicon.png" class="pr-2" alt="Site Name"> Jason's Notes
+      {% if page.url == '/index.html' %} 
+      text-orange-400 
+      {% else %} 
+        text-red-800 dark:text-blue-200 
+      {% endif %}
+      underline hover:text-black dark:hover:text-white" href="/" title="Home">
+      <img class="w-10 mx-2" src="/favicon.png" class="pr-2" alt="Site Name"><p>{{ site.title }}</p>
     </a>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
@@ -130,8 +135,12 @@
       {%- assign my_page = site.pages | where: "path", path | first -%}
       {%- if my_page.title and my_page.autogen == nil -%}
       <li class="sm:bg-transparent bg-white dark:bg-black">
-        <a class="px-4 text-red-800 dark:text-blue-200 underline hover:text-black dark:hover:text-white"
-          href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}
+        <a class="px-4 underline hover:text-black dark:hover:text-white 
+            {% if page.url == my_page.url %} 
+              text-orange-400 
+            {% else %} 
+              text-red-800 dark:text-blue-200 
+            {% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}
         </a>
       </li>
       {%- endif -%}
