@@ -5,7 +5,7 @@ image: /assets/img/the-month-july.jpg
 category: blog
 ---
 
-{% include lazy-img.html src="/assets/img/the-month-july.jpg" alt="July" %}
+![July](/assets/img/the-month-july.jpg)
 
 First post of what I am hoping will be a series. Here I will update what has been happening with me in the month.
 

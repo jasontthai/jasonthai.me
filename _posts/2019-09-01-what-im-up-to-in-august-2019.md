@@ -5,7 +5,7 @@ image: "/assets/img/month-of-august.jpg"
 description: Summary of what's been happening in August 2019
 ---
 
-{% include lazy-img.html src="/assets/img/month-of-august.jpg" alt="August" %}
+![August](/assets/img/month-of-august.jpg)
 
 This month has been busy. I have been learning more about self-hosting software and doing some tinkering with them.
 

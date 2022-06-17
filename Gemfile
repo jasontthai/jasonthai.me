@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'jekyll-loading-lazy'
 gem 'jekyll-feed'
 gem 'jekyll-last-modified-at'
 gem 'jekyll-gist'
@@ -10,7 +11,6 @@ gem 'jekyll-redirect-from'
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-paginate-v2'
 gem 'jekyll-coffeescript'
-gem 'jekyll-github-metadata'
 gem 'jekyll-relative-links'
 gem 'jekyll-optional-front-matter'
 gem 'jekyll-readme-index'

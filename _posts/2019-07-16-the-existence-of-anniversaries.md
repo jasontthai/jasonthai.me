@@ -5,7 +5,7 @@ category: blog
 description: A note about anniversaries.
 ---
 
-{% include lazy-img.html src="/assets/img/3years.jpg" alt="3 year anniversary" %}
+![3 Year Anniversary](/assets/img/3years.jpg)
 
 Definition of **anniversary** from [Merriam-Webster](https://www.merriam-webster.com/dictionary/anniversary):
 > 1: The annual recurrence of a date marking a notable event

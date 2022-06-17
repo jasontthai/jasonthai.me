@@ -6,7 +6,7 @@ toc: true
 description: A note of how to achieve high score on PageSpeed Insights
 ---
 
-{% include lazy-img.html src="/assets/img/pagespeed-full.png" alt="PageSpeed Insights" %}
+![PageSpeed Insights](/assets/img/pagespeed-full.png)
 
 ## Introduction
 

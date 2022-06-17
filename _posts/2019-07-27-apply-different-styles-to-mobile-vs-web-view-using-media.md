@@ -13,13 +13,12 @@ First let's examine how it looks on web vs mobile:
 ## Web View:
 This view is designed to be viewed on devices with larger screen like laptops or desktops and it includes more information such as the cover image and description of the post.
 
-{% include lazy-img.html src="/assets/img/jasonthai-web-view.png" at="web view" %}
- 
+![Webview](/assets/img/jasonthai-web-view.png)
 
 ## Mobile View:
 The view on mobile is optimized a lot more for information browsing. The image and description are eliminated in favor of more number of articles in the view. This makes viewing on mobile devices faster too since the browser does not have to load any images.
 
-{% include lazy-img.html src="/assets/img/jasonthai-mobile-view.png" at="mobile view" %}
+![Mobileview](/assets/img/jasonthai-mobile-view.png)
 
 ## How to: using @media
 Using `@media` query, we can define specific css behavior depending on certain width or height of the screen. You can learn more about it [here](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)

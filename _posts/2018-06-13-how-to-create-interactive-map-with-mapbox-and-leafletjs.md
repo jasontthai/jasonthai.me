@@ -6,7 +6,7 @@ image: /assets/img/visited-map.png
 description: This post provides an overview how to create an interactive map with Mapbox and Leafletjs.
 ---
 
-{% include lazy-img.html src="/assets/img/visited-map.png" alt="Visted Places" %}
+![Footprints](/assets/img/visited-map.png)
 
 Recently I created [<u>an interactive map page of all the places that I visited</u>]({{ "/visited-places" | absolute_url }}).
 This post provides an overview of how to create such interactive map.

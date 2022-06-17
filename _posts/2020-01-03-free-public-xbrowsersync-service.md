@@ -11,7 +11,7 @@ Before using xBrowserSync, I do not have a good way of consolidating all my book
 
 After you have downloaded the [extension for your browser](https://www.xbrowsersync.org/#download), you can either use the default provided xbrowsersync service or you can update to my service in the setting:
 
-{% include lazy-img.html src="/assets/img/xbrowsersync-setting.jpeg" alt="xbrowsersync setting" %}
+![xbrowsersync setting](/assets/img/xbrowsersync-setting.jpeg)
 
 From [https://xbrowsersync.org](https://xbrowsersync.org):
 
