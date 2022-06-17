@@ -24,8 +24,8 @@ layout: default
                     {% if post.image %}
                     {% assign image_filename_and_ext = post.image | split:"." %}
                     {% assign image_filename = image_filename_and_ext[0] | append: ".webp" %}
-                    <source data-srcset="{{ cdnurl | append: image_filename }}" type="image/webp">
-                    <img data-src="{{ cdnurl | append: post.image}}" alt="">
+                    <source srcset="{{ cdnurl | append: image_filename }}" type="image/webp">
+                    <img src="{{ cdnurl | append: post.image}}" alt="" loading="lazy">
                     {% endif %}
                 </picture>
                 <div class="sm:w-3/5">
