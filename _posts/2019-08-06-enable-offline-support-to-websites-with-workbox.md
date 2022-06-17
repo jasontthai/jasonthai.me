@@ -7,7 +7,7 @@ toc: true
 image: "/assets/img/workbox.png"
 ---
 
-{% include lazy-img.html src="/assets/img/workbox.png" alt="workbox" %}
+![Workbox](/assets/img/workbox.png)
 
 Recently I have added offline support for this blog using [Workbox](https://developers.google.com/web/tools/workbox/). You can test this by going offline and then browsing my blog. This note gives a walkthrough of how I did it and summarizes my findings.
 <!--more-->

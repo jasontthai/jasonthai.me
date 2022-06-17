@@ -9,7 +9,7 @@ toc: true
 ### Update 08/16/2019
 This post is outdated as this blog has been through a few iterations of design. Hopefully I will write another blog that covers what has changed. In the meantime you can read to get some context about my blog's old design.
 
-{% include lazy-img.html src="/assets/img/jekyll.png" alt="Jekyll" %}
+![Jekyll](/assets/img/jekyll.png)
 
 The stock theme that I am currently using is from [https://github.com/jekyll/minima](https://github.com/jekyll/minima). I like it for its cleanliness and simplicty as the name implies.
 

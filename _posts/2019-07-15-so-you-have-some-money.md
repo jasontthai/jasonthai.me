@@ -6,7 +6,7 @@ category: finance
 description: A letter to my wife and sister about money.
 ---
 
-{% include lazy-img.html src="/assets/img/money-matters-1173105.jpg" alt="so you have money" %}
+![So You Have Some Money](/assets/img/money-matters-1173105.jpg)
 
 To San and Vy,
 

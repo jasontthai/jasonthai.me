@@ -6,7 +6,7 @@ image: /assets/img/accounting-black-budget.jpg
 description: A list of my recommended financial tools.
 ---
 
-{% include lazy-img.html src="/assets/img/accounting-black-budget.jpg" alt="budgeting" %}
+![Budgeting](/assets/img/accounting-black-budget.jpg)
 
 Here is a list of my recommended financial tools that will enhance your experience of managing your finance:
 <!--more-->

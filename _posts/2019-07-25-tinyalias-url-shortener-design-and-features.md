@@ -115,27 +115,27 @@ After I wrote some of my thoughts about my URL shortener service TinayAlias and 
 <!-- Full-width images with number and caption text -->
 <div class="mySlides fade">
 <div class="numbertextImg">1 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-authentication.png" alt="TinyAlias Authentication" %}
+![TinyAlias Authentication](/assets/img/tinyalias-authentication.png)
 </div>
 
 <div class="mySlides fade">
 <div class="numbertextImg">2 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-password.png" alt="TinyAlias Password" %}
+![TinyAlias Password](/assets/img/tinyalias-password.png)
 </div>
 
 <div class="mySlides fade">
 <div class="numbertextImg">3 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-analytics.png" alt="TinyAlias Analytics" %}
+![TinyAlias Analytics](/assets/img/tinyalias-analytics.png)
 </div>
 
 <div class="mySlides fade">
 <div class="numbertextImg">4 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-mindful.png" alt="TinyAlias Mindful" %}
+![TinyAlias Mindful](/assets/img/tinyalias-mindful.png)
 </div>
 
 <div class="mySlides fade">
 <div class="numbertextImg">5 / 5</div>
-{% include lazy-img.html src="/assets/img/tinyalias-news.png" alt="TinyAlias News" %}
+![TinyAlias News](/assets/img/tinyalias-news.png)
 </div>
 
 <!-- Next and previous buttons -->
@@ -155,7 +155,7 @@ After I wrote some of my thoughts about my URL shortener service TinayAlias and 
 
 ## Design
 
-{% include lazy-img.html src="/assets/img/tinyalias-diagram.png" alt="TinyAlias Design" %}
+![TinyAlias Design](/assets/img/tinyalias-diagram.png)
 
 ### Workflow
 

@@ -6,7 +6,7 @@ category: tech
 toc: true
 ---
 
-{% include lazy-img.html src="/assets/img/NginxVarnish.png" alt="Nginx + Varnish" %}
+![Nginx + Varnish](/assets/img/NginxVarnish.png)
 # Introduction
 >nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server
 >[https://nginx.org](https://nginx.org)
@@ -153,10 +153,10 @@ It shows the website is being returned by Varnish cache.
 The result of a load test with 2000 concurrent users on [https://jasonthai.me](https://jasonthai.me) can be found at [https://bit.ly/3jyxAeq](https://bit.ly/3jyxAeq)
 
 Result of 1000 concurrent clients:
-{% include lazy-img.html src="/assets/img/1000-concurrent.png" alt="1000 concurrent users" %}
+![1000 concurrent users](/assets/img/1000-concurrent.png)
 
 Result of 2000 concurrent clients:
-{% include lazy-img.html src="/assets/img/2000-concurrent.png" alt="2000 concurrent users" %}
+![2000 concurrent users](/assets/img/2000-concurrent.png)
 
 # What's Next?
 Varnish supports multiple configurations including cache purging, cache skipping and TTL for cached contents. More resources can be found on their website.

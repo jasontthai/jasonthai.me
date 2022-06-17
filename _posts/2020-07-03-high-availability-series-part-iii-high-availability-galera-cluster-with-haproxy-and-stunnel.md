@@ -9,7 +9,7 @@ category: tech
 ---
 
 # Introduction
-{% include lazy-img.html src="/assets/img/haproxy-galera.png" alt="HA Galera Cluster" %}
+![HA Galera Cluster](/assets/img/haproxy-galera.png)
 
 > HAProxy is a free, very fast and reliable solution offering high availability, load balancing, and proxying for TCP and HTTP-based applications. It is particularly suited for very high traffic web sites and powers quite a number of the world's most visited ones. Over the years it has become the de-facto standard opensource load balancer, is now shipped with most mainstream Linux distributions, and is often deployed by default in cloud platforms
 [https://www.haproxy.org](https://www.haproxy.org)
@@ -210,7 +210,7 @@ MariaDB [(none)]>
 If you noticed, we have configured a stats page for HAProxy on port 8404 in our config file. You can check out the stats page by going to `http://IP-of-HAProxy-node:8404`
 
 You will see something like this:
-{% include lazy-img.html src="/assets/img/haproxy-stats.png" alt="HAProxy Stats" %}
+![HAProxy Stats](/assets/img/haproxy-stats.png)
 
 # Conclusions
 We have configured a HAProxy node as a load balancer to our Galera cluster. Connection between HAProxy to the three nodes is secured by Stunnel. In the next post, we will go over setting up a full HA webservers that are powered by a HA Galera cluster.

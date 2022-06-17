@@ -77,7 +77,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-admin
   - jekyll-coffeescript
-  - jekyll-github-metadata
   - jekyll-relative-links
   - jekyll-optional-front-matter
   - jekyll-readme-index
@@ -86,6 +85,7 @@ plugins:
   - jekyll-toc
   - jekyll-webp
   - jekyll-last-modified-at
+  - jekyll-loading-lazy
 
 ############################################################
 # Site configuration for the WebP Generator Plugin

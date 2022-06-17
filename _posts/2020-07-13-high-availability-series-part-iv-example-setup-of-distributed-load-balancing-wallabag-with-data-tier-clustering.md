@@ -9,7 +9,7 @@ description: 'High Availability Series: Example Setup of Distributed Load Balanc
 category: tech
 ---
 
-{% include lazy-img.html src="/assets/img/ha-cluster.png" alt="HA Distributed Web Apps" %}
+![HA Distributed Web Apps](/assets/img/ha-cluster.png)
 
 # Introduction
 >Wallabag is a self hostable application for saving web pages: Save and classify articles. Read them later. Freely

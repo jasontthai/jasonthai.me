@@ -6,7 +6,7 @@ toc: true
 description: How to deploy to Github Pages Using CircirCI 2.0 and how to use Jekyll custom dependencies on Github Pages
 ---
 
-{% include lazy-img.html src="/assets/img/circleci-logo-1200x630.png" alt="CircleCi" %}
+![CircliCI](/assets/img/circleci-logo-1200x630.png)
 
 Since I have been playing with [Github Pages](https://pages.github.com/) to host my own website, I notice although there is a lot of automation out of the box to host the static website, Github only supports [a few jekyll dependencies](https://pages.github.com/versions/). This makes it restricting when you want to use a custom Jekyll gem or your own plugin. After doing a bit of research, I have figured out a way to also enable automatic deployment of your own site while also has the ability to use your own dependencies not supported yet by Github Pages. One of the ways is to use CircleCI for automatic build and deployment of your static site to your Github Pages repo.
 
@@ -96,8 +96,7 @@ Here we are telling CircleCI to checkout the **master** branch of the repo. For 
 
 After you have created these files, commit and push the changes to **source** branch. You will see a new build will start in CircleCI, which will execute all the steps mentioned above and put the new changes of your site on **master** branch. You may see something similar to this on CircleCI:
 
-{% include lazy-img.html src="/assets/img/circleci-build.png" alt="CircleCi Build" %}
-
+![CircleCI Build](/assets/img/circleci-build.png)
 
 Once it's done, your changes will be available for viewing.
 

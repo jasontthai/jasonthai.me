@@ -95,34 +95,33 @@ curl -sSL https://install.pi-hole.net | bash
 Follow the instruction to set up pi-hole:
 
 * Installing dependencies
-{% include lazy-img.html src="/assets/img/pihole-step-1.png" alt="step 1" %}
+![step 1](/assets/img/pihole-step-1.png)
 
 * Some instruction
-{% include lazy-img.html src="/assets/img/pihole-step-2.png" alt="step 2" %}
+![step 2](/assets/img/pihole-step-2.png)
 
 * Some information
-{% include lazy-img.html src="/assets/img/pihole-step-3.png" alt="step 3" %}
+![step 3](/assets/img/pihole-step-3.png)
 
-* This informs we need a **static IP address** in order the the whole thing to work
-{% include lazy-img.html src="/assets/img/pihole-step-4.png" alt="step 4" %}
+![step 4](/assets/img/pihole-step-4.png)
 
 * The following step is important, make sure to select `tun0` as the interface
-{% include lazy-img.html src="/assets/img/pihole-step-5.png" alt="step 5" %}
+![step 5](/assets/img/pihole-step-5.png)
 
 * Choose the DNS provider Pi-hole will use. This is interesting. Essentially we will set up pi-hole as a DNS OpenVPN server will use, and within Pi-hole it will use the DNS setting below to make outbound requests.
-{% include lazy-img.html src="/assets/img/pihole-step-6.png" alt="step 6" %}
+![step 6](/assets/img/pihole-step-6.png)
 
 * Choose the protocols available to you
-{% include lazy-img.html src="/assets/img/pihole-step-7.png" alt="step 7" %}
+![step 7](/assets/img/pihole-step-7.png)
 
 * This following step is important, make sure to choose `no` so we can assign our internal address which is `10.8.0.1`.
-{% include lazy-img.html src="/assets/img/pihole-step-8.png" alt="step 8" %}
+![step 8](/assets/img/pihole-step-8.png)
 
 * Enter `10.8.0.1/24`. This is the static address VPN will use to talk to Pi-hole
-{% include lazy-img.html src="/assets/img/pihole-step-9.png" alt="step 9" %}
+![step 9](/assets/img/pihole-step-9.png)
 
 * Enter the ipv4-gateway. I just leave this as is.
-{% include lazy-img.html src="/assets/img/pihole-step-10.png" alt="step 10" %}
+![step 10](/assets/img/pihole-step-10.png)
 
 * There are a few more steps but I just choose the default settings.
 
@@ -161,11 +160,11 @@ Run `./openvpn-install.sh`
 
 ### Test From Browser
 After connecting to your VPN using OpenVPN client. Go to this address [http://pagead2.googlesyndication.com](http://pagead2.googlesyndication.com), if everything works correctly you will see this:
-{% include lazy-img.html src="/assets/img/google-syndication.png" alt="google syndication" %}
+![google syndication](/assets/img/google-syndication.png)
 
 ### Pi-hole Statistics
 You can go to `http://pi.hole/admin` once you are connected to the VPN and see some of Pi-hole's stats. The result is mind-boggling. Almost half of my traffic is to serve ads.
-{% include lazy-img.html src="/assets/img/pi-hole-stats.png" alt="Pi-hole stats" %}
+![Pi-hole stats](/assets/img/pi-hole-stats.png)
 
 ## Conclusion
 Pi-hole is a good solution to fight against ads on the internet. You should give it a try. That said not all ads are bad. Some creators are reliant on ads as their source of income. If you have someone you support, consider whitelisting the ads for the good cause.

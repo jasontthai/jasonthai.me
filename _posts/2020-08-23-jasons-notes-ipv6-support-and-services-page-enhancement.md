@@ -11,4 +11,4 @@ Also,  service page now also returns the status. We can now see whether the serv
 
 Here is how it looks like. To view the page, navigate to [https://jasonthai.me/services/](https://jasonthai.me/services/)
 
-{% include lazy-img.html src="/assets/img/status.png" alt="Status" %}
+![Status](/assets/img/status.png)

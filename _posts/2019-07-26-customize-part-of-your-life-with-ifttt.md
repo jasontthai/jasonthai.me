@@ -5,7 +5,7 @@ toc: true
 image: "/assets/img/ifttt-featured.png"
 ---
 
-{% include lazy-img.html src="/assets/img/ifttt-featured.png" alt="IFTTT feature" %}
+![IFTTT feature](/assets/img/ifttt-featured.png)
 
 I have been using [IFTTT](https://ifttt.com) to automate a part of my life and I figure it is useful not just to me but to others as well. This post lists some of the useful applets I use to improve my day to day activities.
 <!--more-->

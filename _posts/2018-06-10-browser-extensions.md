@@ -6,7 +6,7 @@ image: "/assets/img/browser-2457113_1280.png"
 description: List of my recommended browser extensions
 ---
 
-{% include lazy-img.html src="/assets/img/browser-2457113_1280.png" alt="browsers" %}
+![browsers](/assets/img/browser-2457113_1280.png)
 
 Here is a list of my recommended browser extensions that will make your browsing experience safer:
 

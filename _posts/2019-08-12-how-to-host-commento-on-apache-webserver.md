@@ -7,7 +7,7 @@ toc: true
 image: "/assets/img/commento-logo.png"
 ---
 
-{% include lazy-img.html src="/assets/img/commento-logo.png" alt="Commento Logo" %}
+![Commento Logo](/assets/img/commento-logo.png)
 # Introduction
 I recently switched from using Disqus comment system to Commento. The reason is that I am in favor of a non-tracking and lightweight system which Commento satisfies. This note will go over the steps to host Commento using Apache webserver.
 
@@ -197,7 +197,7 @@ Include /etc/letsencrypt/options-ssl-apache.conf
 ```
 
 After setting everything up, you can go to the domain that you set up to access Commento. If it works, you'll be greeted with something like this:
-{% include lazy-img.html src="/assets/img/commento.png" alt="Commento" %}
+![Commento](/assets/img/commento.png)
 # Adding Commento to Your Site
 Put this to where you want the comments to show up:
 ```html

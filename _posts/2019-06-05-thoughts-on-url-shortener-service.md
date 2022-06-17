@@ -6,7 +6,7 @@ image: /assets/img/tinyalias.png
 description: My experience hosting a URL shortener service.
 ---
 
-{% include lazy-img.html src="/assets/img/tinyalias.png" alt="TinyAlias" %}
+![TinyAlias](/assets/img/tinyalias.png)
 
 TinyAlias is no longer in service but I am still hosting it on Heroku so you can try out its functionality. 
 

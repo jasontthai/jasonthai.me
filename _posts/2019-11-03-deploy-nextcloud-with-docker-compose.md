@@ -69,7 +69,7 @@ Run `docker-compose -f docker-compose.yml up -d` to start all necessary containe
 
 Browse to `http://localhost:8080` and you'll see a set up page like this:
 
-{% include lazy-img.html src="/assets/img/nextcloud-setup.png" alt="Setup" %}
+![Setup](/assets/img/nextcloud-setup.png)
 
 Fill in the fills as the following:
 * Database user: nextcloud
@@ -79,7 +79,7 @@ Fill in the fills as the following:
 
 After setting up nextcloud, you will see something like:
 
-{% include lazy-img.html src="/assets/img/nextcloud.jpeg" alt="Nextcloud" %}
+![Nextcloud](/assets/img/nextcloud.jpeg)
 
 ## Modify Overwrite Protocal
 Modify `/opt/nextcloud-data/config/config.php` and add:
