@@ -18,6 +18,5 @@ gem 'jekyll-default-layout'
 gem 'jekyll-titles-from-headings'
 gem 'html-proofer'
 gem 'jekyll-toc'
-gem 'jekyll-webp'
 gem "webrick"
 gem "jekyll", "~> 4.2"

@@ -4,7 +4,7 @@ layout: default
 <article class="prose prose-gray dark:prose-invert w-full max-w-none px-4 
   prose-a:text-red-800 dark:prose-a:text-blue-200 hover:prose-a:text-black dark:hover:prose-a:text-white
   prose-h1:text-orange-400">
-  <header class="">
+  <header>
     <h1>{{ page.title | escape }}</h1>
     <div class="flex">
       <span class="pr-2">Published:</span>
@@ -22,7 +22,7 @@ layout: default
     </span>
   </header>
 
-  <div class="">
+  <div>
     <div class="db f5 lh-copy">
       {{ content | toc }}
     </div>
