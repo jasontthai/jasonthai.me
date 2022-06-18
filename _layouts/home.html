@@ -19,24 +19,14 @@ layout: default
     <article class="py-8 border-b-2 border-gray-700 dark:border-gray-300">
         <a class="transition-opacity ease-in duration-150 hover:opacity-60 hover:no-underline"
             href="{{ post.url | relative_url }}">
-            <div class="flex flex-col sm:flex-row">
-                <picture class="hidden sm:block w-2/5 max-w-sm mr-20">
-                    {% if post.image %}
-                    {% assign image_filename_and_ext = post.image | split:"." %}
-                    {% assign image_filename = image_filename_and_ext[0] | append: ".webp" %}
-                    <source srcset="{{ cdnurl | append: image_filename }}" type="image/webp">
-                    <img src="{{ cdnurl | append: post.image}}" alt="" loading="lazy">
-                    {% endif %}
-                </picture>
-                <div class="sm:w-3/5">
-                    <h1 class="text-2xl font-light text-red-800 dark:text-blue-200">{{ post.title }}</h1>
-                    <p class="mt-4 mb-2">
-                        {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
-                    </p>
-                    <time>
-                        {{ post.date | date: "%b %-d, %Y" }}
-                    </time>
-                </div>
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-light text-red-800 dark:text-blue-200">{{ post.title }}</h1>
+                <p class="mt-4 mb-2">
+                    {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
+                </p>
+                <time>
+                    {{ post.date | date: "%b %-d, %Y" }}
+                </time>
             </div>
         </a>
     </article>
