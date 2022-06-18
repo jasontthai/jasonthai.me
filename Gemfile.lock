@@ -95,7 +95,6 @@ GEM
       nokogiri (~> 1.11)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    jekyll-webp (1.0.0)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -183,7 +182,6 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-titles-from-headings
   jekyll-toc
-  jekyll-webp
   webrick
 
 BUNDLED WITH
