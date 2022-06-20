@@ -51,7 +51,7 @@
 
   #menu-toggle:checked+.menu-button-container .menu-button::before {
     margin-top: 0px;
-    transform: rotate(405deg);
+    transform: rotate(45deg);
   }
 
   #menu-toggle:checked+.menu-button-container .menu-button {
@@ -60,7 +60,7 @@
 
   #menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
-    transform: rotate(-405deg);
+    transform: rotate(-45deg);
   }
 
   @media (max-width: 640px) {
@@ -90,8 +90,7 @@
 
     #menu-toggle:checked~.menu li {
       border: 1px solid #333;
-      height: 100%;
-      padding: 0.5em;
+      height: 2.5em;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
