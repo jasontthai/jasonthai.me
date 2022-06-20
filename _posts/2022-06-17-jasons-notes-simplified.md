@@ -1,6 +1,6 @@
 ---
 title: Jason's Notes Simplified
-category: tech
+category: blog
 description: A cleaner and more minimal Jason's Notes
 ---
 
