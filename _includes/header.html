@@ -90,7 +90,7 @@
 
     #menu-toggle:checked~.menu li {
       border: 1px solid #333;
-      height: 2.5em;
+      height: 100%;
       padding: 0.5em;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
@@ -119,15 +119,14 @@
   {%- if titles_size > 0 -%}
   <section class="mx-4 flex items-center sm:flex-col justify-between
     border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
-    <a class="flex flex-row items-center py-2 text-2xl 
+    <a class="flex flex-row items-center p-2 text-2xl
       {% if page.url == '/index.html' %} 
-      text-orange-400 
+      bg-red-800 dark:bg-blue-200 dark:text-black text-white
       {% else %} 
         text-red-800 dark:text-blue-200 
-      {% endif %}
-      underline hover:text-black dark:hover:text-white" href="/" title="Home">
-      <img class="w-10" src="/favicon.png" class="pr-2" alt="Site Name">
-      <span class="mx-2">{{ site.title }}</span>
+      {% endif %} 
+      underline hover:bg-red-800 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white" href="/" title="Home">
+      {{ site.title }}
     </a>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
@@ -140,11 +139,11 @@
       {%- assign my_page = site.pages | where: "path", path | first -%}
       {%- if my_page.title and my_page.autogen == nil -%}
       <li class="sm:bg-transparent bg-white dark:bg-black">
-        <a class="px-4 underline hover:text-black dark:hover:text-white 
+        <a class="p-2 underline hover:bg-red-800 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white
             {% if page.url == my_page.url %} 
-              text-orange-400 
-            {% else %} 
-              text-red-800 dark:text-blue-200 
+              bg-red-800 dark:bg-blue-200 dark:text-black text-white
+            {% else %}
+              text-red-800 dark:text-blue-200
             {% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}
         </a>
       </li>
