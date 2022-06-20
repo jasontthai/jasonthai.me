@@ -1,15 +1,11 @@
 {% assign author = page.author | default: site.author %}
-{% assign cdnurl = site.baseurl %}
-{% if jekyll.environment == "production" %}
-{% assign cdnurl = site.cdnurl %}
-{% endif %}
 <div class="avenir db fl-l w-30-l pt3-l pa3 pa0-l sticky">
     <div id="authorContainer" class="flex flex-row lg:flex-col">
         <div id="authorPicture" class="mb-4">
             {% assign image_filename_and_ext = author.avatar | split:"." %}
             {% assign image_filename = image_filename_and_ext[0] | append: ".webp" %}
             <picture>
-                <source srcset="{{ cdnurl | append: image_filename }}" type="image/webp">
+                <source srcset="{{ image_filename }}" type="image/webp">
                 <img class="rounded-full w-1/2" src="{{ author.avatar }}" alt="profile">
             </picture>
         </div>
