@@ -5,10 +5,6 @@ layout: default
 {% if paginator.total_pages >= 1 %}
 {% assign posts = paginator.posts %}
 {% endif %}
-{% assign cdnurl = site.baseurl %}
-{% if jekyll.environment == "production" %}
-{% assign cdnurl = site.cdnurl %}
-{% endif %}
 <section class="px-4 justify-center">
     {%- if page.title -%}
     <h1 class="my-5 text-4xl text-orange-400">{{ page.title }}</h1>

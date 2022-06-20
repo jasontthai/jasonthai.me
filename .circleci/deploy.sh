@@ -13,7 +13,6 @@ git pull origin master
 
 find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
 rsync -avz ../_site/ json@$SERVER_IP:/var/www/jasonthai/
-rsync -avz ../_site/assets json@$SERVER_IP:/var/www/cdn/
 mv ../_site/* .
 
 git add -fA
