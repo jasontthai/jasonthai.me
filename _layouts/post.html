@@ -4,8 +4,8 @@ layout: default
 <article class="prose prose-gray dark:prose-invert w-full max-w-none px-4 
   prose-a:text-red-800 dark:prose-a:text-blue-200 hover:prose-a:text-black dark:hover:prose-a:text-white
   prose-h1:text-orange-400">
-  <header>
-    <h1>{{ page.title | escape }}</h1>
+  <h1>{{ page.title | escape }}</h1>
+  <div class="border-l-2 pl-4 border-l-gray-700 dark:border-l-gray-300">
     <div class="flex">
       <span class="pr-2">Published:</span>
       <time class="">
@@ -17,15 +17,20 @@ layout: default
         {{ page.last_modified_at | date: "%b %-d, %Y" }}
       </time>
     </div>
-    <span>
+    <p class="m-0">
       Author: {{ page.author | default: site.author.name | escape }}
-    </span>
-  </header>
+    </p>
+  </div>
 
   <div>
-    <div class="db f5 lh-copy">
-      {{ content | toc }}
+    <div class="fixed z-20 top-[3.8125rem] right-[max(0px,calc(50%-50rem))] w-[19.5rem] py-8 px-8 
+        hidden sm:block">
+      {% if page.toc %}
+        <h2 class="text-orange-400">Table of Contents</h2>
+        {% toc %}
+      {% endif %}
     </div>
+    {{ content }}
 
     <div class="not-prose flex items-center justify-center px-4 my-10">
       {% if page.previous.url %}
