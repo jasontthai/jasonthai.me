@@ -27,7 +27,7 @@ $ sudo apt install firmware-iwlwifi
 
 * I also need to install the AMD GPU firmware as (you guessed it) it didn't come with Debian either. To do so:
 
-```
+```sh
 $ git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
 $ sudo mkdir /lib/firmware/amdgpu
 $ sudo cp linux-firmware/amdgpu/* /lib/firmware/amdgpu/ && sudo update-initramfs -k all -u -v
