@@ -128,7 +128,9 @@
     </a>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
-      <div class='menu-button before:bg-orange-400 after:bg-orange-400 bg-orange-400 '></div>
+      <div class='menu-button dark:before:bg-white dark:after:bg-white dark:bg-white
+      before:bg-black after:bg-black bg-black'>
+      </div>
     </label>
     <ul class="menu">
       {%- for path in page_paths -%}
