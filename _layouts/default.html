@@ -17,8 +17,14 @@ layout: compress
   </main>
 
   <footer
-    class="justify-center border-t-2 border-gray-700 dark:border-gray-300 flex flex-row py-5 flex-shrink-0">
+    class="justify-center border-t-2 border-gray-700 dark:border-gray-300 flex flex-col items-center py-5 flex-shrink-0">
     <span>{{ site.title | escape }}</b> © 2019 - {{ site.time | date: '%Y' }}</span>
+    <div class="py-2">
+      <span>A member of </span>
+      <a class="px-1 border-2 border-orange-400" target="blank" href="https://512kb.club">
+        <span>512KB Club</span>
+      </a>
+    </div>
   </footer>
 
 </body>
