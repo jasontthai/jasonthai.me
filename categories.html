@@ -29,13 +29,11 @@ description: categories page
       <h2>{{ category | capitalize }}</h2>
       <ul class="posts-list">
         {% for post in site.categories[category] %}
-        <li>
-          <!-- <h3> -->
+        <li class="flex justify-between">
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
           </a>
-          <small>{{ post.date | date_to_string }}</small>
-          <!-- </h3> -->
+          <time>{{ post.date | date: "%b %-d, %Y" }}</time>
         </li>
         {% endfor %}
       </ul>
