@@ -2,10 +2,11 @@
 layout: default
 ---
 <article class="prose prose-gray dark:prose-invert w-full max-w-none px-4 
-  prose-a:text-red-800 dark:prose-a:text-blue-200 hover:prose-a:text-black dark:hover:prose-a:text-white
+  prose-a:text-red-800 dark:prose-a:text-blue-200
+  hover:prose-a:bg-red-800 dark:hover:prose-a:bg-blue-200 dark:hover:prose-a:text-black hover:prose-a:text-white
   prose-h1:text-orange-400">
   <h1>{{ page.title | escape }}</h1>
-  <div class="border-l-2 pl-4 border-l-gray-700 dark:border-l-gray-300">
+  <div class="mb-4 border-l-2 pl-4 border-l-gray-700 dark:border-l-gray-300">
     <div class="flex">
       <span class="pr-2">Published:</span>
       <time class="">
@@ -26,8 +27,8 @@ layout: default
     <div class="fixed z-20 top-[3.8125rem] right-[max(0px,calc(50%-50rem))] w-[19.5rem] py-8 px-8 
         hidden sm:block">
       {% if page.toc %}
-        <h2 class="text-orange-400">Table of Contents</h2>
-        {% toc %}
+      <h2 class="text-orange-400">Table of Contents</h2>
+      {% toc %}
       {% endif %}
     </div>
     {{ content }}
