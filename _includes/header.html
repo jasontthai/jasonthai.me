@@ -2,9 +2,11 @@
   .menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 0;
+    width: 100%;
   }
 
   .menu>li {
@@ -115,8 +117,8 @@
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
   {%- if titles_size > 0 -%}
-  <section class="px-4 flex items-center sm:flex-col justify-between sm:px-16
-      border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
+  <section class="mx-4 flex items-center sm:flex-col justify-between
+    border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
     <a class="flex flex-row items-center py-2 text-2xl 
       {% if page.url == '/index.html' %} 
       text-orange-400 
@@ -124,7 +126,8 @@
         text-red-800 dark:text-blue-200 
       {% endif %}
       underline hover:text-black dark:hover:text-white" href="/" title="Home">
-      <img class="w-10 mx-2" src="/favicon.png" class="pr-2" alt="Site Name"><p>{{ site.title }}</p>
+      <img class="w-10" src="/favicon.png" class="pr-2" alt="Site Name">
+      <span class="mx-2">{{ site.title }}</span>
     </a>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
