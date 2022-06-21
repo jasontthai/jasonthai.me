@@ -4,6 +4,7 @@ tags:
 - games
 - thoughts
 category: blog
+description: Hello games.
 ---
             
 I love to game but lately I haven't been able to find the time. I think Elden Ring is one of the popular games nowadays. I also heard Final Fantasy VII Remake is now available for PC.
