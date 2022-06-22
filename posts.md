@@ -9,9 +9,9 @@ sidebar_link: true
 <h3>
     {{ yearMonth.name }}
 </h3>
-<ul>
+<ul class="p-0">
     {% for post in yearMonth.items %}
-    <li>
+    <li class="flex p-0">
         <a href="{{ post.url }}">
             {{ post.title }}
         </a>
