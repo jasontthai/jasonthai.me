@@ -44,22 +44,6 @@ excerpt_separator: <!--more-->
 
 permalink: /blog/:year/:month/:day/:title/
 
-defaults:
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      tag: "en"
-      sidebar: false
-  -
-    scope:
-      path: "_posts/vi"
-      type: "posts"
-    values:
-      tag: "vi"
-      sidebar: false
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:

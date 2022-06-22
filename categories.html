@@ -17,7 +17,7 @@ description: categories page
     {% for category_pair in category_words %}
     {% assign category = category_pair | split:'|' | last %}
     <a href="#{{ category | slugify }}"
-      class=" text-black dark:text-white hover:dark:text-black hover:text-white bg-white dark:bg-black hover:bg-black dark:hover:bg-white border-2 inline-flex hover:no-underline p-3 mx-3 border-gray-700 dark:border-gray-300">
+      class="text-black dark:text-white hover:dark:text-black hover:text-white bg-white dark:bg-black hover:bg-black dark:hover:bg-white border-2 inline-flex hover:no-underline p-3 mr-3 border-gray-700 dark:border-gray-300">
       {{ category | capitalize }} {{ site.categories[category] | size }}
     </a>
     {% endfor %}
@@ -27,13 +27,11 @@ description: categories page
     {% assign category = category_pair | split:'|' | last %}
     <div id="{{ category | slugify }}" class="posts-for-tag">
       <h2>{{ category | capitalize }}</h2>
-      <ul class="posts-list">
+      <ul class="posts-list p-0 w-full">
         {% for post in site.categories[category] %}
-        <li class="flex justify-between">
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-          </a>
-          <time>{{ post.date | date: "%b %-d" }}</time>
+        <li class="list-none p-0">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <time>{{ post.date | date: "%b %-d %Y" }}</time>
         </li>
         {% endfor %}
       </ul>
