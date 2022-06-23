@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<section class="prose
+    dark:prose-invert w-full max-w-none px-4 
+    prose-a:text-blue-700 dark:prose-a:text-blue-200
+    hover:prose-a:bg-blue-700 dark:hover:prose-a:bg-blue-200 dark:hover:prose-a:text-black hover:prose-a:text-white">
+    {%- if page.title -%}
+    {%- if page.type == 'tag' -%}
+    <h1 class="my-5 text-4xl">#{{ page.title }}</h1>
+    {% endif %}
+    {%- if page.type == 'category' -%}
+    <h1 class="my-5 text-4xl">{{ page.title | capitalize }}</h1>
+    {% endif %}
+    {%- endif -%}
+    <ul class="posts p-0">
+        {% for post in page.posts %}
+        <li class="list-none p-0">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
