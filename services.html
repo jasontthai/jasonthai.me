@@ -4,14 +4,14 @@ title: Services
 description: Free services that I hosted
 ---
 A set of services that I am currently hosting. You can check the status of all services at <a
-    class="text-red-800  dark:text-blue-200" href="https://status.jasonthai.me">https://status.jasonthai.me</a>
+    class="text-blue-700  dark:text-blue-200" href="https://status.jasonthai.me">https://status.jasonthai.me</a>
 
 <div class="not-prose grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
     {% for service in site.data.services %}
     <article class="relative flex flex-col items-center border-2 p-8 border-black dark:bg-white">
         <img class="h-16 w-16" src="{{ service.icon }}" title="{{ service.name }}">
         <h1 class="text-xl my-2">
-            <a class="text-red-800 dark:text-blue-200 hover:text-black" href="{{ service.url }}">{{ service.name }}</a>
+            <a class="text-blue-700 dark:text-blue-200 hover:text-black" href="{{ service.url }}">{{ service.name }}</a>
         </h1>
         <span id="{{ service.id }}" class="absolute top-2 right-2"></span>
         </img>

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'jekyll-archives'
 gem 'jekyll-loading-lazy'
 gem 'jekyll-feed'
 gem 'jekyll-last-modified-at'
