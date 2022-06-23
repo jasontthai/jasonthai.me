@@ -55,6 +55,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
+    jekyll-archives (2.2.1)
+      jekyll (>= 3.6, < 5.0)
     jekyll-coffeescript (2.0.0)
       coffee-script (~> 2.2)
       coffee-script-source (~> 1.12)
@@ -108,6 +110,8 @@ GEM
     multi_json (1.15.0)
     nokogiri (1.13.6)
       mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.13.6-x64-mingw32)
       racc (~> 1.4)
     octokit (4.25.0)
       faraday (>= 1, < 3)
@@ -166,6 +170,7 @@ DEPENDENCIES
   html-proofer
   jekyll (~> 4.2)
   jekyll-admin
+  jekyll-archives
   jekyll-coffeescript
   jekyll-compose
   jekyll-default-layout
@@ -185,4 +190,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.3.15
+   2.3.16

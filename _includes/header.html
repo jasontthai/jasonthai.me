@@ -120,11 +120,11 @@
     border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
     <a class="flex flex-row items-center p-2 text-2xl
       {% if page.url == '/index.html' %} 
-      bg-red-800 dark:bg-blue-200 dark:text-black text-white
+      bg-blue-700 dark:bg-blue-200 dark:text-black text-white
       {% else %} 
-        text-red-800 dark:text-blue-200 
+        text-blue-700 dark:text-blue-200 
       {% endif %} 
-      underline hover:bg-red-800 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white" href="/" title="Home">
+      underline hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white" href="/" title="Home">
       {{ site.title }}
     </a>
     <input id="menu-toggle" type="checkbox" />
@@ -138,11 +138,11 @@
       {%- assign my_page = site.pages | where: "path", path | first -%}
       {%- if my_page.title and my_page.autogen == nil -%}
       <li class="sm:bg-transparent bg-white dark:bg-black">
-        <a class="p-2 underline hover:bg-red-800 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white
+        <a class="p-2 underline hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white
             {% if page.url == my_page.url %} 
-              bg-red-800 dark:bg-blue-200 dark:text-black text-white
+              bg-blue-700 dark:bg-blue-200 dark:text-black text-white
             {% else %}
-              text-red-800 dark:text-blue-200
+              text-blue-700 dark:text-blue-200
             {% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}
         </a>
       </li>

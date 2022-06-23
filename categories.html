@@ -16,7 +16,7 @@ description: categories page
   <div class="flex-auto not-prose">
     {% for category_pair in category_words %}
     {% assign category = category_pair | split:'|' | last %}
-    <a href="#{{ category | slugify }}"
+    <a href="{{ category | slugify }}"
       class="text-black dark:text-white hover:dark:text-black hover:text-white bg-white dark:bg-black hover:bg-black dark:hover:bg-white border-2 inline-flex hover:no-underline p-3 mr-3 border-gray-700 dark:border-gray-300">
       {{ category | capitalize }} {{ site.categories[category] | size }}
     </a>
