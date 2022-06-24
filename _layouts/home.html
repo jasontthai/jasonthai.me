@@ -5,18 +5,19 @@ layout: default
 {% if paginator.total_pages >= 1 %}
 {% assign posts = paginator.posts %}
 {% endif %}
-<section class="w-full px-4 justify-center">
+<section class="w-full justify-center">
     {%- if page.title -%}
     <h1 class="my-5 text-4xl">{{ page.title }}</h1>
     {%- endif -%}
 
     {%- for post in posts -%}
     <article class="relative py-8 border-b-2 border-gray-700 dark:border-gray-300">
-        <a class="group"
-            href="{{ post.url | relative_url }}">
+        <a class="group" href="{{ post.url | relative_url }}">
             <div class="flex flex-col">
-                <h1 class="text-2xl font-light text-blue-700 dark:text-blue-200
-                group-hover:bg-blue-700 dark:group-hover:bg-blue-200 dark:group-hover:text-black group-hover:text-white">{{ post.title }}</h1>
+                <h1
+                    class="underline text-2xl font-light text-blue-700 dark:text-blue-200
+                group-hover:bg-blue-700 dark:group-hover:bg-blue-200 dark:group-hover:text-black group-hover:text-white">
+                    {{ post.title }}</h1>
                 <p class="mt-4 mb-2">
                     {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
                 </p>
@@ -28,22 +29,22 @@ layout: default
         {% if post.tags.size > 0 %}
         <div class="mt-4 sm:absolute bottom-8 right-0">
             <div class="flex items-center">
-            <span>tags:</span>
-            {%- for tag in post.tags -%}
-            <a class="px-2 text-blue-700 dark:text-blue-200
-            hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white"
-                href="/tags/{{ tag }}">#{{ tag }}</a>
-            {% endfor %}
+                <span>tags:</span>
+                {%- for tag in post.tags -%}
+                <a class="px-2 text-blue-700 dark:text-blue-200
+            hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white" href="/tags/{{ tag }}">#{{
+                    tag }}</a>
+                {% endfor %}
             </div>
         </div>
         {% endif %}
     </article>
     {% endfor %}
     {% if paginator.total_pages > 1 %}
-    <div class="flex items-center justify-center px-4 my-10">
+    <div class="flex items-center justify-center my-10">
         {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}"
-            class="text-black dark:bg-white hover:bg-black hover:text-white border-2 inline-flex hover:no-underline p-3 mx-3 border-gray-700 dark:border-gray-300">
+        <a href="{{ paginator.previous_page_path }}" class="underline inline-flex p-3 mx-3 border-2 text-blue-700 dark:text-blue-200 border-blue-700 dark:border-blue-200 
+            hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white">
             <svg class="w-4" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
                 <title>chevronLeft icon</title>
                 <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
@@ -52,8 +53,8 @@ layout: default
         </a>
         {% endif %}
         {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}"
-            class="text-black dark:bg-white hover:bg-black hover:text-white border-2 inline-flex hover:no-underline p-3 mx-3 border-gray-700 dark:border-gray-300">
+        <a href="{{ paginator.next_page_path }}" class="underline inline-flex p-3 mx-3 border-2 text-blue-700 dark:text-blue-200 border-blue-700 dark:border-blue-200
+            hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white">
             <span class="pr-1">Next</span>
             <svg class="w-4" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
                 <title>chevronRight icon</title>
