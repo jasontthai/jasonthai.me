@@ -116,7 +116,7 @@
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
   {%- if titles_size > 0 -%}
-  <section class="mx-4 flex items-center sm:flex-col justify-between
+  <section class="flex items-center sm:flex-col justify-between
     border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
     <a class="flex flex-row items-center p-2 text-2xl
       {% if page.url == '/index.html' %} 
