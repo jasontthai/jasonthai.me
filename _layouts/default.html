@@ -8,7 +8,7 @@ layout: compress
 
 {%- include head.html -%}
 
-<body class="font-ibm dark:bg-stone-800 max-w-4xl w-full m-auto flex flex-col min-h-screen dark:text-white">
+<body class="font-ibm dark:bg-stone-800 max-w-4xl w-full m-auto px-4 flex flex-col min-h-screen dark:text-white">
 
   {%- include header.html -%}
 
@@ -17,7 +17,7 @@ layout: compress
   </main>
 
   <footer
-    class="justify-center border-t-2 border-gray-700 dark:border-gray-300 flex flex-col items-center py-5 mx-4 flex-shrink-0">
+    class="justify-center border-t-2 border-gray-700 dark:border-gray-300 flex flex-col items-center mt-8 py-5 flex-shrink-0">
     <span>{{ site.title | escape }}</b> © 2019 - {{ site.time | date: '%Y' }}</span>
     <div class="py-2">
       <span>A member of </span>

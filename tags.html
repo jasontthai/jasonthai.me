@@ -12,32 +12,30 @@ description: tags page
 {% assign tag_words = site_tags | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
 
-<div>
-    <div class="flex-auto not-prose">
-        {% for tag_pair in tag_words %}
-        {% assign tag = tag_pair | split:'|' | last %}
-        <a href="{{ tag | slugify }}"
-            class="text-black dark:text-white hover:dark:text-black hover:text-white bg-white dark:bg-black hover:bg-black dark:hover:bg-white border-2 inline-flex hover:no-underline p-3 mr-3 border-gray-700 dark:border-gray-300">
-            {{ tag | capitalize }} {{ site.tags[tag] | size }}
-        </a>
-        {% endfor %}
+<div class="flex">
+    {% for tag_pair in tag_words %}
+    {% assign tag = tag_pair | split:'|' | last %}
+    <a href="{{ tag | slugify }}" class="p-3 mr-3 border-2 text-blue-700 dark:text-blue-200 border-blue-700 dark:border-blue-200 
+    hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white">
+        {{ tag | capitalize }} {{ site.tags[tag] | size }}
+    </a>
+    {% endfor %}
+</div>
+<div class="posts-by-category">
+    {% for tag_pair in tag_words %}
+    {% assign tag = tag_pair | split:'|' | last %}
+    <div id="{{ tag | slugify }}" class="posts-for-category">
+        <h2>{{ tag | capitalize }}</h2>
+        <ul class="posts-list p-0 w-full">
+            {% for post in site.tags[tag] %}
+            <li class="list-none p-0">
+                <!-- <h3> -->
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                <time>{{ post.date | date_to_string }}</time>
+                <!-- </h3> -->
+            </li>
+            {% endfor %}
+        </ul>
     </div>
-    <div class="posts-by-category">
-        {% for tag_pair in tag_words %}
-        {% assign tag = tag_pair | split:'|' | last %}
-        <div id="{{ tag | slugify }}" class="posts-for-category">
-            <h2>{{ tag | capitalize }}</h2>
-            <ul class="posts-list p-0">
-                {% for post in site.tags[tag] %}
-                <li class="list-none p-0">
-                    <!-- <h3> -->
-                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    <time>{{ post.date | date_to_string }}</time>
-                    <!-- </h3> -->
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        {% endfor %}
-    </div>
+    {% endfor %}
 </div>
