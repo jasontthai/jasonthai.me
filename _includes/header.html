@@ -2,7 +2,6 @@
   .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 0;
@@ -116,16 +115,16 @@
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
   {%- if titles_size > 0 -%}
-  <section class="flex items-center sm:flex-col justify-between
-    border-b-2 border-b-gray-700 dark:border-b-gray-300 text-center">
-    <a class="flex flex-row items-center p-2 text-2xl
-      {% if page.url == '/index.html' %} 
+  <section class="flex items-center justify-between text-xl
+      border-b-gray-700 dark:border-b-gray-300 text-center">
+    <a class="flex flex-row items-center py-2 mr-4
+      {% if page.url == '/' %} 
       bg-blue-700 dark:bg-blue-200 dark:text-black text-white
       {% else %} 
         text-blue-700 dark:text-blue-200 
       {% endif %} 
       underline hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white" href="/" title="Home">
-      {{ site.title }}
+      {{ 'Home' | site.title }}
     </a>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
@@ -138,7 +137,7 @@
       {%- assign my_page = site.pages | where: "path", path | first -%}
       {%- if my_page.title and my_page.autogen == nil -%}
       <li class="sm:bg-transparent bg-white dark:bg-black">
-        <a class="p-2 underline hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white
+        <a class="py-2 underline hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white
             {% if page.url == my_page.url %} 
               bg-blue-700 dark:bg-blue-200 dark:text-black text-white
             {% else %}
