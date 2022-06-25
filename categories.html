@@ -26,9 +26,9 @@ description: categories page
   {% assign category = category_pair | split:'|' | last %}
   <div id="{{ category | slugify }}" class="posts-for-tag">
     <h2>{{ category | capitalize }}</h2>
-    <ul class="posts-list p-0 w-full">
+    <ul class="posts-list w-full">
       {% for post in site.categories[category] %}
-      <li class="list-none p-0">
+      <li>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <time>{{ post.date | date: "%b %-d %Y" }}</time>
       </li>
@@ -36,3 +36,4 @@ description: categories page
     </ul>
   </div>
   {% endfor %}
+</div>
