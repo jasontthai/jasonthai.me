@@ -26,9 +26,9 @@ description: tags page
     {% assign tag = tag_pair | split:'|' | last %}
     <div id="{{ tag | slugify }}" class="posts-for-category">
         <h2>{{ tag | capitalize }}</h2>
-        <ul class="posts-list p-0 w-full">
+        <ul class="posts-list w-full">
             {% for post in site.tags[tag] %}
-            <li class="list-none p-0">
+            <li>
                 <!-- <h3> -->
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 <time>{{ post.date | date_to_string }}</time>

@@ -4,7 +4,7 @@ layout: page
 description: Hey I'm Jason. You can find more about me in about page.
 ---
 
-For up to date profile, check out my [LinkedIn](https://www.linkedin.com/in/jasontthai)
+For up to date profile, check out my [LinkedIn](https://www.linkedin.com/in/jasontthai).
 
 I am currently a software engineer at [Google](https://google.com) where I am working on making Chrome OS better.
 
@@ -16,7 +16,7 @@ Some of my previous companies include:
 * [Yahoo](https://yahoo.com) where I built content publishing and analytics tool.
 
 ### Other more interesting facts about me
-I'm currently living in San Jose, California with my lovely wife Vy and adorable mini goldendoodle Yuna. We like to go on walks and do other outdoor activities like running, hiking and biking.
+I'm currently living in San Jose, California with my lovely wife Vy and adorable mini goldendoodle [Yuna](/assets/img/yuna-chan.jpeg). We like to go on walks and do other outdoor activities like running, hiking and biking.
 
 I'm also a very ameteur practioner of mindfulness and follow the [Plum Village](https://plumvillage.org)  meditation teachings.
 

@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
-<section class="prose dark:prose-invert w-full max-w-none
+<section class="w-full">
+  {%- if page.title -%}
+  <h1 class="font-bold my-5 text-4xl">
+    {{ page.title }}
+  </h1>
+  {%- endif -%}
+
+  <article class="prose dark:prose-invert w-full max-w-none
     prose-a:text-blue-700 dark:prose-a:text-blue-200
     hover:prose-a:bg-blue-700 dark:hover:prose-a:bg-blue-200 dark:hover:prose-a:text-black hover:prose-a:text-white">
-    {%- if page.title -%}
-    <h1 class="my-5 text-4xl ">{{ page.title }}</h1>
-    {%- endif -%}
-    <article class="flex flex-col">
-        {{ content }}
-    </article>
+    {{ content }}
+  </article>
 </section>
