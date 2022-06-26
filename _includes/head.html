@@ -5,9 +5,11 @@
   {%- seo -%}
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="icon" href="/favicon.svg">
+  {%- if site.pwa.enabled -%}
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <meta name="theme-color" content="#ffffff" />
+  {% endif %}
   {%- feed_meta -%}
   <script>
     /* Check that service workers are supported */
