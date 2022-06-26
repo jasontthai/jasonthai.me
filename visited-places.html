@@ -15,7 +15,7 @@ description: A list of places I have visited
 	here.</a>
 </p>
 
-<div class="w-full max-w-4xl h-screen" id='map' style="height: 50vh; margin-top: 2rem;"></div>
+<div id='map' style="height: 50vh; margin-top: 2rem;"></div>
 
 <script src="/assets/js/countries.js" type="text/javascript"></script>
 
@@ -43,9 +43,9 @@ description: A list of places I have visited
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<h4 class="text-black">Places I visited</h4>' + (props ?
-			'<b class="text-black">' + props.name + '</b><br/><b class="text-black">' + props.description + '</b>'
-			: '<b class="text-black">Hover over a marked place</b>');
+		this._div.innerHTML = '<h4 style="color: black;">Places I visited</h4>' + (props ?
+			'<b><p style="color: black;">' + props.name + ' ' + props.description + '</p></b>'
+			: '<b style="color: black;">Hover over a marked place</b>');
 	};
 
 	info.addTo(map);

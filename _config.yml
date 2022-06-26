@@ -26,6 +26,7 @@ pagination:
   sort_reverse: true
 
 header_pages:
+  - index.html
   - about.md
   - posts.md
   - services.html

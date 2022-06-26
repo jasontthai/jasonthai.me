@@ -1,23 +1,23 @@
 - name: Bitwarden
   description: The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.
   url: https://bitwarden.jasonthai.me
-  icon: /assets/img/services/passwordmanager.png
+  icon: /assets/img/services/passwordmanager.svg
   id: 785563184
 
 - name: HedgeDoc
-  description: Realtime collaborative markdown notes on all platforms. <br> <br>
+  description: Realtime collaborative markdown notes on all platforms.
   url: https://md.jasonthai.me
   icon: /assets/img/services/markdown.png
   id: 785563204
 
 - name: Commento
-  description: A fast, privacy-focused commenting platform. Easy to use, no spam.<br><br>
+  description: A fast, privacy-focused commenting platform. Easy to use, no spam.
   url: https://commento.jasonthai.me
   icon: /assets/img/services/commento.png
   id: 785563205
 
 - name: EchoIP
-  description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported. <br> <br> <br>
+  description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported.
   url: https://ip.jasonthai.me
   icon: /assets/img/services/ip.png
   id: 785563199
@@ -33,13 +33,13 @@
 #  id: 785563189
 
 - name: PrivateBin
-  description: PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. <br>
+  description: PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.
   url: https://privatebin.jasonthai.me
   icon: /assets/img/services/bin.png
   id: 785563191
 
 - name: TT-RSS
-  description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account. <br>
+  description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account.
   url: https://rss.jasonthai.me
   icon: /assets/img/services/rss.png
   id: 785563185

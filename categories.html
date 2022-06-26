@@ -12,21 +12,21 @@ description: categories page
 {% assign category_words = site_categories | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
 
-<div class="flex">
+<div style="display:flex;">
   {% for category_pair in category_words %}
   {% assign category = category_pair | split:'|' | last %}
-  <a href="{{ category | slugify }}" class="p-3 mr-3 border-2 text-blue-700 dark:text-blue-200 border-blue-700 dark:border-blue-200 
-      hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white">
+  <a href="{{ tag | slugify }}"
+    style="display: inline-flex; padding: 0.75rem; margin-inline-end: 0.75rem; border: 1px solid;">
     {{ category | capitalize }} {{ site.categories[category] | size }}
   </a>
   {% endfor %}
 </div>
-<div class="posts-by-category">
+<div>
   {% for category_pair in category_words %}
   {% assign category = category_pair | split:'|' | last %}
-  <div id="{{ category | slugify }}" class="posts-for-tag">
+  <div id="{{ category | slugify }}">
     <h2>{{ category | capitalize }}</h2>
-    <ul class="posts-list w-full">
+    <ul>
       {% for post in site.categories[category] %}
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
