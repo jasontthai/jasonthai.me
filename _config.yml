@@ -91,3 +91,4 @@ exclude:
   - vendor
   - node_modules/*
   - tailwind.config.js
+  - .tailwind/
