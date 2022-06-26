@@ -19,5 +19,7 @@
     }
   </script>
 
+  {%- if site.analytics.enabled -%}
   {%- include matomo.html -%}
+  {% endif %}
 </head>
