@@ -33,6 +33,8 @@ header_pages:
 
 analytics:
   enabled: false
+pwa:
+  enabled: false
 
 # disqus:
 #  shortname: https-jasonthai-me
