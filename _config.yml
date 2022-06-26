@@ -31,6 +31,9 @@ header_pages:
   - services.html
   - visited-places.html
 
+analytics:
+  enabled: false
+
 # disqus:
 #  shortname: https-jasonthai-me
 
