@@ -3,26 +3,22 @@ layout: page
 title: Services
 description: Free services that I hosted
 ---
-<p>A set of services that I am currently hosting. You can check the status of all services at <a
-    class="text-blue-700  dark:text-blue-200" href="https://status.jasonthai.me">https://status.jasonthai.me</a>
+<p>A set of services that I am currently hosting. You can check the status of all services at
+    <a href="https://status.jasonthai.me">https://status.jasonthai.me</a>
 </p>
 
-<div class="not-prose grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
-    {% for service in site.data.services %}
-    <article class="relative flex flex-col items-center border-2 p-8 border-black dark:bg-white">
-        <img class="h-16 w-16" src="{{ service.icon }}" title="{{ service.name }}">
-        <h1 class="text-xl my-2">
-            <a class="underline text-blue-700 dark:text-blue-200 hover:text-black" href="{{ service.url }}">{{ service.name }}</a>
-        </h1>
-        <span id="{{ service.id }}" class="absolute top-2 right-2"></span>
-        </img>
-        <p class="text-black">
+<section>
+    {%- for service in site.data.services -%}
+    <article style="padding-bottom: 2rem;">
+        <h2><a href="{{ service.url | relative_url }}">{{ service.name }}</a>
+        <span id="{{ service.id }}"></span></h2>
+        <span>
             {{ service.description }}
-        </p>
+        </span>
     </article>
     {% endfor %}
-</div>
-</div>
+</section>
+
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
     function getStatus() {
@@ -31,9 +27,9 @@ description: Free services that I hosted
         }, function (result) {
             for (var i = 0; i < result.monitors.length; i++) {
                 if (result.monitors[i].status == 2) {
-                    $('#' + result.monitors[i].id).addClass("text-green-700").html('Online');
+                    $('#' + result.monitors[i].id).html('✅');
                 } else if (result.monitors[i].status == 8 || result.monitors[i].status == 9) {
-                    $('#' + result.monitors[i].id).addClass("text-red-700").html('Offline');
+                    $('#' + result.monitors[i].id).html('❌');
                 }
             }
         });

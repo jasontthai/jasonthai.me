@@ -1,33 +1,276 @@
 ---
 layout: default
 ---
-<article class="prose dark:prose-invert w-full max-w-none
-  prose-a:text-blue-700 dark:prose-a:text-blue-200
-  hover:prose-a:bg-blue-700 dark:hover:prose-a:bg-blue-200 dark:hover:prose-a:text-black hover:prose-a:text-white">
-  <h1 class="my-5">{{ page.title | escape }}</h1>
-  <div class="mb-4 border-l-2 pl-4 border-l-gray-700 dark:border-l-gray-300">
-    <div class="flex">
-      <span class="pr-2">Published:</span>
-      <time class="">
+<style>
+  .highlight {
+    border-radius: 5px;
+    background-color: #002b36;
+    color: #93a1a1
+  }
+
+  .highlight .c {
+    color: #586e75
+  }
+
+  .highlight .err,
+  .highlight .g {
+    color: #93a1a1
+  }
+
+  .highlight .k {
+    color: #859900
+  }
+
+  .highlight .l,
+  .highlight .n {
+    color: #93a1a1
+  }
+
+  .highlight .o {
+    color: #859900
+  }
+
+  .highlight .x {
+    color: #cb4b16
+  }
+
+  .highlight .p {
+    color: #93a1a1
+  }
+
+  .highlight .cm {
+    color: #586e75
+  }
+
+  .highlight .cp {
+    color: #859900
+  }
+
+  .highlight .c1 {
+    color: #586e75
+  }
+
+  .highlight .cs {
+    color: #859900
+  }
+
+  .highlight .gd {
+    color: #2aa198
+  }
+
+  .highlight .ge {
+    color: #93a1a1;
+    font-style: italic
+  }
+
+  .highlight .gr {
+    color: #dc322f
+  }
+
+  .highlight .gh {
+    color: #cb4b16
+  }
+
+  .highlight .gi {
+    color: #859900
+  }
+
+  .highlight .go,
+  .highlight .gp {
+    color: #93a1a1
+  }
+
+  .highlight .gs {
+    color: #93a1a1;
+    font-weight: 700
+  }
+
+  .highlight .gu {
+    color: #cb4b16
+  }
+
+  .highlight .gt {
+    color: #93a1a1
+  }
+
+  .highlight .kc {
+    color: #cb4b16
+  }
+
+  .highlight .kd {
+    color: #268bd2
+  }
+
+  .highlight .kn,
+  .highlight .kp {
+    color: #859900
+  }
+
+  .highlight .kr {
+    color: #268bd2
+  }
+
+  .highlight .kt {
+    color: #dc322f
+  }
+
+  .highlight .ld {
+    color: #93a1a1
+  }
+
+  .highlight .m,
+  .highlight .s {
+    color: #2aa198
+  }
+
+  .highlight .na {
+    color: #93a1a1
+  }
+
+  .highlight .nb {
+    color: #b58900
+  }
+
+  .highlight .nc {
+    color: #268bd2
+  }
+
+  .highlight .no {
+    color: #cb4b16
+  }
+
+  .highlight .nd {
+    color: #268bd2
+  }
+
+  .highlight .ne,
+  .highlight .ni {
+    color: #cb4b16
+  }
+
+  .highlight .nf {
+    color: #268bd2
+  }
+
+  .highlight .nl,
+  .highlight .nn,
+  .highlight .nx,
+  .highlight .py {
+    color: #93a1a1
+  }
+
+  .highlight .nt,
+  .highlight .nv {
+    color: #268bd2
+  }
+
+  .highlight .ow {
+    color: #859900
+  }
+
+  .highlight .w {
+    color: #93a1a1
+  }
+
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo {
+    color: #2aa198
+  }
+
+  .highlight .sb {
+    color: #586e75
+  }
+
+  .highlight .sc {
+    color: #2aa198
+  }
+
+  .highlight .sd {
+    color: #93a1a1
+  }
+
+  .highlight .s2 {
+    color: #2aa198
+  }
+
+  .highlight .se {
+    color: #cb4b16
+  }
+
+  .highlight .sh {
+    color: #93a1a1
+  }
+
+  .highlight .si,
+  .highlight .sx {
+    color: #2aa198
+  }
+
+  .highlight .sr {
+    color: #dc322f
+  }
+
+  .highlight .s1,
+  .highlight .ss {
+    color: #2aa198
+  }
+
+  .highlight .bp,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi {
+    color: #268bd2
+  }
+
+  .highlight .il {
+    color: #2aa198
+  }
+  
+  .toc-container {
+    position: fixed;
+    top: 4rem;
+    right: max(0px, calc(50% - 50rem));
+    width: 20rem;
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .toc-container {
+      display: block;
+    }
+  }
+</style>
+<article style="overflow: auto;">
+  <h1>{{ page.title | escape }}</h1>
+  <div style="border-inline-start: 2px solid; padding-left: 1rem;">
+    <div>
+      <span>Published:</span>
+      <time>
         {{ page.date | date: "%b %-d, %Y" }}
       </time>
-      <span class="px-2">|</span>
-      <span class="pr-2">Last Edited:</span>
-      <time class="">
+      |
+      <span>
+        Last Edited:
+      </span>
+      <time>
         {{ page.last_modified_at | date: "%b %-d, %Y" }}
       </time>
     </div>
-    <p class="m-0">
+    <p>
       Author: {{ page.author | default: site.author.name | escape }}
     </p>
-    <div class="flex">
-      <span class="pr-2">Category:</span>
-      <a class="px-2" href="/categories/{{ page.category }}">{{ page.category }}</a>
+    <div>
+      <span>Category:</span>
+      <a href="/categories/{{ page.category }}">{{ page.category }}</a>
       {%- if page.tags.size > 0 -%}
-      <span class="px-2">|</span>
-      <span class="pr-2">Tags:</span>
+      |
+      <span>
+        Tags:
+      </span>
       {%- for tag in page.tags -%}
-      <a class="px-2" href="/tags/{{ tag }}">#{{ tag }}</a>
+      <a href="/tags/{{ tag }}">#{{ tag }}</a>
       {% endfor %}
       {% endif %}
     </div>
@@ -35,8 +278,7 @@ layout: default
   </div>
 
   <div>
-    <div class="fixed z-20 top-[3.8125rem] right-[max(0px,calc(50%-50rem))] w-[19.5rem] py-8 px-8 
-        hidden sm:block">
+    <div class="toc-container">
       {% if page.toc %}
       <h2>Table of Contents</h2>
       {% toc %}
@@ -44,28 +286,14 @@ layout: default
     </div>
     {{ content }}
 
-    <div class="flex items-center justify-center my-10">
+    <div style="display:flex; align-items: center; justify-content: center; margin: 2.5rem 0;">
       {% if page.previous.url %}
       <a href="{{page.previous.url}}"
-        class="underline inline-flex p-3 mx-3 border-2 text-blue-700 dark:text-blue-200 border-blue-700 dark:border-blue-200
-        hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white">
-        <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
-          <title>chevronLeft icon</title>
-          <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
-        </svg>
-        <span class="pl1">Previous</span>
-      </a>
+        style="display: inline-flex; padding: 0.75rem; margin: 0 0.75rem; border: 1px solid;">Previous</a>
       {% endif %}
       {% if page.next.url %}
       <a href="{{page.next.url}}"
-        class="underline inline-flex p-3 mx-3 border-2 text-blue-700 dark:text-blue-200 border-blue-700 dark:border-blue-200
-        hover:bg-blue-700 dark:hover:bg-blue-200 dark:hover:text-black hover:text-white">
-        <span class="pr1">Next</span>
-        <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
-          <title>chevronRight icon</title>
-          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
-        </svg>
-      </a>
+        style="display: inline-flex; padding: 0.75rem; margin: 0 0.75rem; border: 1px solid;">Next</a>
       {% endif %}
     </div>
 
