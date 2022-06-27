@@ -28,9 +28,9 @@ layout: default
     <a href="/tags/{{ tag | slugify }}">#{{ tag }}</a>
     {% endfor %}
     {% endif %}
-
 </article>
 {% endfor %}
+
 {% if paginator.total_pages > 1 %}
 <div style="display:flex; align-items: center; justify-content: center; margin: 2.5rem 0;">
     {% if paginator.previous_page %}
