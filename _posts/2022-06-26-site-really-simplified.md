@@ -3,7 +3,7 @@ title: Jason's Notes Even More Simplified
 category: blog
 tags:
   - design
-description: This site really lost some real weight!
+description: This site really lost some weight!
 ---
 
 I made this site load even faster. GTMetrix now reports this homepage with a whooping size of [21.9KB Uncompressed](https://gtmetrix.com/reports/jasonthai.me/KBgZSPJ7/), down from [152KB Uncompressed](https://gtmetrix.com/reports/jasonthai.me/rZUIF3dw/) when I redesigned it a little over a week ago.
