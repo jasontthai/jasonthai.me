@@ -25,13 +25,6 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
-header_pages:
-  - index.html
-  - about.md
-  - posts.md
-  - services.html
-  - visited-places.html
-
 analytics:
   enabled: false
 pwa:

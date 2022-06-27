@@ -1,10 +1,12 @@
 ---
-title: "[High Availability Series] PART II: Configure and Secure a 3-node Galera Cluster"
+title: "[Series] PART II: Configure and Secure a 3-node Galera Cluster"
 description: 'High Availability Series: How to configure and secure a 3-node Galera
   cluster'
 category: tech
 toc: true
 image: "/assets/img/galera_small.png"
+tags:
+  - high availibility
 ---
 
 # Introduction

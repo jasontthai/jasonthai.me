@@ -4,6 +4,8 @@ image: /assets/img/logo-travisci-wide1.jpg
 category: tech
 toc: true
 description: How to deploy to Github Pages using Travis CI
+tags:
+  - cicd
 ---
 
 ![TravisCI](/assets/img/logo-travisci-wide1.jpg)

@@ -4,6 +4,9 @@ image: "/assets/img/openvpn-pihole.png"
 description: how to host OpenVPN and Pi-hole on Ubuntu 18.04 VPS
 toc: true
 category: tech
+tags:
+  - pi-hole
+  - vpn
 ---
 
 Interested in using Wireguard? Check out my post on [How to setup wireguard and pi-hole on Debian/Ubuntu]({{ site.url }}{% post_url 2020-05-01-how-to-setup-wireguard-pi-hole-on-debian-10-ubuntu-1804 %})

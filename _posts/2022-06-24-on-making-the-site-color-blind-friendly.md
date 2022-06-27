@@ -2,6 +2,7 @@
 title: On making the site color blind friendly
 tags:
 - accessbility
+- design
 category: blog
 description: Making the site more accessible for color blind users.
 ---

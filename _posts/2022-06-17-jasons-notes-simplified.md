@@ -2,6 +2,8 @@
 title: Jason's Notes Simplified
 category: blog
 description: A cleaner and more minimal Jason's Notes
+tags:
+  - design
 ---
 
 <style>
