@@ -5,7 +5,7 @@ layout: default
   .highlight {
     border-radius: 5px;
     background-color: #002b36;
-    color: #93a1a1
+    color: #93a1a1;
   }
 
   .highlight .c {
@@ -227,7 +227,21 @@ layout: default
   .highlight .il {
     color: #2aa198
   }
-  
+
+  pre {
+    padding: 1rem 1.4rem;
+    max-width: 100%;
+    overflow: auto;
+    font-size: 1rem;
+  }
+
+  :not(pre)>code {
+    background-color: #002b36;
+    color: #b58900;
+    padding: 0.25rem;
+    font-size: 1rem;
+  }
+
   .toc-container {
     position: fixed;
     top: 4rem;
