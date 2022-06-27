@@ -4,6 +4,8 @@ image: /assets/img/circleci-logo-1200x630.png
 category: tech
 toc: true
 description: How to deploy to Github Pages Using CircirCI 2.0 and how to use Jekyll custom dependencies on Github Pages
+tags:
+  - cicd
 ---
 
 ![CircliCI](/assets/img/circleci-logo-1200x630.png)

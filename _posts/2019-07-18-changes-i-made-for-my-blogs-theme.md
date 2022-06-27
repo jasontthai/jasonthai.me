@@ -4,6 +4,8 @@ category: tech
 image: /assets/img/jekyll.png
 description: Some highlights of changes I made to Jekyll's Minima theme.
 toc: true
+tags:
+  - design
 ---
 
 ### Update 08/16/2019

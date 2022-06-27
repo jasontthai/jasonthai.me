@@ -12,12 +12,12 @@ description: tags page
 {% assign tag_words = site_tags | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
 
-<div style="display:flex;">
+<div style="display:flex; flex-wrap: wrap;">
     {% for tag_pair in tag_words %}
     {% assign tag = tag_pair | split:'|' | last %}
     <a href="{{ tag | slugify }}"
-        style="display: inline-flex; padding: 0.75rem; margin-inline-end: 0.75rem; border: 1px solid;">
-        {{ tag | capitalize }} {{ site.tags[tag] | size }}
+        style="display: inline-flex; padding: 0.75rem; margin: 0.75rem; border: 1px solid;">
+        #{{ tag }} {{ site.tags[tag] | size }}
     </a>
     {% endfor %}
 </div>

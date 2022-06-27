@@ -1,11 +1,13 @@
 ---
-title: "[High Availability Series] PART I: Set Up and Use SSL to Secure MariaDB on
+title: "[Series] PART I: Set Up and Use SSL to Secure MariaDB on
   Debian Servers"
 description: 'High Availability Series: How to set up and use SSL to secure MariaDB
   on Debian servers.'
 category: tech
 toc: true
 image: "/assets/img/galera_small.png"
+tags:
+  - high availibility
 ---
 
 # Introduction

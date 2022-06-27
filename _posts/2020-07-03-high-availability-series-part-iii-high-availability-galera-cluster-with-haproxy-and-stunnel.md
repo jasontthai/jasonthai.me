@@ -1,11 +1,13 @@
 ---
-title: "[High Availability Series] PART III: High Availability Galera Cluster with
+title: "[Series] PART III: High Availability Galera Cluster with
   HAProxy and Stunnel"
 image: "/assets/img/haproxy-galera.png"
 description: 'High Availability Series: High Availability Galera Cluster with HAProxy
   and Stunnel'
 toc: true
 category: tech
+tags:
+  - high availibility
 ---
 
 # Introduction

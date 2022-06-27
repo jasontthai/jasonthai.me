@@ -4,6 +4,8 @@ image: /assets/img/pagespeed-featured.png
 category: tech
 toc: true
 description: A note of how to achieve high score on PageSpeed Insights
+tags:
+  - design
 ---
 
 ![PageSpeed Insights](/assets/img/pagespeed-full.png)

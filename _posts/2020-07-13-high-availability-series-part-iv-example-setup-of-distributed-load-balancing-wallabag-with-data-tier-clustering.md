@@ -1,5 +1,5 @@
 ---
-title: "[High Availability Series] PART IV: Example Setup of Distributed Load Balancing
+title: "[Series] PART IV: Example Setup of Distributed Load Balancing
   Wallabag with Data Tier Clustering"
 toc: true
 image: "/assets/img/ha-cluster.png"
@@ -7,6 +7,8 @@ description: 'High Availability Series: Example Setup of Distributed Load Balanc
   Wallabag with Data Tier Clustering. How to set up a highly available Wallabag with
   docker-compose powered by HAProxy, Apache2 and Galera cluster.'
 category: tech
+tags:
+  - high availibility
 ---
 
 ![HA Distributed Web Apps](/assets/img/ha-cluster.png)

@@ -3,6 +3,8 @@ title: I Turned My Blog into a Progressive Web App
 category: tech
 description: A note of how I turn my blog into a progressive web app
 image: "/assets/img/pwa-logo.png"
+tags:
+  - design
 ---
 
 I recently create a post of [how to enable offline support to websites with Workbox]({{ site.url }}{% post_url 2019-08-06-enable-offline-support-to-websites-with-workbox %}) and turns out it already covers half of the work of turning my blog into a progressive web app (PWA). This note will cover the rest to fully convert a regular website to a PWA.
