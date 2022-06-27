@@ -5,42 +5,41 @@ layout: default
 {% if paginator.total_pages >= 1 %}
 {% assign posts = paginator.posts %}
 {% endif %}
-<section>
-    {%- if page.title -%}
-    <h1>{{ page.title }}</h1>
-    {%- endif -%}
 
-    {%- for post in posts -%}
-    <article style="position: relative; padding-bottom: 2rem;">
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p>
-            {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
-        </p>
-        <span>
-            {{ post.date | date: "%b %-d, %Y" }}
-        </span>
-        {%- if post.tags.size > 0 -%}
-        |
-        <span>
-            tags:
-        </span>
-        {%- for tag in post.tags -%}
-        <a href="/tags/{{ tag | slugify }}">#{{ tag }}</a>
-        {% endfor %}
-        {% endif %}
+{%- if page.title -%}
+<h1>{{ page.title }}</h1>
+{%- endif -%}
 
-    </article>
+{%- for post in posts -%}
+<article style="position: relative; padding-bottom: 2rem;">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p>
+        {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
+    </p>
+    <span>
+        {{ post.date | date: "%b %-d, %Y" }}
+    </span>
+    {%- if post.tags.size > 0 -%}
+    |
+    <span>
+        tags:
+    </span>
+    {%- for tag in post.tags -%}
+    <a href="/tags/{{ tag | slugify }}">#{{ tag }}</a>
     {% endfor %}
-    {% if paginator.total_pages > 1 %}
-    <div style="display:flex; align-items: center; justify-content: center; margin: 2.5rem 0;">
-        {% if paginator.previous_page %}
-        <a href="{{paginator.previous_page_path}}"
-            style="display: inline-flex; padding: 0.75rem; margin: 0 0.75rem; border: 1px solid;">Previous</a>
-        {% endif %}
-        {% if paginator.next_page %}
-        <a href="{{paginator.next_page_path}}"
-            style="display: inline-flex; padding: 0.75rem; margin: 0 0.75rem; border: 1px solid;">Next</a>
-        {% endif %}
-    </div>
     {% endif %}
-</section>
+
+</article>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<div style="display:flex; align-items: center; justify-content: center; margin: 2.5rem 0;">
+    {% if paginator.previous_page %}
+    <a href="{{paginator.previous_page_path}}"
+        style="display: inline-flex; padding: 0.75rem; margin: 0 0.75rem; border: 1px solid;">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{paginator.next_page_path}}"
+        style="display: inline-flex; padding: 0.75rem; margin: 0 0.75rem; border: 1px solid;">Next</a>
+    {% endif %}
+</div>
+{% endif %}
