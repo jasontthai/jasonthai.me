@@ -7,17 +7,16 @@ description: Free services that I hosted
     <a href="https://status.jasonthai.me">https://status.jasonthai.me</a>
 </p>
 
-<section>
-    {%- for service in site.data.services -%}
-    <article style="padding-bottom: 2rem;">
-        <h2><a href="{{ service.url | relative_url }}">{{ service.name }}</a>
-        <span id="{{ service.id }}"></span></h2>
-        <span>
-            {{ service.description }}
-        </span>
-    </article>
-    {% endfor %}
-</section>
+{%- for service in site.data.services -%}
+<article style="padding-bottom: 2rem;">
+    <h2><a href="{{ service.url | relative_url }}">{{ service.name }}</a>
+        <span id="{{ service.id }}"></span>
+    </h2>
+    <span>
+        {{ service.description }}
+    </span>
+</article>
+{% endfor %}
 
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">

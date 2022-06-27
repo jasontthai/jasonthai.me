@@ -66,36 +66,12 @@
       color: var(--link-text-color);
     }
 
-    nav {
-      display: flex;
-    }
-
     nav>a {
+      display: inline-block;
       font-size: 1.25rem;
       line-height: 1.75rem;
       padding: 0.5rem 0;
-    }
-
-    nav>a:first-of-type {
-      margin-inline-end: 1rem;
-    }
-
-    nav a+a {
-      margin: 0 1rem;
-    }
-
-    @media (max-width: 640px) {
-      nav {
-        flex-direction: column;
-      }
-
-      nav>a:first-of-type {
-        margin: 0;
-      }
-
-      nav a+a {
-        margin: 0;
-      }
+      margin-inline-end: 2rem;
     }
 
     ul>li {
