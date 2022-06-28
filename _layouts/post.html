@@ -279,9 +279,8 @@ layout: default
       <span>Category:</span>
       <a href="/categories/{{ page.category }}">{{ page.category }}</a>
       {%- if page.tags.size > 0 -%}
-      |
       <span>
-        Tags:
+        | Tags:
       </span>
       {%- for tag in page.tags -%}
       <a href="/tags/{{ tag }}">#{{ tag }}</a>
