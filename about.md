@@ -15,7 +15,7 @@ Some of my previous companies include:
 * [CastAR](http://castar.com) where I built an ecommerce and gaming platform.
 * [Yahoo](https://yahoo.com) where I built content publishing and analytics tool.
 
-### Other more interesting facts about me
+### Other facts about me
 I'm currently living in San Jose, California with my lovely wife Vy and adorable mini goldendoodle [Yuna](/assets/img/yuna-chan.jpeg). We like to go on walks and do other outdoor activities like running, hiking and biking.
 
 I'm also a very amateur practioner of mindfulness and follow the [Plum Village](https://plumvillage.org)  meditation teachings.
@@ -33,5 +33,5 @@ If you expect a lot of randomness, this blog is for you.
 ### How often is this blog updated?
 I try to write as much as possible whenever I feel like writing. If you are interested, you can subscribe using your email [here](https://sendy.jasonthai.me/subscription?f=1xbnC4rzl5bZyD5KdkNEpvolP9bMamozYB9Km892ZO0L7mc7N7Pq7ckWA1dY3DSlvL) and you will be notified when a new post is out.
 
-### Give me feedbacks on my Posts
-Send me an email at [&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;](mailto:&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;). I will really appreciate it!
+### Have some comments? 
+Send me an email at [&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;](mailto:&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;).
