@@ -15,23 +15,23 @@ Some of my previous companies include:
 * [CastAR](http://castar.com) where I built an ecommerce and gaming platform.
 * [Yahoo](https://yahoo.com) where I built content publishing and analytics tool.
 
-### Other facts about me
+## Other facts about me
 I'm currently living in San Jose, California with my lovely wife Vy and adorable mini goldendoodle [Yuna](/assets/img/yuna-chan.jpeg). We like to go on walks and do other outdoor activities like running, hiking and biking.
 
-I'm also a very amateur practioner of mindfulness and follow the [Plum Village](https://plumvillage.org)  meditation teachings.
+I'm also an amateur practioner of mindfulness and follow the [Plum Village](https://plumvillage.org)  meditation teachings.
 
 I've run a half marathon in 2019 and preparing to do another one with my wife this year 2022.
 
 I am considerate of people and would like to be treated the same.
 
-### Some info about this blog
-I spent quite a bit of time trying to make up my mind what should be on the home page. Should it be info about my self and the notes that I wrote. Ultimately I decided to show the articles because it is not about me but my contents.
+## Some info about this blog
+I spent quite a bit of time trying to make up my mind what should be on this blog homepage - whether it should be info about myself or the notes that I wrote. Ultimately I decided to show the articles because it is not about me but my contents.
 
 I do not have a specific theme of topics that are covered in this blog. Mainly what I want to share revolves around my work, life and interests.
 If you expect a lot of randomness, this blog is for you.
 
-### How often is this blog updated?
+## How often is this blog updated?
 I try to write as much as possible whenever I feel like writing. If you are interested, you can subscribe using your email [here](https://sendy.jasonthai.me/subscription?f=1xbnC4rzl5bZyD5KdkNEpvolP9bMamozYB9Km892ZO0L7mc7N7Pq7ckWA1dY3DSlvL) and you will be notified when a new post is out.
 
-### Have some comments? 
+## Have some comments? 
 Send me an email at [&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;](mailto:&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;).
