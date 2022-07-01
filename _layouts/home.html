@@ -32,14 +32,14 @@ layout: default
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
-<div style="display:flex; align-items: center; justify-content: center; margin: 2.5rem 0;">
+<div style="display:flex; justify-content: space-between;">
     {% if paginator.previous_page %}
-    <a href="{{paginator.previous_page_path}}"
-        style="display: inline-flex; padding: 0.75rem; margin: 0 0.75rem; border: 1px solid;">Previous</a>
+    <a href="{{paginator.previous_page_path}}" style="padding: 0.75rem; border: 1px solid;">New Posts</a>
+    {% else %}
+    <a style="visibility: none;"></a>
     {% endif %}
     {% if paginator.next_page %}
-    <a href="{{paginator.next_page_path}}"
-        style="display: inline-flex; padding: 0.75rem; margin: 0 0.75rem; border: 1px solid;">Next</a>
+    <a href="{{paginator.next_page_path}}" style="padding: 0.75rem; border: 1px solid;">Older Posts</a>
     {% endif %}
 </div>
 {% endif %}
