@@ -89,7 +89,7 @@
       u(t);
     }
     window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      const t = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+      const t = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'default';
       u(t);
     });
     function c(color) {
