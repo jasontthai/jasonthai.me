@@ -17,15 +17,21 @@
 
     :root {
       --link-color: #1d4ed8;
-      --default-link-color: #1d4ed8;
       --link-text-color: #FFF;
+      --default-color: #1d4ed8;
+      --red-color: #F28B82;
+      --yellow-color: #FDD663;
+      --green-color: #81C995;
+      --blue-color: #78D9EC;
+      --indigo-color: #8AB4F8;
+      --purple-color: #C58AF9;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
         --link-color: #b8bb26;
-        --default-link-color: #b8bb26;
         --link-text-color: #000;
+        --default-color: #b8bb26;
       }
     }
 
@@ -78,7 +84,7 @@
     }
   </style>
   <script>
-    const t = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+    const t = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'default';
     if (t) {
       u(t);
     }
@@ -89,28 +95,7 @@
     function c(color) {
       const r = document.querySelector(':root');
       const rs = getComputedStyle(r);
-      switch (color) {
-        case 'red':
-          hex = '#F28B82';
-          break;
-        case 'yellow':
-          hex = '#FDD663';
-          break;
-        case 'green':
-          hex = '#81C995';
-          break;
-        case 'blue':
-          hex = '#78D9EC';
-          break;
-        case 'indigo':
-          hex = '#8AB4F8';
-          break;
-        case 'purple':
-          hex = '#C58AF9';
-          break;
-        default:
-          hex = rs.getPropertyValue('--default-link-color');
-      };
+      const hex = rs.getPropertyValue(`--${color}-color`) || rs.getPropertyValue(`--default-color`);
       return hex;
     }
     function u(color) {

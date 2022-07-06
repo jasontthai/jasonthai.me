@@ -1,0 +1,40 @@
+<footer>
+    <div style="display: flex; align-items: center;">
+      Themes:
+      <button id="default" class="tb" style="background-color: var(--default-color);" onclick="o(this)"></button>
+      <button id="red" class="tb" style="background-color: var(--red-color);" onclick="o(this)"></button>
+      <button id="yellow" class="tb" style="background-color: var(--yellow-color);" onclick="o(this)"></button>
+      <button id="green" class="tb" style="background-color: var(--green-color);" onclick="o(this)"></button>
+      <button id="blue" class="tb" style="background-color: var(--blue-color);" onclick="o(this)"></button>
+      <button id="indigo" class="tb" style="background-color: var(--indigo-color);" onclick="o(this)"></button>
+      <button id="purple" class="tb" style="background-color: var(--purple-color);" onclick="o(this)"></button>
+    </div>
+    <p>{{ site.title | escape }}</b> © 2019 - {{ site.time | date: '%Y' }}</p>
+    <p>
+      A member of
+      <a target="blank" href="https://512kb.club">
+        <span>512KB Club</span>
+      </a>
+    </p>
+    <script type="text/javascript">
+      function f() {
+        const t = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'default';
+        const buttons = document.querySelectorAll('.tb');
+        buttons.forEach((button) => {
+          if (button.getAttribute('id') === t) {
+            button.style.setProperty('transform', 'scale(1.5)');
+          } else {
+            button.style.removeProperty('transform');
+          }
+        });
+      }
+      f();
+      function o(d) {
+        const color = d.getAttribute("id");
+        u(color);
+
+        localStorage.setItem('theme', color);
+        f();
+      }
+    </script>
+  </footer>
