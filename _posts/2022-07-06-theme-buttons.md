@@ -6,7 +6,7 @@ tags:
   - design
 ---
 
-Recently, I added support for dark mode to this blog as a long overdue item. Keeping up the momentum, I want to add a new feature that would allow me or you to have some fun with customizing the link colors dynamically. Instead of the default color, there are now a few more options to choose from. You can test it out by testing the buttons in the footer. They may look something like this:
+Recently, I added support for dark modes to this blog as a long-overdue item. Keeping up the momentum, I want to add a new feature that would allow me or you to have some fun with customizing the link colors dynamically. Instead of the default color, there are now a few more options to choose from. You can test it out by trying the buttons in the footer. They may look something like this:
 
 <div style="display: flex; align-items: center;">
   Themes:
@@ -19,7 +19,7 @@ Recently, I added support for dark mode to this blog as a long overdue item. Kee
   <button id="purple" class="tb" style="background-color: var(--purple-color);" onclick="o(this)"></button>
 </div>
 
-I borrow a few designs from my current work project so if you are aware with what I'm working on, this will look very familiar. If you're are not, well I'm working on [supporting the RGB Keyboards on ChromeOS](https://chromeunboxed.com/chromeos-keyboard-backlight-personalization-hub).
+I borrow a few designs from my current work project so if you are aware of what I'm working on, this will look very familiar. If you are not, well I'm working on [supporting the RGB Keyboards on ChromeOS](https://chromeunboxed.com/chromeos-keyboard-backlight-personalization-hub).
 
 The idea is pretty simple. I've manually defined a couple of CSS variables like so:
 
