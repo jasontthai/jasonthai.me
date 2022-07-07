@@ -1,8 +1,8 @@
 ---
 title: I bought a new domain
 description: What to do with jt0.dev?
-category: blog
-tags: [domain]
+category: tech
+tags: [domain, curl, hsts]
 ---
 
 I purchased a new domain today [https://jt0.dev/](https://jt0.dev/) and now I am wondering what to do with it. It is a bit backward because I should have planned for it first but oh well, the domain is short and contains my intials.
@@ -12,7 +12,9 @@ My list of domains are growing:
 * [jasonthai.me](https://jasonthai.me)
 * [jt0.dev](https://jt0.dev)
 
-In other news, I learned how to retrieve a page size today using curl. Here's an example:
+I've added this site to the [HSTS Preload list](https://hstspreload.org/?domain=jasonthai.me) so it will load in HTTPS by default.
+
+I also learned how to retrieve a page size today using curl. Here's an example:
 
 ```sh
 # No compression
