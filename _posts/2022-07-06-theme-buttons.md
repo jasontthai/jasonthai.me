@@ -81,4 +81,6 @@ I also added some scripts that handle on click events for the theme buttons, and
 </script>
 ```
 
+I ran into an issue with the link color flickering between the default and new colors due to the script executing after the page loads. This was resolved by moving the appropriate functions to `<head>`. Another issue is that the button doesn't highlight properly, which is also addressed by keeping parts of the scripts in the `<footer>`.
+
 The changes added about 2kb to the site but I think it's worth making this site a bit more fun. I also have a TODO to add a rainbow theme, so stay tuned.
