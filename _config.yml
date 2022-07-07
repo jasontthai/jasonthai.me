@@ -91,3 +91,4 @@ exclude:
   - node_modules/*
   - tailwind.config.js
   - .tailwind/
+  - .gitignore
