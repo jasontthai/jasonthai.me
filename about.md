@@ -18,7 +18,7 @@ Some of my previous companies include:
 ## Other facts about me
 I'm currently living in San Jose, California with my lovely wife Vy and adorable mini goldendoodle [Yuna](/assets/img/yuna-chan.jpeg). We like to go on walks and do other outdoor activities like running, hiking and biking.
 
-I'm also an amateur practioner of mindfulness and follow the [Plum Village](https://plumvillage.org)  meditation teachings.
+I'm also an amateur practitioner of mindfulness and follow the [Plum Village](https://plumvillage.org)  meditation teachings.
 
 I've run a half marathon in 2019 and preparing to do another one with my wife this year 2022.
 
