@@ -1,6 +1,6 @@
 ---
 title: We All Live at Our Own Pace
-description: Our lives are not a race where we should rush to the finish line.
+description: Where is the finish line?
 category: blog
 tags:
 - thoughts
