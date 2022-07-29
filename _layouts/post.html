@@ -245,7 +245,7 @@ layout: default
   .toc-container {
     position: fixed;
     top: 4rem;
-    right: max(0px, calc(50% - 50rem));
+    right: max(0px, calc(50% - 45rem));
     width: 20rem;
     display: none;
   }
@@ -256,9 +256,9 @@ layout: default
     }
   }
 </style>
+<h1>{{ page.title | escape }}</h1>
 <article style="overflow: auto;">
-  <h1>{{ page.title | escape }}</h1>
-  <div style="border-inline-start: 2px solid; padding-left: 1rem;">
+  <div style="border-inline-start: 4px solid; padding-left: 1rem;">
     <div>
       <span>Published:</span>
       <time>
@@ -289,30 +289,27 @@ layout: default
     </div>
 
   </div>
-
-  <div>
-    <div class="toc-container">
-      {% if page.toc %}
-      <h2>Table of Contents</h2>
-      {% toc %}
-      {% endif %}
-    </div>
-    {{ content }}
-
-    <div style="display:flex; justify-content: space-between;">
-      {% if page.next.url %}
-      <a href="{{page.next.url}}" style="padding: 0.75rem; border: 1px solid;">Newer Post</a>
-      {% else %}
-      <a style="visibility: none;"></a>
-      {% endif %}
-      {% if page.previous.url %}
-      <a href="{{page.previous.url}}" style="padding: 0.75rem; border: 1px solid;">Older Post</a>
-      {% else %}
-      <a style="visibility: none;"></a>
-      {% endif %}
-    </div>
-
-    <div id="commento"></div>
-    <script src="https://commento.jasonthai.me/js/commento.js"></script>
+  <div class="toc-container">
+    {% if page.toc %}
+    <h2>Table of Contents</h2>
+    {% toc %}
+    {% endif %}
   </div>
+  {{ content }}
+
+  <div style="display:flex; justify-content: space-between;">
+    {% if page.next.url %}
+    <a href="{{page.next.url}}" style="padding: 0.75rem; border: 1px solid;">Newer Post</a>
+    {% else %}
+    <a style="visibility: none;"></a>
+    {% endif %}
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}" style="padding: 0.75rem; border: 1px solid;">Older Post</a>
+    {% else %}
+    <a style="visibility: none;"></a>
+    {% endif %}
+  </div>
+
+  <div id="commento"></div>
+  <script src="https://commento.jasonthai.me/js/commento.js"></script>
 </article>
