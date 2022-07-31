@@ -30,8 +30,5 @@ I spent quite a bit of time trying to make up my mind what should be on this blo
 I do not have a specific theme of topics that are covered in this blog. Mainly what I want to share revolves around my work, life and interests.
 If you expect a lot of randomness, this blog is for you.
 
-## How often is this blog updated?
-I try to write as much as possible whenever I feel like writing. If you are interested, you can subscribe using your email [here](https://sendy.jasonthai.me/subscription?f=1xbnC4rzl5bZyD5KdkNEpvolP9bMamozYB9Km892ZO0L7mc7N7Pq7ckWA1dY3DSlvL) and you will be notified when a new post is out.
-
 ## Have some comments? 
 Send me an email at [&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;](mailto:&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;).
