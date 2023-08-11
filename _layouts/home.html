@@ -13,9 +13,11 @@ layout: default
 {%- for post in posts -%}
 <article style="position: relative; padding-bottom: 2rem;">
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {%- if post.description -%}
     <p>
         {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
     </p>
+    {%- endif -%}
     <span>
         {{ post.date | date: "%b %-d, %Y" }}
     </span>

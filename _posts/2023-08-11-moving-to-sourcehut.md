@@ -4,7 +4,6 @@ category: blog
 tags:
 - cicd
 - sourcehut
-description: Site is now powered by Sourcehut page
 ---
 
 For quite a while, this site has been posted on Cloudflare Pages (before that it was on Github Page). I don't really have any complaint about it as the uptime is great (perfect 100%).
