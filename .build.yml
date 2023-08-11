@@ -16,4 +16,4 @@ tasks:
     cd $site/_site
     tar -cvz . > ../../site.tar.gz
 - upload: |
-    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
+    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz -FsiteConfig='{notFound: \"404.html\"}'
