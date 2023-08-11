@@ -1,0 +1,19 @@
+image: debian/stable
+oauth: pages.sr.ht/PAGES:RW
+packages:
+- ruby-full
+- ruby-dev
+environment:
+  site: jasonthai.me
+tasks:
+- install-bundler: |
+    sudo gem install bundler
+- build: |
+    cd $site
+    sudo bundle install
+    sudo bundle exec jekyll build
+- package: |
+    cd $site/_site
+    tar -cvz . > ../../site.tar.gz
+- upload: |
+    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
