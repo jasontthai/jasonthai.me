@@ -14,8 +14,6 @@ author:
   avatar: /assets/img/profile.jpeg
   description: Jason's personal page
 
-# paginate:         5
-# paginate_path:    '/page/:num'
 pagination:
   enabled: true
   debug: true
@@ -24,14 +22,6 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-
-analytics:
-  enabled: false
-pwa:
-  enabled: false
-
-# disqus:
-#  shortname: https-jasonthai-me
 
 github_username: jasontthai
 linkedin_username: jasontthai
@@ -78,13 +68,9 @@ plugins:
   - jekyll-archives
 
 exclude:
-  - .travis.yml
   - bin/*
-  - .circle/
   - Gemfile
   - Gemfile.lock
-  - package.json
-  - package-lock.json
   - README.md
   - yarn.lock
   - vendor
