@@ -5,11 +5,6 @@
   {%- seo -%}
   <link rel="icon"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAACPklEQVQ4jYWRzWsTURTFz3zl22liSDVpkrZSKlYpNUWnTFqIHygVRSh14a5uhbrxH7AL+x+IUBdWce1CQQUNTl0MCoJZdFFK2mgxto2mLUlnYjJv3nNRGkOT0AMP7r0cfvdcHoc2unpnIsE52DwjVKj+3r2vvUq/a+UTWg3Hrqcmjw6HH3TdPH0ukOgKlZf/nI9G4vkfy6tLhwKSl5MjoZHeF8cu9Z0CYwCAQKIrSIzaxZBLXlhbWcs3+vnG5qyqdjsCvkedqRMhACgs5FDZKAMAOlO9IVH2PB4eHY23BQR7/HP902qCd4qoFU04/C64w/JeVLeE/mk14Y/55loCFEWRBa8U5aW9qxxBD/xDEQBAaamA7cw6eEmA6HPGFEWRmwDuiDwbvzU4AAAFbRW1olnfspvbRmAoDACITQ4OuMPywyYAx1CyKzUGAKGxHmx+XKkDIuMn67VtWpQB5SaAqyrO5J590xmh4AQex6/046AYocg9/6p7quLM/qz+jdls1o52x1ZJuTruDHp8jFLYpvX/GRY20tnNSr58N/32fT0ed3CLmkqdkWThGjMtJeoVJwDgp0Fech7pi1Wy3+iattjoFxubZDIZ6YD1RDIsgHHePreACqH4ZdZeax8+zTfddBBgGIZ5pMO7zhiCPAcZAFwiD59DuHfjgjplU87esdhtXdcLLQGZTGYHwAQApNSRqQqhTz0SD6fI+whlNcLRHUKI3TZBK5kWRdG0ZjX98+EnNMri6OLy1t/v+3U73z+/S93A5MbjSQAAAABJRU5ErkJggg==">
-  {%- if site.pwa.enabled -%}
-  <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-  <meta name="theme-color" content="#ffffff" />
-  {% endif %}
   {%- feed_meta -%}
   <style>
     * {
@@ -104,16 +99,5 @@
       const hex = c(color);
       r.style.setProperty('--link-color', hex);
     }
-    /* Check that service workers are supported */
-    if ('serviceWorker' in navigator) {
-      /* Use the window load event to keep the page load performant */
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js');
-      });
-    }
   </script>
-
-  {%- if site.analytics.enabled -%}
-  {%- include matomo.html -%}
-  {% endif %}
 </head>
