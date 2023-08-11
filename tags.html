@@ -15,7 +15,7 @@ description: tags page
 <div style="display:flex; flex-wrap: wrap;">
     {% for tag_pair in tag_words %}
     {% assign tag = tag_pair | split:'|' | last %}
-    <a href="{{ tag | slugify }}"
+    <a href="/tags/{{ tag | slugify }}"
         style="display: inline-flex; padding: 0.75rem; margin: 0.75rem; border: 1px solid;">
         #{{ tag }} {{ site.tags[tag] | size }}
     </a>

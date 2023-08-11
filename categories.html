@@ -15,7 +15,7 @@ description: categories page
 <div style="display:flex; flex-wrap: wrap;">
   {% for category_pair in category_words %}
   {% assign category = category_pair | split:'|' | last %}
-  <a href="{{ category | slugify }}"
+  <a href="/categories/{{ category | slugify }}"
     style="display: inline-flex; padding: 0.75rem; margin: 0.75rem; border: 1px solid;">
     {{ category | capitalize }} {{ site.categories[category] | size }}
   </a>
