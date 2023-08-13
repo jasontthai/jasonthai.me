@@ -10,13 +10,13 @@ Recently, I added support for dark modes to this blog as a long-overdue item. Ke
 
 <div style="display: flex; align-items: center;">
   Themes:
-  <button id="default" class="tb" style="background-color: var(--default-color);" onclick="o(this)"></button>
-  <button id="red" class="tb" style="background-color: var(--red-color);" onclick="o(this)"></button>
-  <button id="yellow" class="tb" style="background-color: var(--yellow-color);" onclick="o(this)"></button>
-  <button id="green" class="tb" style="background-color: var(--green-color);" onclick="o(this)"></button>
-  <button id="blue" class="tb" style="background-color: var(--blue-color);" onclick="o(this)"></button>
-  <button id="indigo" class="tb" style="background-color: var(--indigo-color);" onclick="o(this)"></button>
-  <button id="purple" class="tb" style="background-color: var(--purple-color);" onclick="o(this)"></button>
+  <button id="default" class="tb" style="background-color: var(--default-link-color);" onclick="o(this)"></button>
+  <button id="red" class="tb" style="background-color: var(--red-link-color);" onclick="o(this)"></button>
+  <button id="yellow" class="tb" style="background-color: var(--yellow-link-color);" onclick="o(this)"></button>
+  <button id="green" class="tb" style="background-color: var(--green-link-color);" onclick="o(this)"></button>
+  <button id="orange" class="tb" style="background-color: var(--orange-link-color);" onclick="o(this)"></button>
+  <button id="indigo" class="tb" style="background-color: var(--indigo-link-color);" onclick="o(this)"></button>
+  <button id="purple" class="tb" style="background-color: var(--purple-link-color);" onclick="o(this)"></button>
 </div>
 
 I borrow a few designs from my current work project so if you are aware of what I'm working on, this will look very familiar. If you are not, well I'm working on [supporting the RGB Keyboards on ChromeOS](https://chromeunboxed.com/chromeos-keyboard-backlight-personalization-hub).

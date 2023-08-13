@@ -3,12 +3,12 @@
   {%- assign page_paths = site.data.navigation | default: default_paths -%}
   <nav>
     <a {% if page.url=='/index.html' %} style="background-color: var(--link-color);
-          color: var(--link-text-color);" {% endif %} href="/"><b>Home</b></a>
+          color: var(--bg-color);" {% endif %} href="/"><b>Home</b></a>
     {%- for path in page_paths -%}
     {%- assign my_page = site.pages | where: "path", path | first -%}
     {%- if my_page.title and my_page.autogen == nil -%}
     <a {% if page.url==my_page.url %} style="background-color: var(--link-color);
-          color: var(--link-text-color);" {% endif %} href="{{ my_page.url | relative_url }}"><b>{{ my_page.title | escape
+          color: var(--bg-color);" {% endif %} href="{{ my_page.url | relative_url }}"><b>{{ my_page.title | escape
       }}</b></a>
     {%- endif -%}
     {%- endfor -%}

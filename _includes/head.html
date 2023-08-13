@@ -11,33 +11,46 @@
     }
 
     :root {
-      --link-color: #1d4ed8;
-      --link-text-color: #FFF;
-      --default-color: #1d4ed8;
-      --red-color: #EE675C;
-      --yellow-color: #FBBC04;
-      --green-color: #34A853;
-      --blue-color: #00A3C2;
-      --indigo-color: #4285F4;
-      --purple-color: #B76DF8;
+      --color: #584140;
+      --link-color: #C00021;
+      --bg-color: #FFDAD7;
+
+      --default-color: #000;
+      --default-link-color: #0062CC;
+      --default-bg-color: #FFF;
+
+      --red-color: #584140;
+      --red-link-color: #C00021;
+      --red-bg-color: #FFDAD7;
+
+      --green-color: #dae5e1;
+      --green-link-color: #00dec9;
+      --green-bg-color: #101918;
+
+      --orange-color: #2d1600;
+      --orange-link-color: #8b5000;
+      --orange-bg-color: #ffdcbe;
+
+      --yellow-color: #E7E3D0;
+      --yellow-link-color: #f5e700;
+      --yellow-bg-color: #19180d;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --link-color: #FFD700	;
-        --link-text-color: #000;
-        --default-color: #FFD700	;
+        --default-color: #FFF;
+        --default-bg-color: #000;
       }
     }
 
     body {
+      color: var(--color);
+      background-color: var(--bg-color);
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
       line-height: 1.6;
       margin: auto;
       max-width: 7in;
       padding: 0 1rem;
-      /* background-color: pink;
-      color: red; */
     }
 
     h1, h2, h3 {
@@ -50,7 +63,7 @@
 
     a:hover {
       background-color: var(--link-color);
-      color: var(--link-text-color);
+      color: var(--bg-color);
     }
 
     nav>a {
@@ -88,10 +101,23 @@
       const hex = rs.getPropertyValue(`--${color}-color`) || rs.getPropertyValue(`--default-color`);
       return hex;
     }
+    function b(color) {
+      const r = document.querySelector(':root');
+      const rs = getComputedStyle(r);
+      const hex = rs.getPropertyValue(`--${color}-bg-color`) || rs.getPropertyValue(`--default-bg-color`);
+      return hex;
+    }
+    function l(color) {
+      const r = document.querySelector(':root');
+      const rs = getComputedStyle(r);
+      const hex = rs.getPropertyValue(`--${color}-link-color`) || rs.getPropertyValue(`--default-link-color`);
+      return hex;
+    }
     function u(color) {
       const r = document.querySelector(':root');
-      const hex = c(color);
-      r.style.setProperty('--link-color', hex);
+      r.style.setProperty('--color', c(color));
+      r.style.setProperty('--link-color', l(color));
+      r.style.setProperty('--bg-color', b(color));
     }
   </script>
 </head>
