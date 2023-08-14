@@ -20,5 +20,4 @@ gem 'jekyll-titles-from-headings'
 gem 'html-proofer'
 gem 'jekyll-toc'
 gem "webrick"
-gem "jekyll-sass-converter", "~> 3.0"
 gem "jekyll", "~> 4.2"
