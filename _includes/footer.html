@@ -1,13 +1,11 @@
 <footer>
     <h3 style="display: flex; align-items: center;">
       Themes:
-      <button id="default" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--default-link-color) 0%, var(--default-link-color) 50%, var(--default-bg-color) 50%, var(--default-bg-color) 100%);" onclick="o(this)"></button>
-      <button id="red" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--red-link-color) 0%, var(--red-link-color) 50%, var(--red-bg-color) 50%, var(--red-bg-color) 100%);" onclick="o(this)"></button>
-      <button id="orange" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--orange-link-color) 0%, var(--orange-link-color) 50%, var(--orange-bg-color) 50%, var(--orange-bg-color) 100%);" onclick="o(this)"></button>
-      <button id="green" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--green-link-color) 0%, var(--green-link-color) 50%, var(--green-bg-color) 50%, var(--green-bg-color) 100%);" onclick="o(this)"></button>
-      <button id="yellow" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--yellow-link-color) 0%, var(--yellow-link-color) 50%, var(--yellow-bg-color) 50%, var(--yellow-bg-color) 100%);" onclick="o(this)"></button>
-      <button id="indigo" class="tb" style="background-color: var(--indigo-color);" onclick="o(this)"></button>
-      <button id="purple" class="tb" style="background-color: var(--purple-color);" onclick="o(this)"></button>
+      <button id="default" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--default-link-color) 0%, var(--default-link-color) 50%, var(--default-bg-color) 50%, var(--default-bg-color) 100%);" onclick="o(this)" aria-label="Default"></button>
+      <button id="red" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--red-link-color) 0%, var(--red-link-color) 50%, var(--red-bg-color) 50%, var(--red-bg-color) 100%);" onclick="o(this)" aria-label="Red"></button>
+      <button id="orange" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--orange-link-color) 0%, var(--orange-link-color) 50%, var(--orange-bg-color) 50%, var(--orange-bg-color) 100%);" onclick="o(this)" aria-label="Orange"></button>
+      <button id="green" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--green-link-color) 0%, var(--green-link-color) 50%, var(--green-bg-color) 50%, var(--green-bg-color) 100%);" onclick="o(this)" aria-label="Green"></button>
+      <button id="yellow" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--yellow-link-color) 0%, var(--yellow-link-color) 50%, var(--yellow-bg-color) 50%, var(--yellow-bg-color) 100%);" onclick="o(this)" aria-label="Yellow"></button>
     </h3>
     <p>{{ site.title | escape }}</b> © 2019 - {{ site.time | date: '%Y' }}</p>
     <p>
