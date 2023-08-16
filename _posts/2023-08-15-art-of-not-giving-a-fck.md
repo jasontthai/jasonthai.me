@@ -20,4 +20,4 @@ Self reflections
 * My body is sore. Then what? I should listen to how my body reacts and take it easy for the day.
 * I'm sad. Then what? Is it because of something or someone? If something, then what? If someone, then what? Etc.
 
-Vy has been feeling stressful about work today, so I shared this with her, hoping it will cheer her up. She seemed to like it. It's easier said than said for the things I mentioned above, but with practice we can do it. I know we can, just like how we are able to run a half marathon now.
+Vy has been feeling stressful about work today, so I shared this with her, hoping it will cheer her up. She seemed to like it. It's easier said than done for the things I mentioned above, but with practice we can do it. I know we can, just like how we are able to run a half marathon now.
