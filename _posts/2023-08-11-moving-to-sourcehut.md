@@ -1,5 +1,5 @@
 ---
-title: Moving to Sourcehut
+title: <s>Moving to Sourcehut</s>
 category: blog
 tags:
 - cicd
@@ -13,4 +13,9 @@ I found out [Sourcehut](https://srht.site/) not long ago and the dedication for 
 I'm going to monitor the uptime of the page for some time to see whether it lives up to my expectation. Bye now.
 
 Edited: Aug 11 2023
+
 After a few hours, I found that Sourcehut limitations affect this site quite a bit, specifically the Services and Footprints page. The external APIs that I am using no longer works due to the CSP limitation. Not the end of the world, but kinda annoying. Now the Services page fails to show the live status and the Footprints page is not able to show the world map from Mapbox API anymore. I also can no longer customize the 404 page. Bummer.
+
+Edited: Aug 16 2023
+
+It turns out I'm more annoyed at the limitations than I thought. I have decided to move back to using Cloudflare Pages to host this site as it fits my use case more. SourceHut is still great though, and I'm considering hosting a few git repos there.
