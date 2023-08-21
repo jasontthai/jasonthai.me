@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<style>
+    .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+</style>
+
 {% assign posts = site.posts %}
 {% if paginator.total_pages >= 1 %}
 {% assign posts = paginator.posts %}
@@ -11,26 +18,10 @@ layout: default
 {%- endif -%}
 
 {%- for post in posts -%}
-<article style="padding-bottom: 2rem;">
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    {%- if post.description -%}
-    <p>
-        {{ post.description | default: post.excerpt | strip_html | truncatewords: 100 }}
-    </p>
-    {%- endif -%}
-    <span>
-        {{ post.date | date: "%b %-d, %Y" }}
-    </span>
-    {%- if post.tags.size > 0 -%}
-    |
-    <span>
-        tags:
-    </span>
-    {%- for tag in post.tags -%}
-    <a href="/tags/{{ tag | slugify }}">#{{ tag }}</a>
-    {% endfor %}
-    {% endif %}
-</article>
+<div style="padding-bottom: 2rem;">
+    <a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <div>{{ post.date | date: "%b %-d, %Y" }}</div>
+</div>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}

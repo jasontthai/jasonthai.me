@@ -11,12 +11,9 @@ gem 'jekyll-sitemap'
 gem 'jekyll-redirect-from'
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-paginate-v2'
-gem 'jekyll-coffeescript'
 gem 'jekyll-relative-links'
 gem 'jekyll-optional-front-matter'
-gem 'jekyll-readme-index'
 gem 'jekyll-default-layout'
-gem 'jekyll-titles-from-headings'
 gem 'html-proofer'
 gem 'jekyll-toc'
 gem "webrick"
