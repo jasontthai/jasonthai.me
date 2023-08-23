@@ -18,72 +18,59 @@ layout: default
     margin: 0;
     padding: 0;
   }
-
-  .toc-container {
-    position: fixed;
-    top: 4rem;
-    right: max(0px, calc(50% - 45rem));
-    width: 20rem;
-    display: none;
-  }
-
-  @media (min-width: 640px) {
-    .toc-container {
-      display: block;
-    }
-  }
 </style>
 <h1>{{ page.title | escape }}</h1>
 <article style="overflow: auto;">
   <div style="border-inline-start: 4px solid; padding-left: 1rem;">
     <div>
-      <span>Published:</span>
+      Published:
       <time>
         {{ page.date | date: "%b %-d, %Y" }}
       </time>
-      |
-      <span>
-        Last Edited:
-      </span>
+      | Last Edited:
       <time>
         {{ page.last_modified_at | date: "%b %-d, %Y" }}
       </time>
     </div>
-    <p>
-      Author: {{ page.author | default: site.author.name | escape }}
-    </p>
     <div>
-      <span>Category:</span>
-      <a href="/categories/{{ page.category }}">{{ page.category }}</a>
+      Category: <a href="/categories/{{ page.category }}">{{ page.category }}</a>
       {%- if page.tags.size > 0 -%}
-      <span>
-        | Tags:
-      </span>
-      {%- for tag in page.tags -%}
-      <a href="/tags/{{ tag }}">#{{ tag }}</a>
-      {% endfor %}
+        <span>  | Tags:
+        {%- for tag in page.tags -%}
+          <a href="/tags/{{ tag }}">#{{ tag }}</a>
+        {% endfor %}
+        </span>
       {% endif %}
     </div>
 
   </div>
+  {% if page.toc %}
+  <style>
+    .toc-container {
+      position: fixed;
+      top: 4rem;
+      right: max(0px, calc(50% - 45rem));
+      width: 20rem;
+      display: none;
+    }
+
+    @media (min-width: 640px) {
+      .toc-container {
+        display: block;
+      }
+    }
+  </style>
   <div class="toc-container">
-    {% if page.toc %}
     <h2>Table of Contents</h2>
     {% toc %}
-    {% endif %}
   </div>
+  {% endif %}
   {{ content }}
 
-  <div style="display:flex; justify-content: space-between;">
-    {% if page.next.url %}
-    <a href="{{page.next.url}}" style="padding: 0.75rem; border: 1px solid;">Newer Post</a>
-    {% else %}
-    <a style="visibility: none;"></a>
-    {% endif %}
-    {% if page.previous.url %}
-    <a href="{{page.previous.url}}" style="padding: 0.75rem; border: 1px solid;">Older Post</a>
-    {% else %}
-    <a style="visibility: none;"></a>
-    {% endif %}
-  </div>
+  {% if page.next.url %}
+    <div>Next Post: <a href="{{page.next.url}}">{{page.next.title}}</a></div>
+  {% endif %}
+  {% if page.previous.url %}
+    <div>Previous Post: <a href="{{page.previous.url}}">{{page.previous.title}}</a></div>
+  {% endif %}
 </article>
