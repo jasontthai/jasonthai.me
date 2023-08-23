@@ -37,31 +37,23 @@ layout: default
 <article style="overflow: auto;">
   <div style="border-inline-start: 4px solid; padding-left: 1rem;">
     <div>
-      <span>Published:</span>
+      Published:
       <time>
         {{ page.date | date: "%b %-d, %Y" }}
       </time>
-      |
-      <span>
-        Last Edited:
-      </span>
+      | Last Edited:
       <time>
         {{ page.last_modified_at | date: "%b %-d, %Y" }}
       </time>
     </div>
-    <p>
-      Author: {{ page.author | default: site.author.name | escape }}
-    </p>
     <div>
-      <span>Category:</span>
-      <a href="/categories/{{ page.category }}">{{ page.category }}</a>
+      Category: <a href="/categories/{{ page.category }}">{{ page.category }}</a>
       {%- if page.tags.size > 0 -%}
-      <span>
-        | Tags:
-      </span>
-      {%- for tag in page.tags -%}
-      <a href="/tags/{{ tag }}">#{{ tag }}</a>
-      {% endfor %}
+        <span>  | Tags:
+        {%- for tag in page.tags -%}
+          <a href="/tags/{{ tag }}">#{{ tag }}</a>
+        {% endfor %}
+        </span>
       {% endif %}
     </div>
 
