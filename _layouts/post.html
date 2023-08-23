@@ -18,20 +18,6 @@ layout: default
     margin: 0;
     padding: 0;
   }
-
-  .toc-container {
-    position: fixed;
-    top: 4rem;
-    right: max(0px, calc(50% - 45rem));
-    width: 20rem;
-    display: none;
-  }
-
-  @media (min-width: 640px) {
-    .toc-container {
-      display: block;
-    }
-  }
 </style>
 <h1>{{ page.title | escape }}</h1>
 <article style="overflow: auto;">
@@ -58,12 +44,27 @@ layout: default
     </div>
 
   </div>
+  {% if page.toc %}
+  <style>
+    .toc-container {
+      position: fixed;
+      top: 4rem;
+      right: max(0px, calc(50% - 45rem));
+      width: 20rem;
+      display: none;
+    }
+
+    @media (min-width: 640px) {
+      .toc-container {
+        display: block;
+      }
+    }
+  </style>
   <div class="toc-container">
-    {% if page.toc %}
     <h2>Table of Contents</h2>
     {% toc %}
-    {% endif %}
   </div>
+  {% endif %}
   {{ content }}
 
   {% if page.next.url %}
