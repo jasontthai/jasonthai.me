@@ -75,9 +75,9 @@ layout: default
   {{ content }}
 
   {% if page.next.url %}
-    <div>Next Post: <a href="{{page.next.rul}}">{{page.next.title}}</a></div>
+    <div>Next Post: <a href="{{page.next.url}}">{{page.next.title}}</a></div>
   {% endif %}
   {% if page.previous.url %}
-    <div>Previous Post: <a href="{{page.previous.rul}}">{{page.previous.title}}</a></div>
+    <div>Previous Post: <a href="{{page.previous.url}}">{{page.previous.title}}</a></div>
   {% endif %}
 </article>
