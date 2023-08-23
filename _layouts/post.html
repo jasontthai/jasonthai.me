@@ -74,16 +74,10 @@ layout: default
   </div>
   {{ content }}
 
-  <div style="display:flex; justify-content: space-between;">
-    {% if page.next.url %}
-    <a href="{{page.next.url}}" style="padding: 0.75rem; border: 1px solid;">Newer Post</a>
-    {% else %}
-    <a style="visibility: none;"></a>
-    {% endif %}
-    {% if page.previous.url %}
-    <a href="{{page.previous.url}}" style="padding: 0.75rem; border: 1px solid;">Older Post</a>
-    {% else %}
-    <a style="visibility: none;"></a>
-    {% endif %}
-  </div>
+  {% if page.next.url %}
+    <div>Next Post: <a href="{{page.next.rul}}">{{page.next.title}}</a></div>
+  {% endif %}
+  {% if page.previous.url %}
+    <div>Previous Post: <a href="{{page.previous.rul}}">{{page.previous.title}}</a></div>
+  {% endif %}
 </article>
