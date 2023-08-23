@@ -5,9 +5,12 @@ tags:
 - thoughts
 ---
 
-I don't usually get exhausted at the end of the day, given that I have a very sedentary work style. Even daily exercises such as running don't tire me out as much as they used to anymore. But, there are a few occasions where I feel drained at the end of the day, which results in a good night's sleep.
+Have you ever felt so exhausted at the end of the day that you fell asleep as soon as your head hit the pillow? I'm not talking about the usual kind of tired that comes from a long day at work or school. I'm talking about the kind of tired that makes your whole body feel heavy and your eyelids droop.
+
+I don't usually get this kind of tired, given that I have a very sedentary work style. Even daily exercises such as running don't tire me out as much as they used to anymore. But, there are a few occasions where I feel drained at the end of the day, which results in a good night's sleep.
 
 The general recipe is something like so:
+
 1. Early wake up than usual
 2. Do some running
 3. Drive a lot (which requires constant attention)
@@ -18,7 +21,8 @@ The general recipe is something like so:
 
 Below are a few examples:
 
-Ex1:
+Example 1:
+
 1. Went to sleep at 11 PM, and woke up at 4 AM
 2. Take Uber to the airport at 4:30 AM
 3. Take the 2-hour flight to SEA
@@ -33,7 +37,7 @@ Ex1:
 12. Shower and mingles till 12 AM
 13. Exhausted
 
-Ex2:
+Example 2:
 1. Wake up at 5 AM
 2. Attend a 10K race and finish at 9 AM
 3. Have breakfast and take a shower
@@ -45,7 +49,7 @@ Ex2:
 9. Head home
 10. Exhausted
 
-Ex3:
+Example 3:
 1. Wake up at 8 AM
 2. Do a 5K run
 3. Pack up and leave home around 10:30 AM
@@ -57,7 +61,7 @@ Ex3:
 9. Sing karaoke till 11 PM
 10. Exhausted
 
-Ex4 (not so exhausted):
+Example 4 (not so exhausted):
 1. Wake up at 8 AM
 2. Do a 10K run
 3. Have breakfast.
