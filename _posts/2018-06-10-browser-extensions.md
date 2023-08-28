@@ -17,5 +17,3 @@ Here is a list of my recommended browser extensions that will make your browsing
 * [HTTPS Everywhere](https://www.eff.org/https-everywhere) - A Firefox, Chrome, and Opera extension that encrypts your communications with many major websites, making your browsing more secure. A collaboration between The Tor Project and the Electronic Frontier Foundation. 
 
 If you are interested in protecting your privacy on the internet, I recommend checking out [https://www.privacytools.io/](https://www.privacytools.io/) where there are a lot of useful tips in helping you do so.
-
-Jared Clarke from VPNandGO also has an informational article about different adblockers. You can read more about it here [https://vpnandgo.com/best-ad-blocker/](https://vpnandgo.com/best-ad-blocker/)
