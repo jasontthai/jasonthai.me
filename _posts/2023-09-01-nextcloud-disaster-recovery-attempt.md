@@ -58,16 +58,16 @@ Before backing up, `pre_backup.sh` is executed, preparing all the containers for
 ## Backup
 Borgmatic is run daily through cron:
 ```
-crontab -l
+$ crontab -l
 20 1 * * * /root/.local/bin/borgmatic --stats --verbosity 1 --syslog-verbosity 1
 ```
 
 ## Restore
 Use borgmatic to mount the previous backup:
 ```
-borgmatic mount --repository /mnt/backup/home-server.borg --mount-point /tmp/backup
+$ borgmatic mount --repository /mnt/backup/home-server.borg --mount-point /tmp/backup
 
-ls /tmp/backup
+$ ls /tmp/backup
 home-server-2023-07-31T01:20:39.771648  home-server-2023-08-27T01:20:37.551086  home-server-2023-08-29T01:20:35.602216  home-server-2023-08-31T09:35:21.040004
 home-server-2023-08-20T01:20:46.226830  home-server-2023-08-28T01:20:41.478482  home-server-2023-08-30T01:20:55.037651  home-server-2023-09-01T14:06:54.389790
 ```
@@ -141,8 +141,8 @@ echo 'Restoring nextcloud db'
 echo 'Restoring nextcloud db. Done'
 ```
 
-# Conclusion
-Having a backup is essential, but it is also important to do a routine restore to make sure everything works as planned. This is a skill worth practicing.
+# Summary
+Having a backup is essential, but it is also important to do a routine restore to make sure everything works as planned. Software changes all the time. If we want to prevent unexpected breaking change to happen, stick to one version and only upgrade the software under supervision, not automatically.
 
 ----
 1. {: #ref-1} [https://mariadb.com/kb/en/mysqldump/](https://mariadb.com/kb/en/mysqldump/)
