@@ -116,6 +116,8 @@ OCI runtime exec failed: exec failed: unable to start container process: exec: "
 ```
 This time, the `restore.sh` script fails because `mysql` is also no longer shipped in the MariaDB image. So I also need to replace `mysql` with `mariadb` command.
 
+After fixing these errors, I was able to create a backup and restoring it to a fully working Nextcloud instance successfully. Phew!
+
 # Nextcloud Scripts (New)
 ```
 $ cat /docker/nextcloud/pre_backup.sh
