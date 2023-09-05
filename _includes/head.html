@@ -34,6 +34,10 @@
       --yellow-color: #E7E3D0;
       --yellow-link-color: #f5e700;
       --yellow-bg-color: #19180d;
+
+      --mono-color: #000;
+      --mono-link-color: #000;
+      --mono-bg-color: #FFF;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -41,6 +45,10 @@
         --default-color: #FFF;
         --default-link-color: #3D9BFF;
         --default-bg-color: #000;
+
+        --mono-color: #FFF;
+        --mono-link-color: #FFF;
+        --mono-bg-color: #000;
       }
     }
 
@@ -100,26 +108,17 @@
     function c(color) {
       const r = document.querySelector(':root');
       const rs = getComputedStyle(r);
-      const hex = rs.getPropertyValue(`--${color}-color`) || rs.getPropertyValue(`--default-color`);
-      return hex;
-    }
-    function b(color) {
-      const r = document.querySelector(':root');
-      const rs = getComputedStyle(r);
-      const hex = rs.getPropertyValue(`--${color}-bg-color`) || rs.getPropertyValue(`--default-bg-color`);
-      return hex;
-    }
-    function l(color) {
-      const r = document.querySelector(':root');
-      const rs = getComputedStyle(r);
-      const hex = rs.getPropertyValue(`--${color}-link-color`) || rs.getPropertyValue(`--default-link-color`);
-      return hex;
+      const d = rs.getPropertyValue(`--${color}-color`) || rs.getPropertyValue(`--default-color`);
+      const b = rs.getPropertyValue(`--${color}-bg-color`) || rs.getPropertyValue(`--default-bg-color`);
+      const l = rs.getPropertyValue(`--${color}-link-color`) || rs.getPropertyValue(`--default-link-color`);
+      return [d, b, l];
     }
     function u(color) {
       const r = document.querySelector(':root');
-      r.style.setProperty('--color', c(color));
-      r.style.setProperty('--link-color', l(color));
-      r.style.setProperty('--bg-color', b(color));
+      let colors = c(color);
+      r.style.setProperty('--color', colors[0]);
+      r.style.setProperty('--link-color', colors[1]);
+      r.style.setProperty('--bg-color', colors[2]);
     }
   </script>
 </head>
