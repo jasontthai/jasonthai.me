@@ -5,6 +5,8 @@ image: "/assets/img/nginx.png"
 category: tech
 ---
 
+Edited Sep 06, 2023: Added TLSv1.3 to ssl protocols and use the default ciphers.
+
 My go to template for using reverse proxy in Nginx (replace `domain.tld` with actual domain and  port `3000` with the port number): 
 
 ```conf
@@ -24,9 +26,7 @@ server {
     ssl_certificate /etc/letsencrypt/live/domain.tld/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/domain.tld/privkey.pem;
 
-    ssl_protocols TLSv1.2;
-    ssl_ciphers ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS;
-    ssl_prefer_server_ciphers   on;
+    ssl_protocols TLSv1.2 TLSv1.3;
 
     add_header Strict-Transport-Security "max-age=31536000";
     add_header X-Content-Type-Options nosniff;
