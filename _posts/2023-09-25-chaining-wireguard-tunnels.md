@@ -109,7 +109,7 @@ You are connected to Mullvad ...
 From **client**, connect to the home net work tunnel using the existing client conf and verify network traffic is routed through our VPN service. This can be done by checking for the IP on [https://whatismyipaddress.com](https://whatismyipaddress.com/) or the curl command above. Also check whether local services are still accessible.
 
 ----
-## References:
+## References
 1. {: #ref-1} [https://www.reddit.com/r/WireGuard/comments/ekeprt/wireguard_to_wireguard_setup_im_sure_many_have/](https://www.reddit.com/r/WireGuard/comments/ekeprt/wireguard_to_wireguard_setup_im_sure_many_have/)  
 2. {: #ref-2}[https://mgnik.wordpress.com/2019/03/05/raspberry-pi-as-a-vpn-gateway-using-wireguard/](https://mgnik.wordpress.com/2019/03/05/raspberry-pi-as-a-vpn-gateway-using-wireguard/)  
 3. {: #ref-3}[https://archern9.github.io/posts/route-pivpn-traffic-via-mullvad/](https://archern9.github.io/posts/route-pivpn-traffic-via-mullvad/)  
