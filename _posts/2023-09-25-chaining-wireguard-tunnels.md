@@ -96,6 +96,13 @@ PreDown = iptables -t nat -D POSTROUTING -o vpn-client -j MASQUERADE
 ...
 ```
 
+The rules and explanations are copied from this comment<sup>[4](#ref-4)</sup>:
+
+> 1. The first rule is about blocking the use of $INTERFACE (enp2s0) for anything but your LAN's local machines ("kill-switch").  
+> 2. The second rule is about forwarding your client's packets (unless rejected by the first rule before).  
+> 3. The third rule is about allowing traffic that is related to or belongs to already established connections (e.g. responses that clients are interested in).  
+> 4. The last rule blocks everything else which also prevents your VPN provider from accessing your clients or LAN's local machines and also blocks your LAN's local machines from initiating connections to your client(s).
+
 ## Connect the dots
 Spin up both tunnels if not already done so. Verify we are still connected to VPN.
 ```
@@ -112,4 +119,5 @@ From **client**, connect to the home net work tunnel using the existing client c
 ## References
 1. {: #ref-1} [https://www.reddit.com/r/WireGuard/comments/ekeprt/wireguard_to_wireguard_setup_im_sure_many_have/](https://www.reddit.com/r/WireGuard/comments/ekeprt/wireguard_to_wireguard_setup_im_sure_many_have/)  
 2. {: #ref-2}[https://mgnik.wordpress.com/2019/03/05/raspberry-pi-as-a-vpn-gateway-using-wireguard/](https://mgnik.wordpress.com/2019/03/05/raspberry-pi-as-a-vpn-gateway-using-wireguard/)  
-3. {: #ref-3}[https://archern9.github.io/posts/route-pivpn-traffic-via-mullvad/](https://archern9.github.io/posts/route-pivpn-traffic-via-mullvad/)  
+3. {: #ref-3}[https://archern9.github.io/posts/route-pivpn-traffic-via-mullvad/](https://archern9.github.io/posts/route-pivpn-traffic-via-mullvad/)
+4. {: #ref-4}[https://www.reddit.com/r/WireGuard/comments/ekeprt/wireguard_to_wireguard_setup_im_sure_many_have/fddcf0b/](https://www.reddit.com/r/WireGuard/comments/ekeprt/wireguard_to_wireguard_setup_im_sure_many_have/fddcf0b/)  
