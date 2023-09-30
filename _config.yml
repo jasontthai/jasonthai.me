@@ -15,7 +15,7 @@ author:
   description: Jason's personal page
 
 pagination:
-  enabled: true
+  enabled: false
   debug: true
   per_page: 6
   permalink: '/page/:num/'
@@ -75,3 +75,4 @@ exclude:
   - tailwind.config.js
   - .tailwind/
   - .gitignore
+  - scripts/
