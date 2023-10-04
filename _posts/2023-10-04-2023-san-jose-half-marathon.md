@@ -5,6 +5,12 @@ tags:
 - running
 ---
 
+<style>
+td, th {
+  border-bottom: 1px solid;
+}
+</style>
+
 ### Race Information
 
 * **Name:** Rock'n'Roll San Jose Marathon
