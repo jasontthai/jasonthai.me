@@ -41,7 +41,7 @@ td, th {
 
 ### Training
 
-I made a goal to run a sub-2-hour marathon after the race last year and started running pretty consistently. I realized I needed to work on my endurance more so I started following the 80-20 training where 80% of the time I run at an easy and comfortable pace and the other 20% at a faster and harder pace. I also paid attention to my heart rate more and made sure that the easy runs were easy based on the HR zone.
+I made a goal to run a sub-2-hour half marathon after the race last year and started running pretty consistently. I realized I needed to work on my endurance more so I started following the 80-20 training where 80% of the time I run at an easy and comfortable pace and the other 20% at a faster and harder pace. I also paid attention to my heart rate more and made sure that the easy runs were easy based on the HR zone.
 
 I have run about 1,100 miles this year, peaking at about 38 miles per week. Each week consisted of about 5 or 6 runs, where the shorter runs were done during weekdays and longer ones on the weekends. Looking back, I think I might have ramped up the mileage too fast. The last few weeks before the race Overall, I decided to taper and not run as much, which might have reduced my running capacity for a bit.
 
