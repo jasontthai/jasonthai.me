@@ -17,7 +17,7 @@ td, th {
 * **Date:** October 1, 2023
 * **Distance:** 13.1 miles
 * **Location:** San Jose, CA
-* **Website:** https://www.runrocknroll.com/san-jose
+* **Website:** [https://www.runrocknroll.com/san-jose](https://www.runrocknroll.com/san-jose)
 * **Time:** 1:43:52
 
 ### Goals
@@ -71,4 +71,4 @@ After the race, I got some water and a banana. I finally noticed the pain in my 
 
 Overall, I am happy with the result and the effort that I put into the race. Maybe next year I'll be able to conquer the sub 1:40 goal.
 
-The template is based on [http://sfdavis.com/racereports](http://sfdavis.com/racereport).
+The template is based on [http://sfdavis.com/racereports](http://sfdavis.com/racereports/).
