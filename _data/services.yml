@@ -4,39 +4,11 @@
   icon: /assets/img/services/passwordmanager.svg
   id: 785563184
 
-- name: HedgeDoc
-  description: Realtime collaborative markdown notes on all platforms.
-  url: https://md.jasonthai.me
-  icon: /assets/img/services/markdown.png
-  id: 785563204
-
-- name: Commento
-  description: A fast, privacy-focused commenting platform. Easy to use, no spam.
-  url: https://commento.jasonthai.me
-  icon: /assets/img/services/commento.png
-  id: 785563205
-
 - name: EchoIP
   description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported.
   url: https://ip.jasonthai.me
   icon: /assets/img/services/ip.png
   id: 785563199
-# - name: Gitea
-#   description: Gitea is a community managed lightweight code hosting solution written in Go. It is published under the MIT license.
-#   url: https://git.jasonthai.me
-#   icon: /assets/img/services/gitea.png
-
-#- name: Nextcloud
-#  description: The self-hosted productivity platform that keeps you in control. Data is encrypted. Contact me for a free 4GB space.
-#  url: https://cloud.jasonthai.me
-#  icon: /assets/img/services/cloud.png
-#  id: 785563189
-
-- name: PrivateBin 
-  description: Minimal pastebin service (I've decided to taken this down to prevent spam)
-  url: /#
-  icon: /assets/img/services/bin.png
-  id: 785563191
 
 - name: TT-RSS
   description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account.
@@ -49,9 +21,3 @@
   url: https://wallabag.jasonthai.me
   icon: /assets/img/services/wallabag.png
   id: 785563208
-
-- name: xBrowserSync
-  description: Sync your bookmarks between browsers and devices while maintaining your privacy and anonymity.
-  url: https://xbrowsersync.jasonthai.me
-  icon: /assets/img/services/browsersync.png
-  id: 785563197
