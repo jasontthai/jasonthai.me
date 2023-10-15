@@ -20,7 +20,7 @@ I'm currently living in San Jose, California with my lovely wife Vy and adorable
 
 I'm also an amateur practitioner of mindfulness and follow the [Plum Village](https://plumvillage.org)  meditation teachings.
 
-I've run a half marathon in [2019]({% post_url 2019-07-28-42nd-biofreeze-sf-marathon-1st-half %}), [2022]({% post_url 2022-11-06-2022-rock-n-roll-san-jose-half-marathon %}) and preparing to do another one with my wife this year 2023.
+I've run a half marathon in [2019]({% post_url 2019-07-28-42nd-biofreeze-sf-marathon-1st-half %}), [2022]({% post_url 2022-11-06-2022-rock-n-roll-san-jose-half-marathon %}) and [2023]({% post_url 2023-10-04-2023-san-jose-half-marathon %}).
 
 I am considerate of people and would like to be treated the same.
 
