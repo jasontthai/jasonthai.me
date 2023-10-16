@@ -3,21 +3,25 @@
   url: https://bitwarden.jasonthai.me
   icon: /assets/img/services/passwordmanager.svg
   id: 785563184
+  badge: https://status.jasonthai.me/api/badge/6/uptime?style=flat-square
 
 - name: EchoIP
   description: IP address lookup. Look up your Network's IP, ASN, Geolocation. API supported.
   url: https://ip.jasonthai.me
   icon: /assets/img/services/ip.png
   id: 785563199
+  badge: https://status.jasonthai.me/api/badge/10/uptime?style=flat-square
 
 - name: TT-RSS
   description: Free and open source web-based news feed (RSS/Atom) reader and aggregator. Contact me for an account.
   url: https://rss.jasonthai.me
   icon: /assets/img/services/rss.png
   id: 785563185
+  badge: https://status.jasonthai.me/api/badge/9/uptime?style=flat-square
 
 - name: Wallabag
   description: Wallabag is an open source project to save your web articles and allows you to read them later on your mobile devices.
   url: https://wallabag.jasonthai.me
   icon: /assets/img/services/wallabag.png
   id: 785563208
+  badge: https://status.jasonthai.me/api/badge/11/uptime?style=flat-square

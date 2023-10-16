@@ -5,13 +5,17 @@ description: Free services that I hosted
 sitemap: false
 ---
 <p>A set of services that I am currently hosting. You can check the status of all services at
-    <a href="https://stats.uptimerobot.com/mMn90f5PYn">https://stats.uptimerobot.com/mMn90f5PYn</a>
+    <a href="https://status.jasonthai.me">https://status.jasonthai.me</a>
 </p>
 
 {%- for service in site.data.services -%}
 <article style="padding-bottom: 2rem;">
-    <h2><a href="{{ service.url | relative_url }}">{{ service.name }}</a>
-        <span id="{{ service.id }}"></span>
+    <h2 style="display: flex; align-items: center;"><a href="{{ service.url | relative_url }}">{{ service.name }}</a>
+        {% if service.badge %}
+        <img style="margin-inline-start: 10px;" src="{{ service.badge }}">
+        {% else %}
+        <span style="margin-inline-start: 10px;" id="{{ service.id }}"></span>
+        {% endif %}
     </h2>
     <span>
         {{ service.description }}
