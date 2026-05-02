@@ -23,20 +23,35 @@ sitemap: false
 </article>
 {% endfor %}
 
-<script type="text/javascript" src="/assets/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
     function getStatus() {
-        $.post("https://api.uptimerobot.com/v2/getMonitors", {
-            "api_key": "ur976816-df4af47e846c916b83909b69"
-        }, function (result) {
-            for (var i = 0; i < result.monitors.length; i++) {
-                if (result.monitors[i].status == 2) {
-                    $('#' + result.monitors[i].id).html('✅');
-                } else if (result.monitors[i].status == 8 || result.monitors[i].status == 9) {
-                    $('#' + result.monitors[i].id).html('❌');
+        fetch("https://api.uptimerobot.com/v2/getMonitors", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams({
+                'api_key': 'ur976816-df4af47e846c916b83909b69'
+            })
+        })
+        .then(response => response.json())
+        .then(result => {
+            if (result && result.monitors) {
+                for (var i = 0; i < result.monitors.length; i++) {
+                    const monitor = result.monitors[i];
+                    const element = document.getElementById(monitor.id);
+                    if (element) {
+                        if (monitor.status == 2) {
+                            element.innerHTML = '✅';
+                        } else if (monitor.status == 8 || monitor.status == 9) {
+                            element.innerHTML = '❌';
+                        }
+                    }
                 }
             }
-        });
+        })
+        .catch(error => console.error('Error fetching status:', error));
+
         setTimeout(getStatus, 60000);
     }
     getStatus();

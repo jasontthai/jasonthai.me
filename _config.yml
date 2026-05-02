@@ -72,7 +72,5 @@ exclude:
   - yarn.lock
   - vendor
   - node_modules/*
-  - tailwind.config.js
-  - .tailwind/
   - .gitignore
   - scripts/
