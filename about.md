@@ -30,7 +30,7 @@ I live in San Jose, California, with my lovely wife Vy and our adorable mini gol
 ![Yuna](/assets/img/yuna-chan.jpg){:style="width:100%; border-radius: 8px; margin: 20px 0;"}
 *Our adorable companion, Yuna.*
 
-When I'm not behind a screen, you'll likely find me outdoors. We love going on long walks, hiking through local trails, and exploring the city on our bikes.
+When I'm not behind a screen, you'll likely find me outdoors. We love going on long walks, hiking through local trails, and exploring the city on foot.
 
 ---
 
