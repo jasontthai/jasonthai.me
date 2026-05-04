@@ -1,34 +1,57 @@
 ---
 title: About
 layout: page
-description: Hey I'm Jason. You can find more about me in about page.
+description: Learn about Jason Thai, a Software Engineer at Google, and his journey through tech, mindfulness, and marathon running.
 ---
 
-For up to date profile, check out my [LinkedIn](https://www.linkedin.com/in/jasontthai).
+![Jason Thai](/assets/img/profile.jpeg){:style="width:150px; border-radius: 50%; float: right; margin-left: 20px;"}
 
-I am currently a software engineer at [Google](https://google.com) where I am working on making ChromeOS better.
+Hey there! You found me. I'm Jason.
 
-Some of my previous companies include:
+### 🚀 Professional Journey
 
-* [Amazon](https://www.amazon.com) where I worked on advertising experimentation and private market place platforms. 
-* [Nauto](https://www.nauto.com) where I worked on BE services for fleet web and mobile applications.
-* [CastAR](http://castar.com) where I built an ecommerce and gaming platform.
-* [Yahoo](https://yahoo.com) where I built content publishing and analytics tool.
+I currently engineer software at **[Google](https://google.com)**, where I focus on enhancing the **ChromeOS** personalization experience. I enjoy solving complex problems that impact millions of users daily.
 
-## Other facts about me
-I'm currently living in San Jose, California with my lovely wife Vy and adorable mini goldendoodle [Yuna](/assets/img/yuna-chan.jpeg). We like to go on walks and do other outdoor activities like running, hiking and biking.
+Before Google, I spent time building and scaling platforms at several other technology companies:
 
-I'm also an amateur practitioner of mindfulness and follow the [Plum Village](https://plumvillage.org)  meditation teachings.
+*   **[Amazon](https://www.amazon.com)**: Worked on advertising experimentation and private marketplace platforms.
+*   **[Nauto](https://www.nauto.com)**: Built backend services for fleet web and mobile applications.
+*   **[CastAR](http://castar.com)**: Developed e-commerce and gaming platforms.
+*   **[Yahoo](https://yahoo.com)**: Built content publishing and analytics tools.
 
-I [run](https://jasonthai.me/tags/running/). My furthest distance is a marathon.
+**Tech Interests:** I enjoy making client applications more delightful and accessible, and love tinkering with  with systems and infrastructures.
 
-I am considerate of people and would like to be treated the same.
+---
 
-## Some info about this blog
-I spent quite a bit of time trying to make up my mind what should be on this blog homepage - whether it should be info about myself or the notes that I wrote. Ultimately I decided to show the articles because it is not about me but my contents.
+### 🏡 Life in San Jose
 
-I do not have a specific theme of topics that are covered in this blog. Mainly what I want to share revolves around my work, life and interests.
-If you expect a lot of randomness, this blog is for you.
+I live in San Jose, California, with my lovely wife Vy and our adorable mini goldendoodle, **Yuna**. 
 
-## Have some comments? 
-Send me an email at [&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;](mailto:&#104;&#101;&#121;&#064;&#106;&#097;&#115;&#111;&#110;&#116;&#104;&#097;&#105;&#046;&#109;&#101;).
+![Yuna](/assets/img/yuna-chan.jpg){:style="width:100%; border-radius: 8px; margin: 20px 0;"}
+*Our adorable companion, Yuna.*
+
+When I'm not behind a screen, you'll likely find me outdoors. We love going on long walks, hiking through local trails, and exploring the city on our bikes.
+
+---
+
+### 🏃 Interests & Philosophy
+
+*   **Mindfulness:** I am an amateur practitioner of mindfulness and follow the [Plum Village](https://plumvillage.org) meditation teachings. I often write about my journey toward a more [mindful life](/tags/mindfulness/).
+*   **Running:** I love to [run](/tags/running/). I've progressed from short jogs to completing a full marathon. It’s my favorite way to clear my mind and stay resilient.
+*   **Philosophy:** I believe in treating people with consideration and respect, and I strive to live by that principle every day.
+
+---
+
+### ✍️ About This Blog
+
+I spent a lot of time debating what should be on this homepage. Ultimately, I realized it can be anything and everything. This blog is a collection of my notes, technical deep-dives, and personal reflections. 
+
+There’s no single theme here; expect a healthy dose of randomness reflecting my work, life, and ever-changing interests.
+
+---
+
+### 📬 Let's Connect
+
+Have a question or just want to say hi? 
+
+Send me an email at [**hey@jasonthai.me**](mailto:hey@jasonthai.me) or find me on **[LinkedIn](https://www.linkedin.com/in/jasontthai)**.
