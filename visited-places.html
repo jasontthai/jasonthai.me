@@ -130,22 +130,19 @@ description: A list of places I have visited
 		accessToken: '{{ site.mapbox_token }}'
 	}).addTo(map);
 
-	// Update map style when theme changes
 	function updateMapStyle() {
 		const newStyle = getMapStyle();
 		tileLayer.options.id = newStyle;
 		tileLayer.setUrl('https://api.mapbox.com/styles/v1/' + newStyle + '/tiles/{z}/{x}/{y}?access_token={{ site.mapbox_token }}');
-		geojson.resetStyle(); // Refresh country colors in case theme color changed
+		geojson.resetStyle();
 	}
 
-	// Listen for theme button clicks
 	document.querySelectorAll('.tb').forEach(button => {
 		button.addEventListener('click', () => {
-			setTimeout(updateMapStyle, 100); // Wait for theme engine to update localStorage
+			setTimeout(updateMapStyle, 100);
 		});
 	});
 
-	// Listen for system theme changes
 	window.matchMedia('(prefers-color-scheme: dark)').addListener(updateMapStyle);
 
 	var info = L.control();
