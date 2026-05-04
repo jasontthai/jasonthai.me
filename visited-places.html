@@ -6,29 +6,147 @@ description: A list of places I have visited
 <link rel="stylesheet" href="/assets/css/1.8.0_dist_leaflet.css"/>
 <script type="text/javascript" src="/assets/js/1.8.0_dist_leaflet.js"></script>
 
-<p>Here are some places that I have visited. You can hover on the map for more info.
-<a href="{% post_url 2018-06-13-how-to-create-interactive-map-with-mapbox-and-leafletjs %}">Check out how I made it
+<style>
+	.info {
+		padding: 6px 8px;
+		font: 14px/16px Arial, Helvetica, sans-serif;
+		background: var(--bg-color);
+		box-shadow: 0 0 15px rgba(0,0,0,0.2);
+		border-radius: 5px;
+		color: var(--color);
+	}
+	.info h4 {
+		margin: 0 0 5px;
+		color: var(--color);
+	}
+	.info b, .info p {
+		color: var(--color);
+	}
+	th.sortable {
+		cursor: pointer;
+		position: relative;
+	}
+	th.sortable:hover {
+		background-color: var(--link-color);
+		color: var(--bg-color);
+	}
+	th.sortable::after {
+		content: ' ↕';
+		font-size: 0.8em;
+		opacity: 0.5;
+	}
+</style>
+
+<p id="stats" style="font-weight: bold;">I have visited {{ site.data.visited_places | size }} countries and regions.</p>
+
+<h3 style="margin-top: 2rem;">Details</h3>
+<table id="visited-table" style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+	<thead>
+		<tr style="border-bottom: 2px solid var(--link-color);">
+			<th class="sortable" onclick="sortTable(0)" style="text-align: left; padding: 10px;">Place</th>
+			<th class="sortable" onclick="sortTable(1)" style="text-align: left; padding: 10px;">Memory</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for place in site.data.visited_places %}
+		<tr style="border-bottom: 1px solid var(--color); opacity: 0.8;">
+			<td style="padding: 10px; font-weight: bold;">{{ place.name }}</td>
+			<td style="padding: 10px;">{{ place.description }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<h3 style="margin-top: 3rem;">Interactive Map</h3>
+<a href="{% post_url 2018-06-13-how-to-create-interactive-map-with-mapbox-and-leafletjs %}">Check out how I made the interactive map
 	here.</a>
 </p>
 
-<div id='map' style="height: 50vh; margin-top: 2rem;"></div>
+<p><i>Note: I have stopped adding new places to the interactive map as it is difficult to maintain.</i></p>
 
-<script src="/assets/js/countries.js" type="text/javascript"></script>
+<div id='map' style="height: 50vh; margin-top: 1rem; margin-bottom: 2rem;"></div>
 
 <script type="text/javascript">
 
+	function sortTable(n) {
+		var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+		table = document.getElementById("visited-table");
+		switching = true;
+		dir = "asc";
+		while (switching) {
+			switching = false;
+			rows = table.rows;
+			for (i = 1; i < (rows.length - 1); i++) {
+				shouldSwitch = false;
+				x = rows[i].getElementsByTagName("TD")[n];
+				y = rows[i + 1].getElementsByTagName("TD")[n];
+				if (dir == "asc") {
+					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+						shouldSwitch = true;
+						break;
+					}
+				} else if (dir == "desc") {
+					if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+						shouldSwitch = true;
+						break;
+					}
+				}
+			}
+			if (shouldSwitch) {
+				rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+				switching = true;
+				switchcount++;
+			} else {
+				if (switchcount == 0 && dir == "asc") {
+					dir = "desc";
+					switching = true;
+				}
+			}
+		}
+	}
+
+	function isDarkTheme() {
+		const theme = localStorage.getItem('theme') || 'default';
+		if (theme === 'default') {
+			return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+		}
+		return ['green', 'yellow'].includes(theme);
+	}
+
+	function getMapStyle() {
+		return isDarkTheme() ? 'mapbox/dark-v11' : 'mapbox/light-v11';
+	}
+
 	var map = L.map('map').setView([0, 0], 2);
 
-	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+	var tileLayer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 		tileSize: 512,
 		maxZoom: 18,
 		zoomOffset: -1,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		id: 'mapbox/streets-v11',
-		accessToken: 'pk.eyJ1IjoiemlyaXVzIiwiYSI6ImNqaWNsenluYTAyZHczcHJvMGUzYWt6bTQifQ.fiJQMjN8hf8FFdHakLB3cw'
+		id: getMapStyle(),
+		accessToken: '{{ site.mapbox_token }}'
 	}).addTo(map);
+
+	// Update map style when theme changes
+	function updateMapStyle() {
+		const newStyle = getMapStyle();
+		tileLayer.options.id = newStyle;
+		tileLayer.setUrl('https://api.mapbox.com/styles/v1/' + newStyle + '/tiles/{z}/{x}/{y}?access_token={{ site.mapbox_token }}');
+		geojson.resetStyle(); // Refresh country colors in case theme color changed
+	}
+
+	// Listen for theme button clicks
+	document.querySelectorAll('.tb').forEach(button => {
+		button.addEventListener('click', () => {
+			setTimeout(updateMapStyle, 100); // Wait for theme engine to update localStorage
+		});
+	});
+
+	// Listen for system theme changes
+	window.matchMedia('(prefers-color-scheme: dark)').addListener(updateMapStyle);
 
 	var info = L.control();
 
@@ -39,20 +157,15 @@ description: A list of places I have visited
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<h4 style="color: black;">Places I visited</h4>' + (props ?
-			'<b><p style="color: black;">' + props.name + ' ' + props.description + '</p></b>'
-			: '<b style="color: black;">Hover over a marked place</b>');
+		this._div.innerHTML = '<h4>Places I visited</h4>' + (props ?
+			'<b><p>' + props.name + ' ' + props.description + '</p></b>'
+			: '<b>Hover over a marked place</b>');
 	};
 
 	info.addTo(map);
 
-	function getRandomColor() {
-		var letters = '0123456789ABCDEF';
-		var color = '#';
-		for (var i = 0; i < 6; i++) {
-			color += letters[Math.floor(Math.random() * 16)];
-		}
-		return color;
+	function getThemeColor() {
+		return getComputedStyle(document.documentElement).getPropertyValue('--link-color').trim() || '#C00021';
 	}
 
 	function style(feature) {
@@ -61,7 +174,7 @@ description: A list of places I have visited
 			opacity: 1,
 			color: 'black',
 			fillOpacity: 0.7,
-			fillColor: getRandomColor()
+			fillColor: getThemeColor()
 		};
 	}
 
@@ -82,6 +195,8 @@ description: A list of places I have visited
 		info.update(layer.feature.properties);
 	}
 
+	var geojson;
+
 	function resetHighlight(e) {
 		geojson.resetStyle(e.target);
 		info.update();
@@ -97,10 +212,16 @@ description: A list of places I have visited
 			mouseout: resetHighlight,
 			click: zoomToFeature
 		});
+		layer.bindPopup('<b>' + feature.properties.name + '</b><br>' + feature.properties.description);
 	}
 
-	var geojson = L.geoJson(countries, {
-		style: style,
-		onEachFeature: onEachFeature
-	}).addTo(map);
+	fetch('/assets/js/countries.json')
+		.then(response => response.json())
+		.then(data => {
+			geojson = L.geoJson(data, {
+				style: style,
+				onEachFeature: onEachFeature
+			}).addTo(map);
+		});
+
 </script>

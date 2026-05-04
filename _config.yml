@@ -64,6 +64,9 @@ plugins:
   - jekyll-loading-lazy
   - jekyll-archives
 
+# Mapbox
+mapbox_token: pk.eyJ1IjoiemlyaXVzIiwiYSI6ImNqaWNsenluYTAyZHczcHJvMGUzYWt6bTQifQ.fiJQMjN8hf8FFdHakLB3cw
+
 exclude:
   - bin/*
   - Gemfile
