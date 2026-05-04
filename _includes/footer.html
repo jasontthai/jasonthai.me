@@ -1,6 +1,12 @@
 <footer>
     <p style="display: flex; align-items: center;">
       Themes:
+      <button id="notebook" class="tb" style="border: 1px solid black; background: 
+        linear-gradient(90deg, transparent 30%, #ffb1b1 30%, #ffb1b1 35%, transparent 35%),
+        linear-gradient(#d1e1e1 1px, transparent 1px),
+        var(--notebook-bg-color);
+        background-size: 100% 100%, 100% 4px, 100% 100%;" 
+        onclick="o(this)" aria-label="Notebook"></button>
       <button id="default" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--default-link-color) 0%, var(--default-link-color) 50%, var(--default-bg-color) 50%, var(--default-bg-color) 100%);" onclick="o(this)" aria-label="Default"></button>
       <button id="red" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--red-link-color) 0%, var(--red-link-color) 50%, var(--red-bg-color) 50%, var(--red-bg-color) 100%);" onclick="o(this)" aria-label="Red"></button>
       <button id="orange" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--orange-link-color) 0%, var(--orange-link-color) 50%, var(--orange-bg-color) 50%, var(--orange-bg-color) 100%);" onclick="o(this)" aria-label="Orange"></button>
@@ -12,7 +18,7 @@
     </div>
     <script type="text/javascript">
       function f() {
-        const t = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'default';
+        const t = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'notebook';
         const buttons = document.querySelectorAll('.tb');
         buttons.forEach((button) => {
           if (button.getAttribute('id') === t) {
