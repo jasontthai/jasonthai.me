@@ -74,6 +74,7 @@
       margin: auto;
       max-width: 8in;
       overflow-wrap: break-word;
+      padding: 0 1rem;
     }
 
     .post-metadata {
@@ -89,6 +90,15 @@
         linear-gradient(#d1e1e1 1px, transparent 1px);
       background-repeat: repeat-y, repeat;
       background-size: auto, 100% 1.8rem;
+    }
+
+    @media (max-width: 1000px) {
+      .notebook-theme body {
+        /* We keep the horizontal lines but remove the vertical red one */
+        background-image: 
+          none, 
+          linear-gradient(#d1e1e1 1px, transparent 1px);
+      }
     }
 
     h1, h2, h3 {
