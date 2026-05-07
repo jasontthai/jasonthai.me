@@ -1,5 +1,5 @@
 <footer>
-    <p style="display: flex; align-items: center;">
+    <p style="display: flex; align-items: center; flex-wrap: wrap;">
       Themes:
       <button id="notebook" class="tb" style="border: 1px solid black; background: 
         linear-gradient(90deg, transparent 30%, #ffb1b1 30%, #ffb1b1 35%, transparent 35%),
@@ -7,6 +7,8 @@
         var(--notebook-bg-color);
         background-size: 100% 100%, 100% 4px, 100% 100%;" 
         onclick="o(this)" aria-label="Notebook"></button>
+      <button id="blueprint" class="tb" style="border: 1px solid white; background: var(--blueprint-bg-color); background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px); background-size: 5px 5px;" onclick="o(this)" aria-label="Blueprint"></button>
+      <button id="terminal" class="tb" style="border: 1px solid white; background: var(--terminal-bg-color); color: var(--terminal-color); font-family: monospace; font-size: 10px; display: flex; align-items: center; justify-content: center;" onclick="o(this)" aria-label="Terminal">_</button>
       <button id="default" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--default-link-color) 0%, var(--default-link-color) 50%, var(--default-bg-color) 50%, var(--default-bg-color) 100%);" onclick="o(this)" aria-label="Default"></button>
       <button id="red" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--red-link-color) 0%, var(--red-link-color) 50%, var(--red-bg-color) 50%, var(--red-bg-color) 100%);" onclick="o(this)" aria-label="Red"></button>
       <button id="orange" class="tb" style="border: 1px solid black; background: linear-gradient(to right, var(--orange-link-color) 0%, var(--orange-link-color) 50%, var(--orange-bg-color) 50%, var(--orange-bg-color) 100%);" onclick="o(this)" aria-label="Orange"></button>

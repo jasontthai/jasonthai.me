@@ -55,6 +55,14 @@
       --notebook-color: #333;
       --notebook-link-color: #d14;
       --notebook-bg-color: #fffef0;
+
+      --terminal-color: #00FF00;
+      --terminal-link-color: #00FF00;
+      --terminal-bg-color: #0D0D0D;
+
+      --blueprint-color: #FFFFFF;
+      --blueprint-link-color: #33CCFF;
+      --blueprint-bg-color: #003366;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -99,6 +107,14 @@
           none, 
           linear-gradient(#d1e1e1 1px, transparent 1px);
       }
+    }
+
+    .terminal-theme h1::before { content: "$ "; }
+
+    .blueprint-theme body {
+      font-family: 'Patrick Hand', cursive;
+      background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
+      background-size: 20px 20px;
     }
 
     h1, h2, h3 {
@@ -184,10 +200,11 @@
       r.style.setProperty('--color', colors[0]);
       r.style.setProperty('--bg-color', colors[1]);
       r.style.setProperty('--link-color', colors[2]);
-      if (color === 'notebook') {
-        document.documentElement.classList.add('notebook-theme');
-      } else {
-        document.documentElement.classList.remove('notebook-theme');
+      
+      const themes = ['notebook', 'terminal', 'blueprint'];
+      themes.forEach(t => document.documentElement.classList.remove(`${t}-theme`));
+      if (themes.includes(color)) {
+        document.documentElement.classList.add(`${color}-theme`);
       }
     }
   </script>
